@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0083757A-5676-4D70-B32F-E223348E4E27" name="TIPO SUCS AGENS">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>90621D24-3D5D-084D-262C-318865CA436A</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id tipo suc agen" id="25D95265-4521-CECD-E7BF-5FE2B669DAAE">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>18DD17A7-1976-1EBD-D01F-3496EE39BE1F</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo suc agen" id="C7871EA7-0F5F-464F-9137-9F0DDE570EFE">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>6CD47D67-EBEF-5027-079E-3947F01D2E53</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SUCS AGENS id suc agen" id="3A7973A0-FB3E-1944-5CF6-7FC9945EB0DE">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:45:29 UTC</createdTime>
+<generatorID>89B406D9-D6A1-AD7B-7C7D-2D249A783BAD</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<referedAttribute>4607666D-8CEF-DCD2-D39A-A3CB08E6DD5A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="10D1B2B7-5732-F1DF-E801-9168BDBDDA49" name="TIPO SUCURSAL AGENCIA PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>3D50EA6F-9612-66AD-B74A-2DD699A24C55</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>25D95265-4521-CECD-E7BF-5FE2B669DAAE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

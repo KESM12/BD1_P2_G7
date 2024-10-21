@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0B48DA9D-1072-3AAB-334E-114E6E1B679B" name="SEGURIDAD_ACCESO">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>A8A20811-E6B7-D2E2-CF61-BDEDD129F6B0</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_acceso" id="AC947E93-AAC3-CB23-86A3-376CC8D1CBBD">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>8908A92A-5EBC-E2D8-1D46-42CC63DFAA10</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_empleado" id="B485017B-D185-D03E-4DCB-B0C6B0A281F2">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>04EB874B-6EC6-1FF7-1AA9-0E79BDB552E6</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rol_acceso" id="D2A555D2-D3C2-0E75-5E2E-3D55A900B040">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>2B73413C-CCC4-ACDB-522C-DE1A1B516EBD</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_acceso" id="6B0A71B3-FD94-3AD5-3DB1-D7369241BDA5">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>985E2F40-381A-CDAF-A5C9-D8A5219C6077</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hora_acceso" id="EB8470CE-0A37-FAA1-C7F8-C944829D64F0">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>C7B54CB7-91D2-29A7-2AB9-DEED8625B8A9</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLEADOS_id_empleado" id="B66E6783-8EEB-E6C4-36F8-7A830595A737">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:21:13 UTC</createdTime>
+<generatorID>941B19B8-C04D-1FB3-9256-424CB7338D5D</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EF321490-9321-697F-FEB4-AE8B12FE0F63" referredColumn="A7A5A0AA-A8C9-628C-0600-44C341B6F81B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="50D87F89-CA30-B6C6-A7A4-7F5EDCCAED92" name="SEGURIDAD_ACCESO_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>8A92A449-B58E-F4C9-1932-64BB72E4D7CB</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC947E93-AAC3-CB23-86A3-376CC8D1CBBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0CB05EC1-5D82-2579-8DD6-5DC396457F9C" name="SEGURIDAD_ACCESO_EMPLEADOS_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:21:13 UTC</createdTime>
+<generatorID>F9C9C6B5-13E3-5405-F843-21749C3F040D</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B66E6783-8EEB-E6C4-36F8-7A830595A737"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

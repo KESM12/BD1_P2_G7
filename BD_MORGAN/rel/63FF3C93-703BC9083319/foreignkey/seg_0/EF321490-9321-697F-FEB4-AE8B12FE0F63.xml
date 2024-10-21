@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EF321490-9321-697F-FEB4-AE8B12FE0F63" containerWithKeyObject="0B48DA9D-1072-3AAB-334E-114E6E1B679B" localFKIndex="0CB05EC1-5D82-2579-8DD6-5DC396457F9C" name="SEGURIDAD_ACCESO_EMPLEADOS_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:21:13 UTC</createdTime>
+<generatorID>F9C9C6B5-13E3-5405-F843-21749C3F040D</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<referredTableLongName>EMPLEADOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8FBCE572-E552-0DDC-9714-31E06AF5056E</referredTableID>
+<keyObject>F4A83C2C-A2E7-CC2D-32E9-898AB76A52AA</keyObject>
+<referredKeyID>F4A83C2C-A2E7-CC2D-32E9-898AB76A52AA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_empleado</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

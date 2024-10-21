@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="40E41701-C1F3-5739-5CC1-C4C2D870B0F9" name="HISTORIAL_SALDOS">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>BDEB6CB2-4D0E-E655-25DD-D13A76A81592</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_historial" id="3DF1F996-3055-2C6E-5762-AE50A7B5DDC3">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>929BE82D-5A92-AA21-2CC4-7D464C12CCFC</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_cuenta" id="E456A3E3-8ECB-89DD-13EA-AEC8AED1CB7D">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>D5E19BF0-36D2-FDC1-E77D-B1680251231C</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="saldo" id="C8E7A2AA-528F-A2B2-2AAA-E31FB6AD4BE8">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>40C65C74-0574-B25C-8451-30554EA16C24</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="224D2AB4-6D1E-9B4A-D715-0CB0CCAAA305">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>25CDE87B-2455-B95C-F122-733A28DA1209</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D08C1A23-58AF-1D1B-1180-EA2884F81F86" name="HISTORIAL_SALDOS_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>F1689D56-9DDE-A2B5-439E-7F8A7F62A9AE</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3DF1F996-3055-2C6E-5762-AE50A7B5DDC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

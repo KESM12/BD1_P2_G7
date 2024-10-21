@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="18653F6C-6D3F-AB3B-9424-1F7B91C65DFC" name="CLIENTES">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 01:21:37 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_cliente" id="6E948EEA-C929-A776-AF08-134D6AD7E233">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 01:22:23 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="B9D5DDC3-C16E-BE25-8D06-E21B1B6365FB">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 01:22:53 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido" id="DBBF47BB-B75E-E58E-BC75-BFEB2AD9409C">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 01:22:53 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="7604BC51-B956-CD58-42F8-18C5E3511F88">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 01:31:19 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0C454B6A-DB30-53EF-FB53-669080772DAE" name="CLIENTES_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 05:59:17 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E948EEA-C929-A776-AF08-134D6AD7E233"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

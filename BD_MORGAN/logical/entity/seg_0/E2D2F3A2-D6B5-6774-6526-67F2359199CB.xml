@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E2D2F3A2-D6B5-6774-6526-67F2359199CB" name="TIPOCUENTAS">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>E2075738-D997-47A7-7653-25BDEB5791F8</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id tipo cuenta" id="58148CD9-1974-9514-ACE6-D6C98244DB2F">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>AD7B4A0A-09CF-513B-6DD0-583CF011AA78</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo cuenta" id="47DC5B8D-CE74-A7BD-1B5D-07ED41E28501">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>7427980E-731D-9E01-67DF-E03B40C62507</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BE5257A3-93D3-7D3A-4E93-DD7C98A09529" name="TIPOCUENTA PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>7A28F63A-142D-8B83-200F-33904A9BE48E</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>58148CD9-1974-9514-ACE6-D6C98244DB2F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

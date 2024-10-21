@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C919CBB7-F4D8-7ECB-65F6-2429ECA03131" name="EST_TARJETAS">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:15:44 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_estado" id="A89281FF-5720-81CB-79A7-9A0413DDED2A">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:16:43 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="52CB75F3-0304-C106-159F-C8E20F329A55">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:16:43 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="657B7C39-5DA4-408F-07EE-4ADD99AB211E" name="ESTADO_TARJETA_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:16:43 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A89281FF-5720-81CB-79A7-9A0413DDED2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

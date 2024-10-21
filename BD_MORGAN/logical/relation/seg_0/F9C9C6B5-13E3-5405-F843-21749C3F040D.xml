@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SEGURIDAD ACCESO EMPLEADOS FK" directorySegmentName="seg_0" id="F9C9C6B5-13E3-5405-F843-21749C3F040D">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:16:15 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<sourcePk>E0DD1A71-51BC-AC95-2032-C1F35446860F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>07D61DD5-A148-A55D-E3AD-6678220D2B88</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A8A20811-E6B7-D2E2-CF61-BDEDD129F6B0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

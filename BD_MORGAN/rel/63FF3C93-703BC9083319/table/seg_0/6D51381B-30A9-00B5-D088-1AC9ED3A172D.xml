@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6D51381B-30A9-00B5-D088-1AC9ED3A172D" name="HISTORIAL_AUDITORIA">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>9DE9D6BD-3F3A-6788-3169-DBB6E348F0B6</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_auditoria" id="80FF821C-3128-892D-B242-E99F4A6DECAF">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>AB3BAD1B-A139-1529-43E3-E84ABC9976DF</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_transaccion" id="C242B589-D053-DFEA-4EB5-0E6750E41C0F">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>C7EDC495-AB02-D644-C3DF-EE3FC0C5CF75</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_empleado" id="7C8EBC5F-279B-F713-D1F7-FE33CF928E67">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>7F04E2A9-6A78-5ED0-0C73-7D11430FB277</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="168E87B2-EAFD-7015-26EC-5974F187BB08">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>F2EBE3F7-5FD2-148C-1A3A-B6349BBCFAC4</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hora" id="D4D9ACB0-C950-7FE8-0AEE-7020D82B71E9">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>A32D382C-DC0D-24B3-7AFF-05C08B3D1D80</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLEADOS_id_empleado" id="A786CDEC-CD58-0C54-5143-DA998BB91E85">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:21:13 UTC</createdTime>
+<generatorID>B0A194FE-93E6-72A1-8054-9EC6E57F5091</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2496F3C1-4A1B-63EA-8DE1-63C2571CC216" referredColumn="A7A5A0AA-A8C9-628C-0600-44C341B6F81B"/>
+</associations>
+</Column>
+<Column name="TRANSACCIONES_id_transaccion" id="7BC39207-13D8-E94D-80D0-5E3CFD6BB809">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:21:13 UTC</createdTime>
+<generatorID>688B56C6-33DF-8EF8-528F-525DF679E9D8</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CF86ED8E-85F2-F099-08F6-75EEF3ACFD01" referredColumn="58277DB2-A67B-5FD8-F776-54D4EB671B70"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1ABAACDA-8879-769D-363E-A3D7521F0DBE" name="HISTORIAL_AUDITORIA_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>434CC2A4-CD38-AE8C-A0A2-8930308F0462</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="80FF821C-3128-892D-B242-E99F4A6DECAF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C612DBDA-C0DF-C467-8A74-AED35B63BE04" name="HISTORIAL_AUDITORIA__IDX">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-19 00:37:08 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>CF890B17-4F7D-1F35-559F-767E73988C77</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="7BC39207-13D8-E94D-80D0-5E3CFD6BB809"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="939CFB9B-CFFD-628F-7ADF-E14034BBA09F" name="HISTORIAL_AUDITORIA_TRANSACCIONES_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:21:13 UTC</createdTime>
+<generatorID>CF890B17-4F7D-1F35-559F-767E73988C77</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7BC39207-13D8-E94D-80D0-5E3CFD6BB809"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F7B8ECEB-0631-507C-948A-46D7FDE80290" name="HISTORIAL_AUDITORIA_EMPLEADOS_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:21:13 UTC</createdTime>
+<generatorID>0BC47C2D-4633-3F25-2933-78226B4E8881</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A786CDEC-CD58-0C54-5143-DA998BB91E85"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

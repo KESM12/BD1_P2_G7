@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E2075738-D997-47A7-7653-25BDEB5791F8" name="TIPOCUENTAS">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:01:57 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tipo_cuenta" id="AD7B4A0A-09CF-513B-6DD0-583CF011AA78">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:03:03 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_cuenta" id="7427980E-731D-9E01-67DF-E03B40C62507">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:03:03 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7A28F63A-142D-8B83-200F-33904A9BE48E" name="TIPOCUENTA_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:03:03 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD7B4A0A-09CF-513B-6DD0-583CF011AA78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="720F1841-20E7-E369-0C4A-A59465588B4F" name="EST TARJETAS">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>C919CBB7-F4D8-7ECB-65F6-2429ECA03131</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id estado" id="A40C4AE1-6899-98EC-3AF9-4709D03CC988">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>A89281FF-5720-81CB-79A7-9A0413DDED2A</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="estado" id="630671BF-9EAF-0820-FDC0-DC2E473C6CF4">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>52CB75F3-0304-C106-159F-C8E20F329A55</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C8C55272-7589-AD55-B9DC-981B46FE1406" name="ESTADO TARJETA PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>657B7C39-5DA4-408F-07EE-4ADD99AB211E</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A40C4AE1-6899-98EC-3AF9-4709D03CC988</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

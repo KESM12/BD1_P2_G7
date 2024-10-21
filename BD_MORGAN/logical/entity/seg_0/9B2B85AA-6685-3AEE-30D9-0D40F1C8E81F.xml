@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9B2B85AA-6685-3AEE-30D9-0D40F1C8E81F" name="SUCS AGENS">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>69D9070B-D660-858C-1F14-D5400E2300A3</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id suc agen" id="4607666D-8CEF-DCD2-D39A-A3CB08E6DD5A">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>0E3401B8-0A5D-AC0F-2EF8-051D78C4B5FB</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="55FFA6CC-4610-3632-D254-123A49A26BFF">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>652A5B99-B728-C2DD-63EC-774D388DAF4D</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id tipo suc agen" id="68C7766A-4A74-07FB-0E17-7E31771460E9">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>DA353FD8-8D12-D5A8-94F9-C86393A968CA</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id departamento" id="E45F3412-E910-4A10-D8AB-B8899FCB63E1">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>B6F225BC-F942-5F0F-3E36-E325FD37749C</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono" id="EAAD125C-6F28-1C66-3726-8E3BAB09537A">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>55C6C725-5119-E7B4-83E0-7FD192775D17</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DEPARTAMENTOS id departamento" id="D11B0456-4112-EFDC-A5C2-91F60D666F5E">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:42:05 UTC</createdTime>
+<generatorID>737EBA92-4340-0CAD-B036-90CF9C817BD8</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<referedAttribute>673D0C9D-982A-09E3-EFFB-F593089EAE95</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="98DBDBA2-91B2-981E-A095-69BE0F02D40C" name="SUCURSALES AGENCIAS PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>35020D26-A09F-A487-0926-35E8EA219895</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4607666D-8CEF-DCD2-D39A-A3CB08E6DD5A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4E8383F3-0FB9-3FD5-BC37-CF9B1B9BDF9E" name="HISTORIAL_PRESTAMOS">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>F805A1F1-E49D-46E7-E76E-CB243587C047</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_historial_prestamo" id="9AB45950-F034-7979-53ED-D4D411575CBD">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>809EBB8A-AF03-3B08-0D7B-895DB3101E43</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_prestamo" id="8CF62D6B-EBDA-3E08-7195-7BEAC0E68030">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>30DF0750-2A74-CDA1-94CA-F8DC0CAF00B0</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_solicitud" id="4E58B051-601D-77C7-D490-BB8BAB23DA00">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>AEC6CE53-CC9F-0597-75F2-3A0989B35FDB</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="29AB0171-946E-A6A6-BEA8-3BEE9E415DE7">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>5BF3DEC9-3BA0-64E6-714C-CA84BD7E12EA</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRESTAMOS_id_prestamo" id="84324C1B-EA36-1E1A-E1F5-97B6256C8593">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:21:13 UTC</createdTime>
+<generatorID>8EEF6499-F934-F9B3-A990-FBB34FFDD375</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ECD397AD-DF74-9FBE-B081-B98CDBCA8CBF" referredColumn="F16EFEBF-F6B9-602D-AA88-18D552685CE4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6CC52C0B-9CB8-9449-CBE5-12F28F4E05BC" name="HISTORIAL_PRESTAMOS_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>07AA3DC5-41EC-C1F1-37CF-9D07F77722CC</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AB45950-F034-7979-53ED-D4D411575CBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5F60AD6C-98FB-7AD6-FE60-A6EBEAEBD839" name="HISTORIAL_PRESTAMOS_PRESTAMOS_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:21:13 UTC</createdTime>
+<generatorID>FE93E185-B9E7-072F-BF15-0DFA1B4E525D</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84324C1B-EA36-1E1A-E1F5-97B6256C8593"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

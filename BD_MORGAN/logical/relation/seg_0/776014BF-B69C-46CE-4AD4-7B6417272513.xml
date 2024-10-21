@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TARJS CRED EST TARJETAS FK" directorySegmentName="seg_0" id="776014BF-B69C-46CE-4AD4-7B6417272513">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:39:29 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<sourcePk>C8C55272-7589-AD55-B9DC-981B46FE1406</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>720F1841-20E7-E369-0C4A-A59465588B4F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E7E41192-0EFB-1DFA-A7FF-CCDE61924109</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

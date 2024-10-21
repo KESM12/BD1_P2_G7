@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="29CAF1D5-2B9F-FC6C-B4DA-242153E96A11" name="MUNICIPIOS">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:34:48 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_municipio" id="97D61959-F15C-AFE2-98C1-1437F6982AC3">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:36:00 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_mun" id="57D6B3DA-C228-15AD-98BB-0681E3F5AAFB">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:36:00 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="F5F11C15-8A53-92A4-D5FE-7339FD4FE327">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:36:00 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo_postal" id="D8F2D907-989C-22CA-DC08-8B3D6F095026">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:36:00 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTAMENTOS_id_departamento" id="B4062DDF-3186-E5B3-476F-7CAA8C16B4CB">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:52:29 UTC</createdTime>
+<generatorID>D5B766A2-A98B-8F6E-1B56-CD573A27276C</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="26BFDC67-21DD-4ABD-4602-3394FD26E58E" referredColumn="A63FFAA9-488D-0A69-049D-63F1C0690DC2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E1C0B39C-64F9-4814-D4CD-0473062AE6A8" name="MUNICIPIO_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:36:00 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97D61959-F15C-AFE2-98C1-1437F6982AC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A940FE4D-927E-7F31-5FBF-545CFC07F772" name="MUNICIPIOS_DEPARTAMENTOS_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:52:29 UTC</createdTime>
+<generatorID>7B15CD69-E017-3441-31FB-52FB58ED43DB</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4062DDF-3186-E5B3-476F-7CAA8C16B4CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

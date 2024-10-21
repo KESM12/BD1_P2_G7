@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DCE5DCB1-7D7F-F813-31B1-DB7F2C7C1E2A" name="ESTADOS_PRESTAMOS">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:20:07 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_eprestamo" id="9FB38969-8B31-9F3F-D919-419C7649EE29">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:21:19 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado_prestamo" id="BB600349-11C0-BC67-ACE3-F77426536987">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:21:19 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3AB3A625-2F22-8586-EDE6-CA7C7E29BA19" name="ESTADO_PRESTAMO_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:21:19 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FB38969-8B31-9F3F-D919-419C7649EE29"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

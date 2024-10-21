@@ -1,0 +1,181 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7D63FC97-B16C-3584-EAC6-AE28C596ABC0" name="PRESTAMOS">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>2ADD2C45-C3C7-37C0-B409-BD1B1955A634</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id prestamo" id="918BD0FF-AC4A-85E4-C425-42E9C04249B4">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>F16EFEBF-F6B9-602D-AA88-18D552685CE4</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id cliente" id="2AC83994-FAB5-7AC5-5B62-47AC6164ABFF">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>3EA3AF2C-B052-DC4F-4DA6-7404FEF45427</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="monto prest" id="B778DD11-10A5-F07B-141C-83CE5A090E15">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>B50388C9-46B8-D27F-9ADB-A7C85F8434B7</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tasa interes" id="0872416F-9047-8D4D-DEC6-BCD07AAA00BA">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>DA40A2C2-F3AD-D542-8AC2-ABDEE76BC27B</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha des" id="617E17E1-3F02-978F-6638-1562B35F054E">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>B96C3D16-17FD-03E2-F0A0-F371F4B03170</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha ven" id="D53F14EC-5AC3-6760-4180-0B3F4661214B">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>ADE8A55E-05FE-F32F-9E28-6342DC566A17</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="saldo pend" id="CFE2ECA4-9DBE-A86D-21C2-95CE8EA76091">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>91969E78-F151-6FEC-B4B9-9FFB86275BB4</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id eprestamo" id="93C64779-A025-8067-F910-34BCB293594A">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>47E0EAE2-7D61-9463-E789-CC7A1DEB83DC</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CLIENTES id cliente" id="08FE9090-A745-3836-F672-43544BC3970F">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:31:40 UTC</createdTime>
+<generatorID>1FEF1DFD-31D9-C2D8-3113-EF2864E4135E</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<referedAttribute>7F303558-0272-272B-6FA6-083D187C2552</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ESTADOS PRESTAMOS id eprestamo" id="A9AD9FB5-E6A2-90D2-DC45-D6A14701A244">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:39:09 UTC</createdTime>
+<generatorID>B775C610-C496-A2A0-8361-54D81D7AC7D7</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<referedAttribute>AFA31798-E981-0306-7C40-B83C7CFEC1C3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BEDB1E28-2E5A-94D8-B197-9E8DEDB2522A" name="PRESTAMO PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:20:31 UTC</createdTime>
+<generatorID>2AC36CD7-05EC-197D-F001-3D0CEE9AD58D</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>918BD0FF-AC4A-85E4-C425-42E9C04249B4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

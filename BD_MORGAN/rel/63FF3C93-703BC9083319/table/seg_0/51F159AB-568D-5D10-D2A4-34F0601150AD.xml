@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="51F159AB-568D-5D10-D2A4-34F0601150AD" name="TIPO_TRANSACS">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:06:22 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tipo_tran" id="9A9A2702-84DA-5F50-E938-B2DA4B05FD3A">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:08:18 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_tran" id="FF4B201A-5BCF-9990-9A37-7A38E9D79B45">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:08:18 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUCS_AGENS_id_suc_agen" id="75C15036-137B-420F-EB4D-DAFF37B30EFA">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:52:29 UTC</createdTime>
+<generatorID>17020711-ABAD-8C6F-2CAB-F95081C6AA40</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AEB73B51-BB5E-3998-A2E0-CEC06AFBDD58" referredColumn="0E3401B8-0A5D-AC0F-2EF8-051D78C4B5FB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="392D2569-5F63-8086-9980-D1D70E7E1E42" name="TIPO_TRANSACCION_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:08:18 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A9A2702-84DA-5F50-E938-B2DA4B05FD3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A16A4BB0-2819-64FD-DF2C-37F7B499F11C" name="TIPO_TRANSACS_SUCS_AGENS_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:52:29 UTC</createdTime>
+<generatorID>1A619F34-88A8-147B-F617-41148B0D831F</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75C15036-137B-420F-EB4D-DAFF37B30EFA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

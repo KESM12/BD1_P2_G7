@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7C1680CC-F89A-EEA4-7C24-7CD117D5A1CE" containerWithKeyObject="C0F8F388-A58A-2C68-6284-AF364DBC20B1" localFKIndex="AF61A02E-2007-FB38-0349-669A237BC943" name="TRANSACCIONES_INTERBANCARIAS_BOVEDAS_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:21:13 UTC</createdTime>
+<generatorID>73E80A4F-BFE0-9F41-83B8-B621189EDDFB</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<referredTableLongName>BOVEDAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EC007B03-6773-76C4-1BF0-BC20F20B9AE4</referredTableID>
+<keyObject>27C7D1E1-DB59-4901-3677-E5714BB5CC37</keyObject>
+<referredKeyID>27C7D1E1-DB59-4901-3677-E5714BB5CC37</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_boveda</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

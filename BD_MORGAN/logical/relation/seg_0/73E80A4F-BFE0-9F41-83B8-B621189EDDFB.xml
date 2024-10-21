@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TRANSACCIONES INTERBANCARIAS BOVEDAS FK" directorySegmentName="seg_0" id="73E80A4F-BFE0-9F41-83B8-B621189EDDFB">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:06:15 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<sourcePk>202DBF7B-269C-009F-6F7C-0BD594E2D9C0</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>23ADBEAF-9D70-C87E-A2C8-69C9D07E94EE</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>45105D2B-FB0D-75BF-3E59-2211C6B5414F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

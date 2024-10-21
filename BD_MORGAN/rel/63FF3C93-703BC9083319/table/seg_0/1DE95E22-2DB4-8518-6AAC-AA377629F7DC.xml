@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1DE95E22-2DB4-8518-6AAC-AA377629F7DC" name="DEPARTAMENTOS">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:33:22 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<ordsAlias>table_17</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_departamento" id="A63FFAA9-488D-0A69-049D-63F1C0690DC2">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:34:36 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_dep" id="918855FA-B760-EAEE-9D1C-2FF43D09D270">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:34:36 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_municipio" id="D33458B5-5020-386A-0431-99E9363128F9">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:34:36 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F771E4E0-F92D-A976-B908-C9C751287B89" name="DEPARTAMENTO_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:34:36 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A63FFAA9-488D-0A69-049D-63F1C0690DC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C0F8F388-A58A-2C68-6284-AF364DBC20B1" name="TRANSACCIONES_INTERBANCARIAS">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>45105D2B-FB0D-75BF-3E59-2211C6B5414F</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_interbancaria" id="9E5A69F8-2640-CF87-9936-048556141A94">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>5E727A76-11CA-EF23-49B7-FD495E41CA63</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_boveda_origen" id="F78BBFA0-BDF8-2DFB-0AFE-38B66F5F6CA7">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>99A63B3D-D2AE-7AE8-64A2-2AB0C8C3845B</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_boveda_destino" id="7B2E007E-AAFA-6BCC-E27B-2822558089BC">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>5EBB1703-BA48-CED6-A2D6-BA692996B3CE</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="monto" id="4B441F86-F8AF-B80F-D58E-6E16AC47B0CE">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>CA4E545C-732F-6325-D8B8-D6FD414230A2</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="099CDDB3-07A1-1653-1C59-44AE98782C6D">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>F92F9D79-0553-AA23-0E2D-4DDDB1E2DC01</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hora" id="B3DB8A70-48F4-5C31-7733-4CFA80088855">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>6BA51453-688C-6E33-EE7A-84589488B3F9</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BOVEDAS_id_boveda" id="016C6833-A3F0-2040-831D-F7BE48F71E31">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:21:13 UTC</createdTime>
+<generatorID>7CCC8086-5BA8-6547-6F62-0F27D4CE4BA8</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7C1680CC-F89A-EEA4-7C24-7CD117D5A1CE" referredColumn="CD7C13C8-7A77-3FF8-FF00-C9CF4372DDA4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C366DD60-1F2F-DA21-0F82-25D70562C9FF" name="TRANSACCIONES_INTERBANCARIAS_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:01:37 UTC</createdTime>
+<generatorID>A81E666E-7E1B-B6F9-9DFC-C0CC1A496B33</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E5A69F8-2640-CF87-9936-048556141A94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AF61A02E-2007-FB38-0349-669A237BC943" name="TRANSACCIONES_INTERBANCARIAS_BOVEDAS_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:21:13 UTC</createdTime>
+<generatorID>73E80A4F-BFE0-9F41-83B8-B621189EDDFB</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="016C6833-A3F0-2040-831D-F7BE48F71E31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

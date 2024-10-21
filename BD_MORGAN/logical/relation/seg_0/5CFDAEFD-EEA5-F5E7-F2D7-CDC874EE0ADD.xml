@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CUENTAS TIPOCUENTAS FK" directorySegmentName="seg_0" id="5CFDAEFD-EEA5-F5E7-F2D7-CDC874EE0ADD">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:37:44 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<sourcePk>BE5257A3-93D3-7D3A-4E93-DD7C98A09529</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E2D2F3A2-D6B5-6774-6526-67F2359199CB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>144C37A4-BA81-B6DA-4BDF-4E067A2010C9</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PRESTAMOS ESTADOS PRESTAMOS FK" directorySegmentName="seg_0" id="B775C610-C496-A2A0-8361-54D81D7AC7D7">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:39:09 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<sourcePk>B577E516-A69A-480F-1D11-971EB6C122EB</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9746C877-2B9E-81B2-3665-7E5094C22493</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7D63FC97-B16C-3584-EAC6-AE28C596ABC0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

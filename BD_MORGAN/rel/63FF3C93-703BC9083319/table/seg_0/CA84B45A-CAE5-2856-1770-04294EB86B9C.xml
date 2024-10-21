@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CA84B45A-CAE5-2856-1770-04294EB86B9C" name="ROLES">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:24:53 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_rol" id="9BE6A06E-BF13-5A57-C6E3-0BEFBECA8F1E">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:25:28 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rol" id="BBBEE96E-1E37-0326-8715-545FAE80810C">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:25:28 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C7446923-55A4-B67C-2D34-51A03C5B878C" name="ROL_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:25:28 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9BE6A06E-BF13-5A57-C6E3-0BEFBECA8F1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

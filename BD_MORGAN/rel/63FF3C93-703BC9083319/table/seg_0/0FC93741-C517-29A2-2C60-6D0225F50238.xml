@@ -1,0 +1,191 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0FC93741-C517-29A2-2C60-6D0225F50238" name="TARJS_CRED">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:10:50 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tarjeta" id="11BDCA60-E94B-81B2-E71C-5E0379D86C6B">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:15:18 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_cliente" id="7D9A1EBA-B006-3648-598D-753B8C6795C9">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:15:18 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero_tarjeta" id="6464299B-98FC-8DF5-E762-F0395EA98C6B">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:15:18 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="limite_credito" id="6D0FE6DA-0E6D-BBEF-8B36-9B3EFBEB2A14">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:15:18 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="saldo_actual" id="23E0CDEE-312B-A9F7-78E5-3B12373583A7">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:15:18 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_emision" id="3B1A9067-59D0-7D60-D3C5-995161049E24">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:15:18 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_expiracion" id="8DE794E5-33B6-1CA3-4C73-B0C48BC2DF49">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:15:18 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_estado" id="65A00E19-F250-E6CB-A7D6-095B598FFECE">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:15:18 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_corte" id="57DAF941-C2E5-E22B-A5AB-0A405375876D">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:15:18 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dia_ciclo" id="3D507504-4C36-72F0-4F1D-8DC1F00CD31B">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:15:18 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLIENTES_id_cliente" id="9DC4476E-F15F-BD33-A0AE-1E9F986587C8">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:52:29 UTC</createdTime>
+<generatorID>7590E29D-A522-1F2E-B691-C44EE5E00F82</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C80D6081-2B28-94D6-9EF1-5B02AE82E9BC" referredColumn="6E948EEA-C929-A776-AF08-134D6AD7E233"/>
+</associations>
+</Column>
+<Column name="EST_TARJETAS_id_estado" id="20BBB948-6E2E-462B-1E29-9DA1575389F7">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:52:29 UTC</createdTime>
+<generatorID>6E773833-F1A8-9251-C6D0-615F3AF4367E</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1690F27F-0D3F-CCDB-D52C-57CA4AA664F8" referredColumn="A89281FF-5720-81CB-79A7-9A0413DDED2A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3C53985C-D2F0-092B-4E7A-0C6A1EBC41BA" name="TARJETAS_CREDITO_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-24 06:15:18 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11BDCA60-E94B-81B2-E71C-5E0379D86C6B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8ED9DA62-8326-138C-3313-4317C0B493E9" name="TARJS_CRED_CLIENTES_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:52:29 UTC</createdTime>
+<generatorID>CF7B14A9-1BD5-C5D3-70D5-31B714A92A12</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DC4476E-F15F-BD33-A0AE-1E9F986587C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A0ED1DAB-5594-D4A1-1A44-B027E521FD41" name="TARJS_CRED_EST_TARJETAS_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-09-25 17:52:29 UTC</createdTime>
+<generatorID>776014BF-B69C-46CE-4AD4-7B6417272513</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="20BBB948-6E2E-462B-1E29-9DA1575389F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

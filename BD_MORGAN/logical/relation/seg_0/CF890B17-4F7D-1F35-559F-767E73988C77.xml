@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="HISTORIAL AUDITORIA TRANSACCIONES FK" directorySegmentName="seg_0" id="CF890B17-4F7D-1F35-559F-767E73988C77">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-10-09 07:10:34 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+</engineerTo>
+<sourcePk>434CC2A4-CD38-AE8C-A0A2-8930308F0462</sourcePk>
+<targetPk>0ACBADB6-E451-8E9B-2559-A3B1C5BE601D</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9DE9D6BD-3F3A-6788-3169-DBB6E348F0B6</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>7DB213A5-A777-E58D-86F9-39F6230D7F67</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
