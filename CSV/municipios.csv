@@ -1,0 +1,25 @@
+id_municipio,nombre_municipio,direccion,codigo_postal
+1,Ciudad de Guatemala,Av. Reforma Zona 10,01010
+2,Mixco,Zona 4,01057
+3,Villa Nueva,Barrio el Frutal,01064
+8,Guastatoya,Avenida Central,02001
+16,Antigua Guatemala,Calle del Arco,03001
+22,Chimaltenango,4a Calle Zona 1,04001
+30,Escuintla,Avenida Centroamerica,05001
+36,Cuilapa,Calle Real,06001
+42,Sololá,Plaza Central,07001
+49,Totonicapán,Calle Principal,08001
+55,Quetzaltenango,Zona 1,09001
+61,Mazatenango,Calle Principal,10001
+66,Retalhuleu,Barrio San Sebastián,11001
+72,San Marcos,4ta Calle Centro,12001
+80,Huehuetenango,Calle Principal,13001
+87,Santa Cruz del Quiché,Calle Central,14001
+94,Salamá,Calle Real,15001
+99,Cobán,Calle Principal,16001
+106,Flores,Calle Central,17001
+113,Puerto Barrios,Avenida del Ferrocarril,18001
+119,Zacapa,Avenida Centro,19001
+125,Chiquimula,Calle Real,20001
+132,Jalapa,Calle Central,21001
+139,Jutiapa,Calle Principal,22001
