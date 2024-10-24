@@ -139,38 +139,45 @@ apellidos = [
 ]
 
 tipo_cuenta = ['Ahorro', 'Monetaria', 'Corriente']
+Roles = ['Cajero', 'Gerente', 'Auxiliar', 'RRHH', 'Contador', 'Auditor', 'Asesor']
+ 
 
 # Número de registros
-num_registros = 500000
+num_registros = 240
+
+# Número de sucursales
+num_sucursales = 23
+
 
 # Crear el archivo CSV
-with open('clientes.csv', mode='w', newline='', encoding='utf-8') as csvfile:
-    fieldnames = ['Nombre', 'Apellido', 'Telefono', 'NumeroCuenta', 'TipoCuenta', 'Saldo', 'NumeroTarjeta']
+with open('Empleados.csv', mode='w', newline='', encoding='utf-8') as csvfile:
+    fieldnames = ['Nombre', 'Apellido', 'Telefono', 'Rol', 'Departamento', 'Suc/Agen']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     
     # Escribir la cabecera
     writer.writeheader()
+
+    # Para la agencia principal
+    for _ in range(20):
+        writer.writerow({
+            'Nombre': random.choice(nombres),
+            'Apellido': random.choice(apellidos),
+            'Telefono': f'+502{random.randint(10000000, 99999999)}',
+            'Rol': random.choice(Roles),
+            'Departamento': 1,
+            'Suc/Agen': 1
+        })
     
-    for i in range(num_registros):
-        # Elegir un nombre aleatorio
-        nombre = random.choice(nombres).split()
-        apellido = random.choice(apellidos).split()
-        nombre = ' '.join(nombre[:-1])
-        apellido = ' '.join(apellido[-1:])
-        
-        # Generar un número de teléfono
-        telefono = f"+502{random.randint(10000000, 99999999)}"
-        
-        # Asignar un número de cuenta (secuencial)
-        numero_cuenta = f"{random.randint(10000000000000000000, 99999999999999999999)}"  # varchar(20)
-
-        # Elegir un tipo de cuenta aleatorio
-        tipo = random.choice(tipo_cuenta)
-
-        # Generar un saldo aleatorio
-        saldo = random.randint(1000, 1000000)
-        
-        # Escribir la fila en el CSV
-        writer.writerow({'Nombre': nombre, 'Apellido': apellido, 'Telefono': telefono, 'NumeroCuenta': numero_cuenta, 'TipoCuenta': tipo, 'Saldo': saldo, 'NumeroTarjeta': f"{random.randint(1000000000000000, 9999999999999999)}"})
-
-print("El archivo 'clientes.csv' ha sido generado con 500,000 registros.")
+    # Para el resto de agencias o sucursales.
+    for sucursales in range (2, num_sucursales +1):
+        for _ in range(10):
+            writer.writerow({
+                'Nombre': random.choice(nombres),
+                'Apellido': random.choice(apellidos),
+                'Telefono': f'+502{random.randint(10000000, 99999999)}',
+                'Rol': random.choice(Roles),
+                'Departamento': f'{random.randint(2, 22)}',
+                'Suc/Agen': sucursales
+            })
+            
+print(f'Se han generado {num_registros} registros en el archivo clientes.csv')
