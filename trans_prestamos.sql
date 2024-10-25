@@ -36,8 +36,9 @@ BEGIN
         (id_transaccion, id_cliente, monto, fecha, hora, descripcion, id_suc_agen, CLIENTES_id_cliente, TIPO_TRANSACS_id_tipo_tran)
         VALUES 
         (seq_tipo_transacs.NEXTVAL, id_cliente, -p_monto, SYSDATE, SYSDATE, 'Pago de préstamo', p_id_suc_agen, id_cliente, 4);
-
+         COMMIT;
     ELSE 
+        ROLLBACK
         RAISE_APPLICATION_ERROR(-20003, 'El monto a pagar excede el saldo pendiente.');
     END IF;
 EXCEPTION

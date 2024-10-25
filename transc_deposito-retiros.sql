@@ -33,6 +33,14 @@ BEGIN
     );
     
     COMMIT;
+
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+        ROLLBACK;
+        RAISE_APPLICATION_ERROR(-20001, 'No se encontró la cuenta con el id con el ID proporcionado.');
+    WHEN OTHERS THEN
+        ROLLBACK;
+        RAISE_APPLICATION_ERROR(-20002, 'Ocurrió un error inesperado: ' || SQLERRM);
 END;
 /
 
@@ -78,6 +86,7 @@ BEGIN
         
         COMMIT;
     ELSE
+        ROLLBACK
         RAISE_APPLICATION_ERROR(-20001, 'Saldo insuficiente para realizar el retiro.');
     END IF;
 END;

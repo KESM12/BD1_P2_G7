@@ -22,6 +22,7 @@ BEGIN
         
         COMMIT;
     ELSE
+        ROLLBACK
         RAISE_APPLICATION_ERROR(-20002, 'Efectivo insuficiente en la bóveda de origen.');
     END IF;
 END;
