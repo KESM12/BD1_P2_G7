@@ -107,9 +107,6 @@ INSERT INTO CUENTAS (id_cuenta, id_cliente, id_tipo_cuenta, numero_cuenta, saldo
 
 
 
-
-
-
 INSERT INTO BOVEDAS (id_boveda, id_suc_agen, efectivo_disponible, efectivo_disponible_1, SUCS_AGENS_id_suc_agen) 
     VALUES (seq_bovedas.NEXTVAL, 1, 15000.00, '15000', 1);
 
@@ -133,15 +130,14 @@ INSERT INTO ESTADOS_PRESTAMOS (id_eprestamo, estado_prestamo) VALUES
 
 
 
+INSERT INTO PRESTAMOS (id_prestamo, id_cliente, monto_prest, tasa_interes, fecha_des, fecha_ven, saldo_pend, id_eprestamo, CLIENTES_id_cliente, ESTADOS_PRESTAMOS_id_eprestamo) VALUES
+(seq_prestamos.NEXTVAL, 1, 5000.00, 5.00, TO_DATE('2024-01-15', 'YYYY-MM-DD'), TO_DATE('2025-01-15', 'YYYY-MM-DD'), 5000.00, NULL, 1, 1);
 
 INSERT INTO PRESTAMOS (id_prestamo, id_cliente, monto_prest, tasa_interes, fecha_des, fecha_ven, saldo_pend, id_eprestamo, CLIENTES_id_cliente, ESTADOS_PRESTAMOS_id_eprestamo) VALUES
-(seq_prestamos.NEXTVAL, 1, 5000.00, 5.00, TO_DATE('2024-01-15', 'YYYY-MM-DD'), TO_DATE('2025-01-15', 'YYYY-MM-DD'), 5000.00, 1, 1, 1);
+(seq_prestamos.NEXTVAL, 2, 7500.00, 6.50, TO_DATE('2024-02-01', 'YYYY-MM-DD'), TO_DATE('2025-02-01', 'YYYY-MM-DD'), 7500.00, NULL, 2, 1);
 
 INSERT INTO PRESTAMOS (id_prestamo, id_cliente, monto_prest, tasa_interes, fecha_des, fecha_ven, saldo_pend, id_eprestamo, CLIENTES_id_cliente, ESTADOS_PRESTAMOS_id_eprestamo) VALUES
-(seq_prestamos.NEXTVAL, 2, 7500.00, 6.50, TO_DATE('2024-02-01', 'YYYY-MM-DD'), TO_DATE('2025-02-01', 'YYYY-MM-DD'), 7500.00, 1, 2, 1);
-
-INSERT INTO PRESTAMOS (id_prestamo, id_cliente, monto_prest, tasa_interes, fecha_des, fecha_ven, saldo_pend, id_eprestamo, CLIENTES_id_cliente, ESTADOS_PRESTAMOS_id_eprestamo) VALUES
-(seq_prestamos.NEXTVAL, 3, 3000.00, 4.00, TO_DATE('2024-03-10', 'YYYY-MM-DD'), TO_DATE('2025-03-10', 'YYYY-MM-DD'), 3000.00, 1, 3, 1);
+(seq_prestamos.NEXTVAL, 3, 3000.00, 4.00, TO_DATE('2024-03-10', 'YYYY-MM-DD'), TO_DATE('2025-03-10', 'YYYY-MM-DD'), 3000.00, NULL, 3, 1);
 
 
 
