@@ -140,8 +140,52 @@ INSERT INTO PRESTAMOS (id_prestamo, id_cliente, monto_prest, tasa_interes, fecha
 (seq_prestamos.NEXTVAL, 3, 3000.00, 4.00, TO_DATE('2024-03-10', 'YYYY-MM-DD'), TO_DATE('2025-03-10', 'YYYY-MM-DD'), 3000.00, NULL, 3, 1);
 
 
+INSERT INTO TRANSACCIONES (id_transaccion, id_cliente, num_cuenta, tipo_transaccion, monto, descripcion, sucursal_agencia) VALUES
+(seq_transacciones.NEXTVAL, 210, '123456789', 'Depósito', 5000, 'Depósito inicial de cuenta', 'Sucursal Central');
+
+INSERT INTO TRANSACCIONES (id_transaccion, id_cliente, num_cuenta, tipo_transaccion, monto, descripcion, sucursal_agencia) VALUES
+(seq_transacciones.NEXTVAL, 280, '987654321', 'Retiro', 2000, 'Retiro en efectivo', 'Agencia Norte');
+
+INSERT INTO TRANSACCIONES (id_transaccion, id_cliente, num_cuenta, tipo_transaccion, monto, descripcion, sucursal_agencia) VALUES
+(seq_transacciones.NEXTVAL, 299, '543216789', 'Transferencia', 3000, 'Transferencia a otra cuenta', 'Agencia Sur');
 
 
 
+INSERT INTO ROLES (id_rol, nombre_rol) VALUES
+(seq_roles.NEXTVAL, 'Gerente');
+
+INSERT INTO ROLES (id_rol, nombre_rol) VALUES
+(seq_roles.NEXTVAL, 'Cajero');
+
+INSERT INTO ROLES (id_rol, nombre_rol) VALUES
+(seq_roles.NEXTVAL, 'Servicio al Cliente');
+
+INSERT INTO HISTORIAL_PRESTAMOS (id_prestamo, id_cliente, monto, tasa_interes, fecha_desembolso, fecha_vencimiento, estado_prestamo) VALUES
+(seq_historial_prestamos.NEXTVAL, 205, 10000, 5.5, TO_DATE('2023-01-10', 'YYYY-MM-DD'), TO_DATE('2024-01-10', 'YYYY-MM-DD'), 'Activo');
+
+INSERT INTO HISTORIAL_PRESTAMOS (id_prestamo, id_cliente, monto, tasa_interes, fecha_desembolso, fecha_vencimiento, estado_prestamo) VALUES
+(seq_historial_prestamos.NEXTVAL, 250, 15000, 6.2, TO_DATE('2022-06-15', 'YYYY-MM-DD'), TO_DATE('2023-06-15', 'YYYY-MM-DD'), 'Vencido');
+
+INSERT INTO HISTORIAL_PRESTAMOS (id_prestamo, id_cliente, monto, tasa_interes, fecha_desembolso, fecha_vencimiento, estado_prestamo) VALUES
+(seq_historial_prestamos.NEXTVAL, 300, 20000, 4.8, TO_DATE('2023-09-01', 'YYYY-MM-DD'), TO_DATE('2024-09-01', 'YYYY-MM-DD'), 'Cancelado');
 
 
+
+INSERT INTO HISTORIAL_AUDITORIA (id_auditoria, usuario) VALUES
+(seq_historial_auditoria.NEXTVAL, 20, 1, TO_DATE('2023-09-01', 'YYYY-MM-DD'));
+
+INSERT INTO HISTORIAL_AUDITORIA (id_auditoria, usuario) VALUES
+(seq_historial_auditoria.NEXTVAL, 34, 1, TO_DATE('2023-10-01', 'YYYY-MM-DD'));
+
+INSERT INTO HISTORIAL_AUDITORIA (id_auditoria, usuario) VALUES
+(seq_historial_auditoria.NEXTVAL, 45, 1, TO_DATE('2023-11-01', 'YYYY-MM-DD'));
+
+
+INSERT INTO EMPLEADOS (id_empleado, nombre, apellido, telefono, rol, departamento, sucursal_agencia) VALUES
+(seq_empleados.NEXTVAL, 'Juan', 'Pérez', '5551234567', 'Gerente', 1, 1);
+
+INSERT INTO EMPLEADOS (id_empleado, nombre, apellido, telefono, rol, departamento, sucursal_agencia) VALUES
+(seq_empleados.NEXTVAL, 'Ana', 'Gómez', '5557654321', 'Cajero', 2, 3);
+
+INSERT INTO EMPLEADOS (id_empleado, nombre, apellido, telefono, rol, departamento, sucursal_agencia) VALUES
+(seq_empleados.NEXTVAL, 'Carlos', 'Rodríguez', '5559876543', 'Servicio al Cliente', 22, 4);
