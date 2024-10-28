@@ -19,30 +19,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_transaccion" id="83C6F910-90CB-DECE-F6F4-B9EA9DD73063">
-<createdBy>Kevin</createdBy>
-<createdTime>2024-10-28 15:47:02 UTC</createdTime>
-<generatorID>A7A880B5-1706-6B5D-0FBB-83386454CE2A</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="id_empleado" id="0D9E0CEA-161F-6ADD-C096-2DFDCB3827D5">
-<createdBy>Kevin</createdBy>
-<createdTime>2024-10-28 15:47:02 UTC</createdTime>
-<generatorID>82C0338B-FB82-4BF0-995E-BA53C8B6AD8E</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="fecha" id="C659EA92-70ED-798E-050C-7573D5597764">
 <createdBy>Kevin</createdBy>
 <createdTime>2024-10-28 15:47:02 UTC</createdTime>
