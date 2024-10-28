@@ -144,7 +144,7 @@ tipo_cuenta = ['Ahorro', 'Monetaria', 'Corriente']
 num_registros = 500000
 
 # Crear el archivo CSV
-with open('clientes.csv', mode='w', newline='', encoding='utf-8') as csvfile:
+with open('CSV/clientes.csv', mode='w', newline='', encoding='utf-8') as csvfile:
     fieldnames = ['Nombre', 'Apellido', 'Telefono', 'NumeroCuenta', 'TipoCuenta', 'Saldo', 'NumeroTarjeta']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     
