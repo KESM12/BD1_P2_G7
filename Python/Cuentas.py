@@ -2,7 +2,7 @@ import random
 import csv
 
 # Número de registros
-num_registros = 250000
+num_registros = 50
 
 # Crear el archivo CSV
 with open('CSV/Cuentas.csv', mode='w', newline='', encoding='utf-8') as csvfile:
@@ -14,7 +14,7 @@ with open('CSV/Cuentas.csv', mode='w', newline='', encoding='utf-8') as csvfile:
     
     for i in range(num_registros):
         # Generar un cliente.
-        cliente = random.randint(0, 250000)
+        cliente = random.randint(1, num_registros)
 
         # Generar un saldo aleatorio
         saldo = random.randint(1000, 1000000)
@@ -36,4 +36,4 @@ with open('CSV/Cuentas.csv', mode='w', newline='', encoding='utf-8') as csvfile:
             'Saldo': saldo
             })
 
-print("El archivo 'clientes.csv' ha sido generado con 500,000 registros.")
+print(f"El archivo 'clientes.csv' ha sido generado con {num_registros} registros.")
