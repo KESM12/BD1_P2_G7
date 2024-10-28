@@ -6,11 +6,11 @@ id_cliente = ['1', '2', '3', '4', '5']
 descripcion = ['Deposito', 'Retiro', 'Transferencia', 'Pago', 'Compra']
 
 # Número de registros
-num_registros = 250000
+num_registros = 50
 
 # Crear el archivo CSV
-with open('Transacciones.csv', mode='w', newline='', encoding='utf-8') as csvfile:
-    fieldnames = ['Cliente', 'Monto', 'Fecha', 'Hora', 'Descripcion', 'Sucursal/Agencia']
+with open('CSV/Transacciones.csv', mode='w', newline='', encoding='utf-8') as csvfile:
+    fieldnames = ['Monto', 'Fecha', 'Hora', 'Descripcion', 'Cliente', 'TipoTransaccion']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     
     # Escribir la cabecera
@@ -31,16 +31,17 @@ with open('Transacciones.csv', mode='w', newline='', encoding='utf-8') as csvfil
         descripcion_random = random.choice(descripcion)
 
         # Generar un ID de sucursal/agencia aleatorio
-        id_suc_agencia = random.randint(1, 30)
+        tipo = random.randint(1, 5)
 
         # Escribir la fila en el CSV
         writer.writerow({
-            'Cliente': id_cliente,
             'Monto': monto,
             'Fecha': fecha,
             'Hora': hora,
             'Descripcion': descripcion_random,
-            'Sucursal/Agencia': id_suc_agencia
+            'TipoTransaccion': tipo,
+            'Cliente': id_cliente,
+        
         })
 
 print(f"Se han generado {num_registros} registros")

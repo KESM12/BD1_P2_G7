@@ -1,25 +1,111 @@
-id_municipio,nombre_municipio,direccion,codigo_postal
-1,Ciudad de Guatemala,Av. Reforma Zona 10,01010
-2,Mixco,Zona 4,01057
-3,Villa Nueva,Barrio el Frutal,01064
-8,Guastatoya,Avenida Central,02001
-16,Antigua Guatemala,Calle del Arco,03001
-22,Chimaltenango,4a Calle Zona 1,04001
-30,Escuintla,Avenida Centroamerica,05001
-36,Cuilapa,Calle Real,06001
-42,Sololá,Plaza Central,07001
-49,Totonicapán,Calle Principal,08001
-55,Quetzaltenango,Zona 1,09001
-61,Mazatenango,Calle Principal,10001
-66,Retalhuleu,Barrio San Sebastián,11001
-72,San Marcos,4ta Calle Centro,12001
-80,Huehuetenango,Calle Principal,13001
-87,Santa Cruz del Quiché,Calle Central,14001
-94,Salamá,Calle Real,15001
-99,Cobán,Calle Principal,16001
-106,Flores,Calle Central,17001
-113,Puerto Barrios,Avenida del Ferrocarril,18001
-119,Zacapa,Avenida Centro,19001
-125,Chiquimula,Calle Real,20001
-132,Jalapa,Calle Central,21001
-139,Jutiapa,Calle Principal,22001
+Municipio,Direccion,CodigoPostal
+Ciudad de Guatemala,Av. Reforma Zona 10,01010
+Mixco,Zona 4,01057
+Villa Nueva,Barrio el Frutal,01064
+Chinautla,Barrio San Antonio,01066
+San José Pinula,Calle Real,01059
+Guastatoya,Avenida Central,02001
+Sanarate,Barrio La Democracia,02004
+San Agustín Acasaguastlán,Barrio El Centro,02005
+Morazán,Calle Central,02006
+San Cristóbal Acasaguastlán,Plaza Central,02007
+Antigua Guatemala,Calle del Arco,03001
+Jocotenango,Plaza Principal,03002
+Ciudad Vieja,Avenida Central,03003
+San Antonio Aguas Calientes,Calle Real,03004
+Santiago Sacatepéquez,Barrio La Merced,03006
+Chimaltenango,4a Calle Zona 1,04001
+Comalapa,Barrio El Centro,04002
+Tecpán Guatemala,Plaza Central,04003
+Acatenango,Avenida Principal,04004
+Patzún,4a Avenida Centro,04005
+Escuintla,Avenida Centroamerica,05001
+La Gomera,Calle Central,05003
+Palín,Barrio Central,05002
+Santa Lucía Cotzumalguapa,Calle Real,05004
+Tiquisate,Avenida Principal,05005
+Cuilapa,Calle Real,06001
+Barberena,Avenida Central,06002
+Oratorio,Calle Principal,06003
+Santa María Ixhuatán,Plaza Central,06004
+San Juan Tecuaco,Calle del Mercado,06005
+Sololá,Plaza Central,07001
+Panajachel,Calle Principal,07010
+San Pedro La Laguna,Barrio Centro,07002
+Santa Catarina Palopó,Calle Real,07003
+Santiago Atitlán,Avenida Central,07004
+Totonicapán,Calle Principal,08001
+San Francisco El Alto,Plaza del Mercado,08002
+San Cristóbal Totonicapán,Barrio Central,08003
+Momostenango,Calle Real,08004
+Santa María Chiquimula,Avenida Principal,08005
+Quetzaltenango,Zona 1,09001
+Almolonga,Calle Central,09002
+Cantel,Barrio Central,09003
+Salcajá,Calle Real,09004
+San Juan Ostuncalco,Plaza Principal,09005
+Mazatenango,Calle Principal,10001
+Chicacao,Barrio El Centro,10002
+San Bernardino,Plaza Central,10003
+San Francisco Zapotitlán,Calle Real,10004
+Santo Domingo Suchitepéquez,Calle Central,10005
+Retalhuleu,Barrio San Sebastián,11001
+San Sebastián,Avenida Central,11002
+Santa Cruz Muluá,Plaza Central,11003
+San Felipe,Calle Real,11004
+San Martín Zapotitlán,Barrio Centro,11005
+San Marcos,4ta Calle Centro,12001
+San Pedro Sacatepéquez,Calle Principal,12002
+San Antonio Sacatepéquez,Barrio El Centro,12003
+Malacatán,Plaza Central,12004
+Tejutla,Avenida Principal,12005
+Huehuetenango,Calle Principal,13001
+Aguacatán,Plaza del Pueblo,13002
+Chiantla,Avenida Central,13003
+Jacaltenango,Barrio El Centro,13004
+Soloma,Calle Real,13005
+Santa Cruz del Quiché,Calle Central,14001
+Chiché,Avenida Principal,14002
+Chichicastenango,Calle Real,14003
+Joyabaj,Plaza Central,14004
+San Pedro Jocopilas,Barrio Centro,14005
+Salamá,Calle Real,15001
+Rabinal,Plaza Principal,15002
+Cubulco,Calle Real,15003
+Purulhá,Barrio El Centro,15004
+San Miguel Chicaj,Avenida Central,15005
+Cobán,Calle Principal,16001
+San Pedro Carchá,Plaza Central,16002
+Santa Cruz Verapaz,Barrio El Centro,16003
+San Juan Chamelco,Avenida Principal,16004
+Tactic,Calle Real,16005
+Flores,Calle Central,17001
+San Benito,Plaza Principal,17002
+Santa Elena,Calle Real,17003
+San Andrés,Barrio El Centro,17004
+Melchor de Mencos,Calle Principal,17005
+Puerto Barrios,Avenida del Ferrocarril,18001
+Livingston,Calle Central,18002
+El Estor,Avenida Principal,18003
+Los Amates,Plaza Central,18004
+Morales,Calle Real,18005
+Zacapa,Avenida Centro,19001
+Teculután,Barrio Central,19002
+Estanzuela,Plaza Principal,19003
+Río Hondo,Calle Real,19004
+Gualán,Barrio El Centro,19005
+Chiquimula,Calle Real,20001
+Esquipulas,Avenida Central,20002
+Jocotán,Plaza Principal,20003
+Camotán,Barrio El Centro,20004
+Olopa,Calle Principal,20005
+Jalapa,Calle Central,21001
+San Pedro Pinula,Avenida Principal,21002
+San Luis Jilotepeque,Calle Real,21003
+Monjas,Barrio El Centro,21004
+Mataquescuintla,Plaza Principal,21005
+Jutiapa,Calle Principal,22001
+El Progreso,Barrio Central,22002
+Jalpatagua,Calle Real,22003
+Comapa,Plaza Central,22004
+Yupiltepeque,Avenida Central,22005

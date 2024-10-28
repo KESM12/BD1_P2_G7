@@ -143,14 +143,14 @@ Roles = ['Cajero', 'Gerente', 'Auxiliar', 'RRHH', 'Contador', 'Auditor', 'Asesor
  
 
 # Número de registros
-num_registros = 240
+num_registros = 50
 
 # Número de sucursales
 num_sucursales = 23
 
 
 # Crear el archivo CSV
-with open('Empleados.csv', mode='w', newline='', encoding='utf-8') as csvfile:
+with open('CSV/Empleados.csv', mode='w', newline='', encoding='utf-8') as csvfile:
     fieldnames = ['Nombre', 'Apellido', 'Telefono', 'Rol', 'Departamento', 'Suc/Agen']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     

@@ -1,23 +1,23 @@
-id_departamento,nombre_departamento,id_municipio
-1,Guatemala,1
-2,El Progreso,8
-3,Sacatepéquez,16
-4,Chimaltenango,22
-5,Escuintla,30
-6,Santa Rosa,36
-7,Sololá,42
-8,Totonicapán,49
-9,Quetzaltenango,55
-10,Suchitepéquez,61
-11,Retalhuleu,66
-12,San Marcos,72
-13,Huehuetenango,80
-14,Quiché,87
-15,Baja Verapaz,94
-16,Alta Verapaz,99
-17,Peten,106
-18,Izabal,113
-19,Zacapa,119
-20,Chiquimula,125
-21,Jalapa,132
-22,Jutiapa,139
+Departamento,Municipio
+Guatemala,1
+El Progreso,8
+Sacatepéquez,16
+Chimaltenango,22
+Escuintla,30
+Santa Rosa,36
+Sololá,42
+Totonicapán,49
+Quetzaltenango,55
+Suchitepéquez,61
+Retalhuleu,66
+San Marcos,72
+Huehuetenango,80
+Quiché,87
+Baja Verapaz,94
+Alta Verapaz,99
+Peten,106
+Izabal,113
+Zacapa,119
+Chiquimula,125
+Jalapa,132
+Jutiapa,139

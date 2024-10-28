@@ -1,67 +1,67 @@
-id_suc_agen,nombre,id_tipo_suc_agen,id_departamento,telefono
-1,Sucursal Central Guatemala,1,1,22334455
-2,Agencia Mixco,2,1,22335566
-3,Cajero Villa Nueva,3,1,22336677
-4,Agencia Guastatoya,2,2,22337788
-5,Cajero Guastatoya Sur,3,2,22338899
-6,Cajero Guastatoya Norte,3,2,22339900
-7,Agencia Antigua Guatemala,2,3,22340011
-8,Cajero Antigua Plaza,3,3,22341122
-9,Cajero Antigua Mercado,3,3,22342233
-10,Agencia Chimaltenango,2,4,22343344
-11,Cajero Chimaltenango Norte,3,4,22344455
-12,Cajero Chimaltenango Sur,3,4,22345566
-13,Agencia Escuintla,2,5,22346677
-14,Cajero Escuintla Plaza,3,5,22347788
-15,Cajero Escuintla Mercado,3,5,22348899
-16,Agencia Cuilapa,2,6,22349900
-17,Cajero Cuilapa Norte,3,6,22350011
-18,Cajero Cuilapa Sur,3,6,22351122
-19,Agencia Sololá,2,7,22352233
-20,Cajero Sololá Mercado,3,7,22353344
-21,Cajero Sololá Parque,3,7,22354455
-22,Agencia Totonicapán,2,8,22355566
-23,Cajero Totonicapán Norte,3,8,22356677
-24,Cajero Totonicapán Sur,3,8,22357788
-25,Agencia Quetzaltenango,2,9,22358899
-26,Cajero Quetzaltenango Centro,3,9,22359900
-27,Cajero Quetzaltenango Plaza,3,9,22360011
-28,Agencia Mazatenango,2,10,22361122
-29,Cajero Mazatenango Mercado,3,10,22362233
-30,Cajero Mazatenango Plaza,3,10,22363344
-31,Agencia Retalhuleu,2,11,22364455
-32,Cajero Retalhuleu Norte,3,11,22365566
-33,Cajero Retalhuleu Centro,3,11,22366677
-34,Agencia San Marcos,2,12,22367788
-35,Cajero San Marcos Mercado,3,12,22368899
-36,Cajero San Marcos Plaza,3,12,22369900
-37,Agencia Huehuetenango,2,13,22370011
-38,Cajero Huehuetenango Mercado,3,13,22371122
-39,Cajero Huehuetenango Plaza,3,13,22372233
-40,Agencia Santa Cruz del Quiché,2,14,22373344
-41,Cajero Quiché Norte,3,14,22374455
-42,Cajero Quiché Centro,3,14,22375566
-43,Agencia Salamá,2,15,22376677
-44,Cajero Salamá Plaza,3,15,22377788
-45,Cajero Salamá Mercado,3,15,22378899
-46,Agencia Cobán,2,16,22379900
-47,Cajero Cobán Norte,3,16,22380011
-48,Cajero Cobán Centro,3,16,22381122
-49,Agencia Flores,2,17,22382233
-50,Cajero Flores Mercado,3,17,22383344
-51,Cajero Flores Plaza,3,17,22384455
-52,Agencia Puerto Barrios,2,18,22385566
-53,Cajero Puerto Barrios Norte,3,18,22386677
-54,Cajero Puerto Barrios Sur,3,18,22387788
-55,Agencia Zacapa,2,19,22388899
-56,Cajero Zacapa Plaza,3,19,22389900
-57,Cajero Zacapa Mercado,3,19,22390011
-58,Agencia Chiquimula,2,20,22391122
-59,Cajero Chiquimula Norte,3,20,22392233
-60,Cajero Chiquimula Centro,3,20,22393344
-61,Agencia Jalapa,2,21,22394455
-62,Cajero Jalapa Plaza,3,21,22395566
-63,Cajero Jalapa Mercado,3,21,22396677
-64,Agencia Jutiapa,2,22,22397788
-65,Cajero Jutiapa Norte,3,22,22398899
-66,Cajero Jutiapa Plaza,3,22,22399900
+Nombre,id_tipo_suc_agen,id_departamento,telefono
+Sucursal Central Guatemala,1,1,22334455
+Agencia Mixco,2,1,22335566
+Cajero Villa Nueva,3,1,22336677
+Agencia Guastatoya,2,2,22337788
+Cajero Guastatoya Sur,3,2,22338899
+Cajero Guastatoya Norte,3,2,22339900
+Agencia Antigua Guatemala,2,3,22340011
+Cajero Antigua Plaza,3,3,22341122
+Cajero Antigua Mercado,3,3,22342233
+Agencia Chimaltenango,2,4,22343344
+Cajero Chimaltenango Norte,3,4,22344455
+Cajero Chimaltenango Sur,3,4,22345566
+Agencia Escuintla,2,5,22346677
+Cajero Escuintla Plaza,3,5,22347788
+Cajero Escuintla Mercado,3,5,22348899
+Agencia Cuilapa,2,6,22349900
+Cajero Cuilapa Norte,3,6,22350011
+Cajero Cuilapa Sur,3,6,22351122
+Agencia Sololá,2,7,22352233
+Cajero Sololá Mercado,3,7,22353344
+Cajero Sololá Parque,3,7,22354455
+Agencia Totonicapán,2,8,22355566
+Cajero Totonicapán Norte,3,8,22356677
+Cajero Totonicapán Sur,3,8,22357788
+Agencia Quetzaltenango,2,9,22358899
+Cajero Quetzaltenango Centro,3,9,22359900
+Cajero Quetzaltenango Plaza,3,9,22360011
+Agencia Mazatenango,2,10,22361122
+Cajero Mazatenango Mercado,3,10,22362233
+Cajero Mazatenango Plaza,3,10,22363344
+Agencia Retalhuleu,2,11,22364455
+Cajero Retalhuleu Norte,3,11,22365566
+Cajero Retalhuleu Centro,3,11,22366677
+Agencia San Marcos,2,12,22367788
+Cajero San Marcos Mercado,3,12,22368899
+Cajero San Marcos Plaza,3,12,22369900
+Agencia Huehuetenango,2,13,22370011
+Cajero Huehuetenango Mercado,3,13,22371122
+Cajero Huehuetenango Plaza,3,13,22372233
+Agencia Santa Cruz del Quiché,2,14,22373344
+Cajero Quiché Norte,3,14,22374455
+Cajero Quiché Centro,3,14,22375566
+Agencia Salamá,2,15,22376677
+Cajero Salamá Plaza,3,15,22377788
+Cajero Salamá Mercado,3,15,22378899
+Agencia Cobán,2,16,22379900
+Cajero Cobán Norte,3,16,22380011
+Cajero Cobán Centro,3,16,22381122
+Agencia Flores,2,17,22382233
+Cajero Flores Mercado,3,17,22383344
+Cajero Flores Plaza,3,17,22384455
+Agencia Puerto Barrios,2,18,22385566
+Cajero Puerto Barrios Norte,3,18,22386677
+Cajero Puerto Barrios Sur,3,18,22387788
+Agencia Zacapa,2,19,22388899
+Cajero Zacapa Plaza,3,19,22389900
+Cajero Zacapa Mercado,3,19,22390011
+Agencia Chiquimula,2,20,22391122
+Cajero Chiquimula Norte,3,20,22392233
+Cajero Chiquimula Centro,3,20,22393344
+Agencia Jalapa,2,21,22394455
+Cajero Jalapa Plaza,3,21,22395566
+Cajero Jalapa Mercado,3,21,22396677
+Agencia Jutiapa,2,22,22397788
+Cajero Jutiapa Norte,3,22,22398899
+Cajero Jutiapa Plaza,3,22,22399900

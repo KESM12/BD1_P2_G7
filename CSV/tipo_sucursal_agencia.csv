@@ -1,4 +1,4 @@
-id_tipo_suc_agen,tipo_suc_agen
-1,Sucursal Principal
-2,Agencia
-3,Cajero Automático
+tipo_suc_agen
+Sucursal Principal
+Agencia
+Cajero Automático
