@@ -3,7 +3,7 @@ import csv
 
 # Lista de nombres y apellidos
 nombres = [
-    "WALTER JOSUE",
+"WALTER JOSUE",
 "ESDRAS BENJAMIN",
 "EDUARDO ISMAEL",
 "JESER OBDULIO",
@@ -145,7 +145,7 @@ num_registros = 500000
 
 # Crear el archivo CSV
 with open('CSV/clientes.csv', mode='w', newline='', encoding='utf-8') as csvfile:
-    fieldnames = ['Nombre', 'Apellido', 'Telefono', 'NumeroCuenta', 'TipoCuenta', 'Saldo', 'NumeroTarjeta']
+    fieldnames = ['Id_cliente','Nombre', 'Apellido', 'Telefono', 'NumeroCuenta', 'TipoCuenta', 'Saldo', 'NumeroTarjeta']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     
     # Escribir la cabecera
@@ -153,6 +153,7 @@ with open('CSV/clientes.csv', mode='w', newline='', encoding='utf-8') as csvfile
     
     for i in range(num_registros):
         # Elegir un nombre aleatorio
+        id_cliente = i + 1
         nombre = random.choice(nombres).split()
         apellido = random.choice(apellidos).split()
         nombre = ' '.join(nombre[:-1])
@@ -171,6 +172,6 @@ with open('CSV/clientes.csv', mode='w', newline='', encoding='utf-8') as csvfile
         saldo = random.randint(1000, 1000000)
         
         # Escribir la fila en el CSV
-        writer.writerow({'Nombre': nombre, 'Apellido': apellido, 'Telefono': telefono, 'NumeroCuenta': numero_cuenta, 'TipoCuenta': tipo, 'Saldo': saldo, 'NumeroTarjeta': f"{random.randint(1000000000000000, 9999999999999999)}"})
+        writer.writerow({'Id_cliente':id_cliente,'Nombre': nombre, 'Apellido': apellido, 'Telefono': telefono, 'NumeroCuenta': numero_cuenta, 'TipoCuenta': tipo, 'Saldo': saldo, 'NumeroTarjeta': f"{random.randint(1000000000000000, 9999999999999999)}"})
 
 print("El archivo 'clientes.csv' ha sido generado con 500,000 registros.")
