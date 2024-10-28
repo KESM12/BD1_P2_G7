@@ -1,0 +1,191 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F31B212D-7470-2101-F983-552186EB9F5B" name="TARJS CRED">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>0FC93741-C517-29A2-2C60-6D0225F50238</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id tarjeta" id="6E994C00-FCB5-9DE1-75D7-D0DFC7861F27">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>11BDCA60-E94B-81B2-E71C-5E0379D86C6B</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero tarjeta" id="212E133A-1AEB-1AB9-7410-9D7BBADABD90">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>6464299B-98FC-8DF5-E762-F0395EA98C6B</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="limite credito" id="F27D11F3-6E97-1289-FEE1-65620D4E4AE6">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>6D0FE6DA-0E6D-BBEF-8B36-9B3EFBEB2A14</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="saldo actual" id="78D6CC72-F0A0-4BBA-0E3E-0533962DA431">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>23E0CDEE-312B-A9F7-78E5-3B12373583A7</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha emision" id="63DCAFF1-4885-270F-445B-CEFC2B50F1EF">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>3B1A9067-59D0-7D60-D3C5-995161049E24</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha expiracion" id="9D15F4DC-FFE4-DB0A-8CA5-6CC2CB2CE8CD">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>8DE794E5-33B6-1CA3-4C73-B0C48BC2DF49</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha corte" id="CD85F1BC-3BDF-8FEB-7884-1EF92788507D">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>57DAF941-C2E5-E22B-A5AB-0A405375876D</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dia ciclo" id="33BC9473-041F-DC46-4990-F420EA36D1AE">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>3D507504-4C36-72F0-4F1D-8DC1F00CD31B</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id cliente" id="3F1053DE-7151-3F7F-CBA3-88BAA1AFFE24">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:34:10 UTC</createdTime>
+<generatorID>8FE98D92-B92A-03C7-1224-597B53FD73CC</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<referedAttribute>6F95633E-D26B-4459-A625-7421AFF45A65</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id estado" id="4D06069F-DE92-D1E1-E66F-F19961EB105F">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:38:26 UTC</createdTime>
+<generatorID>802C54C0-B581-FBE2-DBA8-C779F613B5B1</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<referedAttribute>4D8E57E1-BFBE-6702-A9C2-79D04AA64E69</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="99DC87C4-8A32-65AE-07E7-E389A185B8E9" name="TARJETAS CREDITO PK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>3C53985C-D2F0-092B-4E7A-0C6A1EBC41BA</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6E994C00-FCB5-9DE1-75D7-D0DFC7861F27</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

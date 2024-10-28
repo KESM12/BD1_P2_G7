@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D51D06D1-C34E-D6D5-1B58-FC4455F171AC" containerWithKeyObject="9AC77417-DADE-704C-81B4-E49283DCA0C2" localFKIndex="98B2BFD0-07FB-AF05-7C57-B752E768CEF9" name="EMPLEADOS_SUCS_AGENS_FK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>1AD50187-83D6-8DB0-69E8-69F6628B303C</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<referredTableLongName>SUCS_AGENS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E66A1159-AF03-5AA0-F708-3F05E3B94E01</referredTableID>
+<keyObject>5414230A-E260-DD33-4428-6C5147B3B9A7</keyObject>
+<referredKeyID>5414230A-E260-DD33-4428-6C5147B3B9A7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_suc_agen</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

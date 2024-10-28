@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="71954A72-B762-CA29-C5D2-FB1E60F3F642" name="SECACCES">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>A4573E51-86C6-93E1-D380-EF6B7010F867</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_acceso" id="DCBB637D-75C5-CEAC-4423-6F946F13C46B">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>DFCE831D-7D26-415D-1DDD-DA491B5A8E1E</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rol_acceso" id="16B38BF9-02B1-B15E-1779-CA36BD40F4F7">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>E00B3612-C4F6-0D9A-C4E8-25B655306297</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_acceso" id="CC0FB652-4DF6-B3B0-224D-22E1546B0D53">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>07930BC4-AEFB-5427-45DE-0410460C2ABB</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hora_acceso" id="E29BD38C-3085-D5BE-D5C2-27E3DC48AA1E">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>496BA4BC-DF93-A117-C2BE-7B6CC4F6B2C9</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLEADOS_id_empleado" id="C56AF6C8-00C4-05C9-D5AF-FB9CD283E2E8">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>AF9626BD-7A7D-A468-39D3-62212DEB5C6F</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9CDB9A3B-D1D1-DD56-F224-BF19F899DBD8" referredColumn="7C4A3497-7837-0D82-9184-F4ACEDB6F81B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8AE51A6C-7608-C7B8-2974-3C8102B5395C" name="SECACCES_PK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>AA9A5F39-BBA2-D208-68A0-D920144EA456</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCBB637D-75C5-CEAC-4423-6F946F13C46B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E1249B50-64C6-DBBF-AFF7-F5BEAE1A0C4E" name="SECACCES_EMPLEADOS_FK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>D552D1AD-B0B2-CAC0-DB81-74805049AB0A</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C56AF6C8-00C4-05C9-D5AF-FB9CD283E2E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

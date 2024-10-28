@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="70C9259F-9C62-AD18-5363-FF5F96800E26" name="MUNICIPIOS">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>29CAF1D5-2B9F-FC6C-B4DA-242153E96A11</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id municipio" id="9E1A61AC-D04E-FC93-8557-90AC610573CF">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>97D61959-F15C-AFE2-98C1-1437F6982AC3</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre mun" id="ED706DEF-A222-E012-B9FB-4873B490031D">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>57D6B3DA-C228-15AD-98BB-0681E3F5AAFB</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="direccion" id="BF1DABAC-563D-00B1-EB72-483ECCE6674F">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>F5F11C15-8A53-92A4-D5FE-7339FD4FE327</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo postal" id="9248E542-EACF-8B1C-172E-BC97F37C6B95">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>D8F2D907-989C-22CA-DC08-8B3D6F095026</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id departamento" id="3DCA89BD-6220-9C07-6FF1-745D0B3B17C0">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:40:33 UTC</createdTime>
+<generatorID>D769F021-0CD2-5A84-C361-10F7EC6B5A5B</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<referedAttribute>41057BFC-939B-48FB-20E0-EF2697B3198D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3E0E6E88-51FA-F238-BCB1-B647D9629CDC" name="MUNICIPIO PK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>E1C0B39C-64F9-4814-D4CD-0473062AE6A8</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9E1A61AC-D04E-FC93-8557-90AC610573CF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

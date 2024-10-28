@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5A39C32C-D54C-A192-B11F-0927EE1FFC4B" name="TRANSACCIONES">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>53E3A95B-1D30-434C-4DEC-F7378D0361FD</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_transaccion" id="1E270C38-C85E-1C9B-254F-D2897FBC2DF9">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>57651337-F9F4-E75D-84FC-30C034DA3E72</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="monto" id="4AE46E28-5A6F-01AB-6058-D709DA1D4E7B">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>008E8DB9-94B1-E419-8619-996864DBF1A7</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="31F4B122-DBA5-3EFF-FBD8-82C3C5D21D7F">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>9EB7809E-8538-3CE8-FE34-4692290C6E4F</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hora" id="E36073E0-54DD-F00C-495F-D153D7C77080">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>3F9C8350-C014-F079-6C4E-D501C64A8BC5</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="D2DFC175-87D9-0C9E-E85F-DF80B22BD48A">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>1A939A07-CFEF-EBF5-CCD6-A6FFC86192C8</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLIENTES_id_cliente" id="B7077380-488D-1E24-1EC6-2BAE4BF826C7">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>A8C1A70C-FF34-4641-9223-17213DA52DAF</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E5889BCF-EAC9-9BCD-A08C-B2B846E33A13" referredColumn="4F89ABE4-DFE8-0669-8792-6C3DBC9F94E4"/>
+</associations>
+</Column>
+<Column name="TIPO_TRANSACS_id_tipo_tran" id="64D14F27-99C1-B418-6E77-6586295E9562">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>F4027E7A-1318-6437-47A9-D565720B68F1</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="98331025-7946-3A07-3834-EEA9FF7A6501" referredColumn="7FDCC16A-C78B-067B-3D7E-9A841E487EC5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ADC64284-F751-BDDC-FDEA-D27EE09D07DB" name="TRANSACCIONES_PK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>0A245784-B82B-33F4-BDA5-5266F33BE28F</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E270C38-C85E-1C9B-254F-D2897FBC2DF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E623F1B6-7FBA-2157-DAF0-9940946814A0" name="TRANSACCIONES_CLIENTES_FK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>5E93A2BF-9F49-9035-6B17-2D413213D5FB</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7077380-488D-1E24-1EC6-2BAE4BF826C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AADF6192-957E-F279-71C7-41B95D7309DC" name="TRANSACCIONES_TIPO_TRANSACS_FK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>41817BDD-2A80-7C47-42C9-03C95F6B650A</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64D14F27-99C1-B418-6E77-6586295E9562"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

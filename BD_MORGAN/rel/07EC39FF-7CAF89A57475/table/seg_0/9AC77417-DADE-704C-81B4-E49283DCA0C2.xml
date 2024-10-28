@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9AC77417-DADE-704C-81B4-E49283DCA0C2" name="EMPLEADOS">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>789DD131-B827-BD32-7B1A-B391D71E3C4D</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_empleado" id="7C4A3497-7837-0D82-9184-F4ACEDB6F81B">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>0843CDA0-9542-42D7-2EBC-9B2E045ACF15</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="FD9D882A-C14A-4FF2-4A52-DBDF263E7B9A">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>7CB7B999-C7F6-BBDB-A310-4BC0E89673DC</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido" id="F6E27FF4-8274-EC20-55E9-5A0F9573EEB1">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>B5A05EF6-F5E5-9CC3-BBC5-B93AFBE67A71</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="DAAAFB38-DE42-0D17-4882-5C909F3F1510">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>EA0D8DCB-570C-4087-CB57-D8586F59DECA</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ROLES_id_rol" id="3E3730E4-A38A-B6E2-4552-F60849526C2E">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>F3E5F46E-7CFE-A66B-CB81-A94300BAC245</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BAB39659-6686-7CAA-0CEE-B090523DEDFC" referredColumn="7A490A3F-4BB7-1ECE-19CD-D6CCD595DE8F"/>
+</associations>
+</Column>
+<Column name="SUCS_AGENS_id_suc_agen" id="ABE037A1-B534-9B90-20AA-26AD5AE8AAF0">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>089B40DB-7DFF-794D-4B43-3C933B2662A3</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D51D06D1-C34E-D6D5-1B58-FC4455F171AC" referredColumn="8BA50C0A-BB48-EA63-A592-5A979BBB4CA9"/>
+</associations>
+</Column>
+<Column name="DEPARTAMENTOS_id_departamento" id="674F00CC-930F-DD03-20DA-9B53FB5D198C">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>4881EB11-E527-BC04-EDB8-7D9595A4CD13</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="44F4D7A1-FEA8-97FF-D7CF-E91B5BD4AEBD" referredColumn="FAF92C52-F655-2E36-C92C-18205B6AEE95"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B2B0780F-405C-D207-0EC6-2521F90FEF3F" name="EMPLEADOS_PK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>BC4955E8-E57E-1488-CBDE-9459EE8C7D64</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C4A3497-7837-0D82-9184-F4ACEDB6F81B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A0641FFA-A22F-BC15-A316-72EDD3CC2C57" name="EMPLEADOS_ROLES_FK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>B48FFA10-7C49-800C-BF20-157EEA8DFA02</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E3730E4-A38A-B6E2-4552-F60849526C2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98B2BFD0-07FB-AF05-7C57-B752E768CEF9" name="EMPLEADOS_SUCS_AGENS_FK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>1AD50187-83D6-8DB0-69E8-69F6628B303C</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ABE037A1-B534-9B90-20AA-26AD5AE8AAF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="440B25C9-35C0-1A95-CDAC-7DCE58E39DD0" name="EMPLEADOS_DEPARTAMENTOS_FK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>255D1FC9-F458-CC3B-C4AB-3DCBE1EE4F03</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="674F00CC-930F-DD03-20DA-9B53FB5D198C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E66A1159-AF03-5AA0-F708-3F05E3B94E01" name="SUCS_AGENS">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>964DB2C9-115C-B7EC-B6F3-C9D42995922E</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_suc_agen" id="8BA50C0A-BB48-EA63-A592-5A979BBB4CA9">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>B14F502B-66B1-48A9-471D-669E7A1C350F</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="04A219DB-E59D-4B0A-32CC-B2A3E5D2C8DF">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>A05D145C-ECC7-8029-DA8B-B3EF7CEEF6F7</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="2C557FFA-E7D4-D198-7610-E85D57D60392">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>D6FD7D7B-5A29-C1EB-712C-36F9D7812837</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTAMENTOS_id_departamento" id="E7949CF4-A994-E12E-877B-D06D299D78CE">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>0096920B-D72C-2000-2236-7CC118B827A7</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA48A54F-F803-DBF6-2C74-7A9BAEF4B7BA" referredColumn="FAF92C52-F655-2E36-C92C-18205B6AEE95"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5414230A-E260-DD33-4428-6C5147B3B9A7" name="SUCS_AGENS_PK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>D72DCD1A-6EAE-F123-20AA-B35ECF43092D</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8BA50C0A-BB48-EA63-A592-5A979BBB4CA9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0F10217B-E2CB-2E1E-BCD9-ADBDF333C87F" name="SUCS_AGENS_DEPARTAMENTOS_FK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>4F101129-1D13-C3A6-2EB4-38CB71108179</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7949CF4-A994-E12E-877B-D06D299D78CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

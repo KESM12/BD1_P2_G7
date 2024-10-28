@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E79A1A6D-2F60-0D1A-9A35-13A21FA8036F" name="TRANINTERBS">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>C0F8F388-A58A-2C68-6284-AF364DBC20B1</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id interbancaria" id="BCA028CC-9008-570E-2D55-BD561D3D666A">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>9E5A69F8-2640-CF87-9936-048556141A94</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id boveda origen" id="C30B2184-BD43-82B6-D5BE-765DF5F1F747">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>F78BBFA0-BDF8-2DFB-0AFE-38B66F5F6CA7</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id boveda destino" id="D248864C-0CCA-FFC2-A49B-DDAF63754591">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>7B2E007E-AAFA-6BCC-E27B-2822558089BC</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="monto" id="35A399C8-E289-AEFF-9B82-93C88BF2EA03">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>4B441F86-F8AF-B80F-D58E-6E16AC47B0CE</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha" id="2254B498-109B-27C9-9BA7-930706D1CF9E">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>099CDDB3-07A1-1653-1C59-44AE98782C6D</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hora" id="2F2D4C08-A954-E4EF-6363-33F9BB5A008B">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>B3DB8A70-48F4-5C31-7733-4CFA80088855</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="902C085C-2843-D65D-6894-B93F1ACFCADD" name="TRANSACCIONES INTERBANCARIAS PK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>C366DD60-1F2F-DA21-0F82-25D70562C9FF</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BCA028CC-9008-570E-2D55-BD561D3D666A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

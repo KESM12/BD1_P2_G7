@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="789DD131-B827-BD32-7B1A-B391D71E3C4D" name="EMPLEADOS">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>8FBCE572-E552-0DDC-9714-31E06AF5056E</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id empleado" id="0843CDA0-9542-42D7-2EBC-9B2E045ACF15">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>A7A5A0AA-A8C9-628C-0600-44C341B6F81B</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="7CB7B999-C7F6-BBDB-A310-4BC0E89673DC">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>2D0FB7D7-6FDE-5F55-41A4-E71BD6A45122</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="apellido" id="B5A05EF6-F5E5-9CC3-BBC5-B93AFBE67A71">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>DC6E5533-99BD-88E6-7B3C-8ADE1E17A14D</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono" id="EA0D8DCB-570C-4087-CB57-D8586F59DECA">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>590C6A49-4877-1F5D-871F-3F4B4407ECF4</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id rol" id="F3E5F46E-7CFE-A66B-CB81-A94300BAC245">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:39:41 UTC</createdTime>
+<generatorID>B48FFA10-7C49-800C-BF20-157EEA8DFA02</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<referedAttribute>D5C005B4-E7B1-8C5C-8E4B-3AE50224B3B6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id suc agen" id="089B40DB-7DFF-794D-4B43-3C933B2662A3">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:40:06 UTC</createdTime>
+<generatorID>1AD50187-83D6-8DB0-69E8-69F6628B303C</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<referedAttribute>B14F502B-66B1-48A9-471D-669E7A1C350F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id departamento" id="4881EB11-E527-BC04-EDB8-7D9595A4CD13">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:40:24 UTC</createdTime>
+<generatorID>255D1FC9-F458-CC3B-C4AB-3DCBE1EE4F03</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<referedAttribute>41057BFC-939B-48FB-20E0-EF2697B3198D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BC4955E8-E57E-1488-CBDE-9459EE8C7D64" name="EMPLEADOS PK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>F4A83C2C-A2E7-CC2D-32E9-898AB76A52AA</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0843CDA0-9542-42D7-2EBC-9B2E045ACF15</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

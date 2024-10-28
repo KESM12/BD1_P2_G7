@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EA22D952-0243-02B3-0873-7DED713CC358" containerWithKeyObject="6A20FB74-D4F5-4F1F-29AC-8DEB6592B04C" localFKIndex="24106F1C-3026-861E-B0AF-C18041B955C7" name="HISTORIAL_SALDOS_CUENTAS_FK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>04B99952-B4E1-9B71-1BC3-84728BA06B45</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<referredTableLongName>CUENTAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A88A3047-16EA-D674-ED2C-C33EAE45AAAF</referredTableID>
+<keyObject>907E123F-E8BB-1A88-F9DE-3539B8DF427B</keyObject>
+<referredKeyID>907E123F-E8BB-1A88-F9DE-3539B8DF427B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_cuenta</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0CC82DBD-6606-C858-168F-24039E216B0B" name="ESTFINACIEROS">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>A86D6E2F-1141-BF15-2BBB-60D7868D419F</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id estado" id="BD2BDCE2-73AB-5689-17E4-95249E299D1B">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>471DECC6-218C-3E05-479D-B4AA66267F9E</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ingresos" id="D7F7858A-77F0-B271-3A54-1C25FE4B3E11">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>5FEC220E-B0D1-D165-37C1-B1AC05BA46B8</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="egresos" id="BB5C5406-1486-C792-D469-1067D1294133">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>8A7B3F11-1EBF-82EB-9C00-89987C121EC0</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="capital" id="71A60314-0CFA-7C9D-A519-7677737A22EA">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>1771D373-92C8-2266-2F9E-8257C8EB79A2</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha" id="DCEC2B6F-2CC0-4308-461E-E2B0CC9B5C38">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>07EBDF23-698A-CAF5-5D9D-C5882C6639B2</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id cuenta" id="7321A284-BA6B-36D7-2E30-69B62B2D991C">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:46:24 UTC</createdTime>
+<generatorID>CF82A88F-659F-B854-0A5C-76F0EB8E9C2A</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<referedAttribute>29C7E900-7220-C9EF-E264-B0ACC4DF909C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BFAB62B8-387D-7665-D60E-CF167C010848" name="ESTADO FINANCIERO PK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:31:02 UTC</createdTime>
+<generatorID>B52F6334-2654-4CB2-9F8C-056BC4863AA2</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BD2BDCE2-73AB-5689-17E4-95249E299D1B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

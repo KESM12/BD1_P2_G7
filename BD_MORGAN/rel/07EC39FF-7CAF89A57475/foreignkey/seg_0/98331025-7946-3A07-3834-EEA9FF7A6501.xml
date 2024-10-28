@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="98331025-7946-3A07-3834-EEA9FF7A6501" containerWithKeyObject="5A39C32C-D54C-A192-B11F-0927EE1FFC4B" localFKIndex="AADF6192-957E-F279-71C7-41B95D7309DC" name="TRANSACCIONES_TIPO_TRANSACS_FK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>41817BDD-2A80-7C47-42C9-03C95F6B650A</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<referredTableLongName>TIPO_TRANSACS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CC838B69-D746-32E0-7B2B-A67772B0B715</referredTableID>
+<keyObject>D1650BA3-AF95-6FF9-60B9-A29251C552EF</keyObject>
+<referredKeyID>D1650BA3-AF95-6FF9-60B9-A29251C552EF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tipo_tran</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -30,17 +30,6 @@
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_municipio" id="D33458B5-5020-386A-0431-99E9363128F9">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-09-24 06:34:36 UTC</createdTime>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="F771E4E0-F92D-A976-B908-C9C751287B89" name="DEPARTAMENTO_PK">

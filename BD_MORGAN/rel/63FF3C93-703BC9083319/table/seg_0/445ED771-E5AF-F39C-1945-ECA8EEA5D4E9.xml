@@ -3,7 +3,6 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:03:16 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <ordsAlias>table_4</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -13,19 +12,6 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:05:51 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="id_cliente" id="5B69905E-26D3-4864-B792-96EDEE0A779B">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-09-24 06:05:51 UTC</createdTime>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -36,7 +22,6 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:05:51 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -50,7 +35,6 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:05:51 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -62,7 +46,6 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:05:51 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -74,7 +57,6 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:05:51 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -83,57 +65,17 @@
 <ownDataTypeParameters>255,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_suc_agen" id="7EA918F2-2435-46F3-22F2-EB28CF38DECA">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-09-24 06:05:51 UTC</createdTime>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="TIPO_TRANSACS_id_tipo_tran" id="D0B9F65B-FCD5-ADC6-7CD6-70F9F9D5BC6A">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-09-25 17:52:29 UTC</createdTime>
-<generatorID>B973BD5D-07C3-715C-91F1-6439DF817476</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="6B0C84CC-1A94-2D1F-0FC9-8E280D0F234E" referredColumn="9A9A2702-84DA-5F50-E938-B2DA4B05FD3A"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="C724DC86-0344-FD6A-5077-665B7686C740" name="TRANSACCIONES_PK">
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:05:51 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="58277DB2-A67B-5FD8-F776-54D4EB671B70"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="F4077247-9D38-3455-B0DA-427368FC361A" name="TRANSACCIONES_TIPO_TRANSACS_FK">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-09-25 17:52:29 UTC</createdTime>
-<generatorID>4095217F-338E-9724-EDB4-14CE233D352D</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="D0B9F65B-FCD5-ADC6-7CD6-70F9F9D5BC6A"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -81,21 +81,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="BOVEDAS_id_boveda" id="016C6833-A3F0-2040-831D-F7BE48F71E31">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-10-09 07:21:13 UTC</createdTime>
-<generatorID>7CCC8086-5BA8-6547-6F62-0F27D4CE4BA8</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="7C1680CC-F89A-EEA4-7C24-7CD117D5A1CE" referredColumn="CD7C13C8-7A77-3FF8-FF00-C9CF4372DDA4"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="C366DD60-1F2F-DA21-0F82-25D70562C9FF" name="TRANSACCIONES_INTERBANCARIAS_PK">
@@ -108,17 +93,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="9E5A69F8-2640-CF87-9936-048556141A94"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="AF61A02E-2007-FB38-0349-669A237BC943" name="TRANSACCIONES_INTERBANCARIAS_BOVEDAS_FK">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-10-09 07:21:13 UTC</createdTime>
-<generatorID>73E80A4F-BFE0-9F41-83B8-B621189EDDFB</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="016C6833-A3F0-2040-831D-F7BE48F71E31"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -54,21 +54,6 @@
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DEPARTAMENTOS_id_departamento" id="B4062DDF-3186-E5B3-476F-7CAA8C16B4CB">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-09-25 17:52:29 UTC</createdTime>
-<generatorID>D5B766A2-A98B-8F6E-1B56-CD573A27276C</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="26BFDC67-21DD-4ABD-4602-3394FD26E58E" referredColumn="A63FFAA9-488D-0A69-049D-63F1C0690DC2"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="E1C0B39C-64F9-4814-D4CD-0473062AE6A8" name="MUNICIPIO_PK">
@@ -80,17 +65,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="97D61959-F15C-AFE2-98C1-1437F6982AC3"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="A940FE4D-927E-7F31-5FBF-545CFC07F772" name="MUNICIPIOS_DEPARTAMENTOS_FK">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-09-25 17:52:29 UTC</createdTime>
-<generatorID>7B15CD69-E017-3441-31FB-52FB58ED43DB</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="B4062DDF-3186-E5B3-476F-7CAA8C16B4CB"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

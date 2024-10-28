@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FA9ED663-4672-733C-A556-7D1FAD24E9EB" name="BOVEDAS">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>4159F506-532A-1ADC-5C7E-11E32E9FD439</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_boveda" id="1FE7F398-62FC-59BE-DC90-3AC02437F828">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>22DC7594-990D-7C99-AE00-C9D6896ABEA4</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="efectivo_disponible" id="F88291AF-4685-21E1-8852-DBA7C3039067">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>F347DF6C-9342-5CE6-4BC1-B273DFB4F746</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="efectivo_disponible_1" id="53AD836D-5E28-5187-D584-2234B6D4590C">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>8EC6FB36-016D-35F6-358F-9BEB90E5BCA5</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUCS_AGENS_id_suc_agen" id="D3F183A9-4471-516C-89E1-60E41B9A9ED4">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>CBA67B7E-34A6-33CA-9C3F-5752CA7A14BF</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A03BE8B7-4F79-D1E4-65A3-A548ABAE8D7F" referredColumn="8BA50C0A-BB48-EA63-A592-5A979BBB4CA9"/>
+</associations>
+</Column>
+<Column name="TRANINTERBS_id_interbancaria" id="308FB06D-6B36-DD3C-FC8A-DE967145C1CD">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>E9559CB6-A2F6-3FF8-E3D3-9E4A5F80C925</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3E8E4B37-B23B-E4C4-1C14-EB18AE150EED" referredColumn="C0393608-B0E7-AE46-E09E-01C572058CBC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E92B92FD-F86E-7D5F-656D-82FAB58885FC" name="BOVEDAS_PK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>C8234419-1CE7-BE8C-08EE-0E5F7CE43845</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1FE7F398-62FC-59BE-DC90-3AC02437F828"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="99756768-5E81-2F33-8E29-DA2F2465CD4C" name="BOVEDAS__IDX">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>EB9D94B2-BE6B-5A90-FE48-DEF1C5FEE259</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="D3F183A9-4471-516C-89E1-60E41B9A9ED4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7962A595-AC55-2FE9-5CF8-EFA68CAA369C" name="BOVEDAS_SUCS_AGENS_FK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>EB9D94B2-BE6B-5A90-FE48-DEF1C5FEE259</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3F183A9-4471-516C-89E1-60E41B9A9ED4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6584EF73-F2EC-511D-E3C5-A594A4550BB3" name="BOVEDAS_TRANINTERBS_FK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>2A99360A-B0C5-E109-EF51-9DD03EFF05F2</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="308FB06D-6B36-DD3C-FC8A-DE967145C1CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

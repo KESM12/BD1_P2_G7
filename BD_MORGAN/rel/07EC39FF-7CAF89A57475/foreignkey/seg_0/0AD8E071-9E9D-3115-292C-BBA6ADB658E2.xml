@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0AD8E071-9E9D-3115-292C-BBA6ADB658E2" containerWithKeyObject="3479D63B-0357-DF04-D825-F74D68BDB308" localFKIndex="C4124620-B269-0428-AF22-293EA9474754" name="HISTPRES_PRESTAMOS_FK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>E9664FDD-44B0-0753-8AF5-445620A68E5D</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<referredTableLongName>PRESTAMOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5AD57EDF-0F0C-AD04-B6E1-6C167D84EB4A</referredTableID>
+<keyObject>CC97F032-8D0D-A635-4CCF-DA2B617A9C54</keyObject>
+<referredKeyID>CC97F032-8D0D-A635-4CCF-DA2B617A9C54</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_prestamo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

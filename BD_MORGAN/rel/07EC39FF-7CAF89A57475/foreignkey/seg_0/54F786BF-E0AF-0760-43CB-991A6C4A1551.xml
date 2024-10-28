@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="54F786BF-E0AF-0760-43CB-991A6C4A1551" containerWithKeyObject="CC838B69-D746-32E0-7B2B-A67772B0B715" localFKIndex="F83019FB-2B90-D9A9-7D46-2F18B8815DAB" name="TIPO_TRANSACS_SUCS_AGENS_FK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>B570ABEC-89DB-6095-C3EB-E6A9B56A6EA9</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<referredTableLongName>SUCS_AGENS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E66A1159-AF03-5AA0-F708-3F05E3B94E01</referredTableID>
+<keyObject>5414230A-E260-DD33-4428-6C5147B3B9A7</keyObject>
+<referredKeyID>5414230A-E260-DD33-4428-6C5147B3B9A7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_suc_agen</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

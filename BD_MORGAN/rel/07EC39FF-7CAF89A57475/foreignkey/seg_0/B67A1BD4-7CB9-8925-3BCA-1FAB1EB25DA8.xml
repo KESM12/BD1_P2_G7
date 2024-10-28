@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B67A1BD4-7CB9-8925-3BCA-1FAB1EB25DA8" containerWithKeyObject="44150CC2-5A96-5D46-4E51-D791077EC670" localFKIndex="84C36E69-2C01-240D-B8BF-D737AE094DA8" name="HISTAUDTORIAS_TRANSACCIONES_FK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>118FE025-DA34-4D15-CA52-74F280723D0A</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<referredTableLongName>TRANSACCIONES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5A39C32C-D54C-A192-B11F-0927EE1FFC4B</referredTableID>
+<keyObject>ADC64284-F751-BDDC-FDEA-D27EE09D07DB</keyObject>
+<referredKeyID>ADC64284-F751-BDDC-FDEA-D27EE09D07DB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_transaccion</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

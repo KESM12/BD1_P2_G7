@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="ED4CC342-97BF-B45A-ABF3-7CA1EE9108D0" containerWithKeyObject="5AD57EDF-0F0C-AD04-B6E1-6C167D84EB4A" localFKIndex="D7D8B3AE-94F2-6FF3-5791-BBBFBC13B8F4" name="PRESTAMOS_ESTPRESTS_FK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>C5316CE1-0AF7-53D5-941B-1FF3BAF24DA5</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<referredTableLongName>ESTPRESTS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2409FD71-37AB-B0FB-28C1-65BE8598C609</referredTableID>
+<keyObject>F0847916-90CD-BC30-87AE-84F16EF15C40</keyObject>
+<referredKeyID>F0847916-90CD-BC30-87AE-84F16EF15C40</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_eprestamo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

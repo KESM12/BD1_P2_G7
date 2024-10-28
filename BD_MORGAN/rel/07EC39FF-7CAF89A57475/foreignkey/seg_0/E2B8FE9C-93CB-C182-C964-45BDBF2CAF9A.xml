@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E2B8FE9C-93CB-C182-C964-45BDBF2CAF9A" containerWithKeyObject="518164DE-BF45-A0AB-84B9-60B63F8CE76B" localFKIndex="D36381D1-E64A-0771-33A0-90E8F8614679" name="TARJS_CRED_EST_TARJETAS_FK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>802C54C0-B581-FBE2-DBA8-C779F613B5B1</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<referredTableLongName>EST_TARJETAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>096A5D9A-FE40-136E-50E9-87C864854A9A</referredTableID>
+<keyObject>8692BAD7-5D16-233F-9090-1DB33CDC4A4D</keyObject>
+<referredKeyID>8692BAD7-5D16-233F-9090-1DB33CDC4A4D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_estado</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

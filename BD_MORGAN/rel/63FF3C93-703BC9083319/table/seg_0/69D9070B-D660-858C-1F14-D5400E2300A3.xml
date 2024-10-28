@@ -30,28 +30,6 @@
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_tipo_suc_agen" id="DA353FD8-8D12-D5A8-94F9-C86393A968CA">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-09-24 06:28:42 UTC</createdTime>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="id_departamento" id="B6F225BC-F942-5F0F-3E36-E325FD37749C">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-09-24 06:28:42 UTC</createdTime>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="telefono" id="55C6C725-5119-E7B4-83E0-7FD192775D17">
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:28:42 UTC</createdTime>
@@ -64,21 +42,6 @@
 <ownDataTypeParameters>12,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DEPARTAMENTOS_id_departamento" id="4B979385-F617-C0D9-D518-1403D3B24DD7">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-09-25 17:52:29 UTC</createdTime>
-<generatorID>D11B0456-4112-EFDC-A5C2-91F60D666F5E</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="0BC51402-6596-91C4-70E7-494B74AE4B6B" referredColumn="A63FFAA9-488D-0A69-049D-63F1C0690DC2"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="35020D26-A09F-A487-0926-35E8EA219895" name="SUCURSALES_AGENCIAS_PK">
@@ -90,17 +53,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="0E3401B8-0A5D-AC0F-2EF8-051D78C4B5FB"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="25218B82-B7E6-E769-C0C8-34DD0EFE4DBE" name="SUCS_AGENS_DEPARTAMENTOS_FK">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-09-25 17:52:29 UTC</createdTime>
-<generatorID>737EBA92-4340-0CAD-B036-90CF9C817BD8</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="4B979385-F617-C0D9-D518-1403D3B24DD7"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

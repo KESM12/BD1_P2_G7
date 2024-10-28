@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A88A3047-16EA-D674-ED2C-C33EAE45AAAF" name="CUENTAS">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>1F642B43-54EE-F195-3095-DEBCF02D27B5</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_cuenta" id="1F242C44-80F5-12CD-DE2B-6C451896AD49">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>29C7E900-7220-C9EF-E264-B0ACC4DF909C</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero_cuenta" id="AE6424D3-E42D-D01F-F681-244E52650699">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>33ED4F96-9519-5F87-49BA-0D52B3470D50</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="saldo" id="A8C1F312-D2E1-9D50-920B-E0890C6C949A">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>BDED943E-85EA-EE16-CB76-A7BC9A6EDB30</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLIENTES_id_cliente" id="06875B90-DED7-5A0A-8327-489FEBA66D0C">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>E2D55CCE-76D4-3451-4BC9-3C48BCF06055</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="694BA049-06C2-C3BE-48B5-F67039CFA330" referredColumn="4F89ABE4-DFE8-0669-8792-6C3DBC9F94E4"/>
+</associations>
+</Column>
+<Column name="TIPOCUENTAS_id_tipo_cuenta" id="FD14A3B4-5B1C-EEE0-AA24-130B4BA4A89D">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>CB7BAB4C-C5B9-949D-C44A-AEF55FDD0227</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CA2A81F0-3681-D37E-94E3-D88248194179" referredColumn="21FD80A1-F050-E25D-1A32-DD0BFFC5C1CE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="907E123F-E8BB-1A88-F9DE-3539B8DF427B" name="CUENTAS_PK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>87A4498F-CCF3-4472-23D7-B1D42649984B</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F242C44-80F5-12CD-DE2B-6C451896AD49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DCFAF37C-0006-AACD-F53B-9BF7018E6198" name="CUENTAS_CLIENTES_FK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>6B8C626D-ADBD-E1BD-1AA4-9C2502B52309</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="06875B90-DED7-5A0A-8327-489FEBA66D0C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CE80841E-A254-E9CF-8CCB-537C13FE6CA4" name="CUENTAS_TIPOCUENTAS_FK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>2A173C8B-913D-E7DB-F550-1A691A5F2E65</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD14A3B4-5B1C-EEE0-AA24-130B4BA4A89D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

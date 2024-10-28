@@ -58,21 +58,6 @@
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="SUCS_AGENS_id_suc_agen" id="613D9B5B-3F6E-7844-CD8C-5290AF95C843">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-10-09 07:21:13 UTC</createdTime>
-<generatorID>0CE69BBC-596F-4F57-78B9-C6C0F3BFFE33</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="5582039E-152F-A051-991F-623672630597" referredColumn="0E3401B8-0A5D-AC0F-2EF8-051D78C4B5FB"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="27C7D1E1-DB59-4901-3677-E5714BB5CC37" name="BOVEDAS_PK">
@@ -85,17 +70,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="CD7C13C8-7A77-3FF8-FF00-C9CF4372DDA4"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="215E1292-F95A-2D38-9C30-53120C986606" name="BOVEDAS_SUCS_AGENS_FK">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-10-09 07:21:13 UTC</createdTime>
-<generatorID>3EAD946C-853A-E079-22AA-24A600F33405</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="613D9B5B-3F6E-7844-CD8C-5290AF95C843"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

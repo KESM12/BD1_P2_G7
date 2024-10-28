@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3E8E4B37-B23B-E4C4-1C14-EB18AE150EED" containerWithKeyObject="FA9ED663-4672-733C-A556-7D1FAD24E9EB" localFKIndex="6584EF73-F2EC-511D-E3C5-A594A4550BB3" name="BOVEDAS_TRANINTERBS_FK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-28 15:47:02 UTC</createdTime>
+<generatorID>2A99360A-B0C5-E109-EF51-9DD03EFF05F2</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<referredTableLongName>TRANINTERBS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BAFA1950-486A-2885-3CB4-B73D79006294</referredTableID>
+<keyObject>A2D8CE84-4417-0C7C-0004-74FFC002B6E7</keyObject>
+<referredKeyID>A2D8CE84-4417-0C7C-0004-74FFC002B6E7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_interbancaria</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

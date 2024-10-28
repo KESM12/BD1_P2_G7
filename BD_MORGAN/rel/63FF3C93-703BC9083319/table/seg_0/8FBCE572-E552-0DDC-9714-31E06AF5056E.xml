@@ -42,39 +42,6 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_rol" id="78C2EE62-92FB-A8BE-8702-BCA5EC5739FF">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-09-24 06:24:29 UTC</createdTime>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="id_departamento" id="9739F0F3-8822-30F8-7F1D-DA722E5432CB">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-09-24 06:24:29 UTC</createdTime>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="id_suc_agen" id="4C238037-A37C-04E2-23C8-B17668AB924F">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-09-24 06:24:29 UTC</createdTime>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="telefono" id="590C6A49-4877-1F5D-871F-3F4B4407ECF4">
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:24:29 UTC</createdTime>
@@ -87,51 +54,6 @@
 <ownDataTypeParameters>12,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DEPARTAMENTOS_id_departamento" id="AED5D110-23C8-C9C2-E013-93366E0B86BC">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-09-25 17:52:29 UTC</createdTime>
-<generatorID>31E7609A-9567-027B-B472-170FA8358111</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="E6E8DBAF-A61B-6FE8-B95C-D243C709900E" referredColumn="A63FFAA9-488D-0A69-049D-63F1C0690DC2"/>
-</associations>
-</Column>
-<Column name="ROLES_id_rol" id="16A73222-B9AE-3D10-71B8-54BA5BE64062">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-09-25 17:52:29 UTC</createdTime>
-<generatorID>AB87051F-A3A2-F768-CDEB-0C5A6C0FC64F</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="0D00C8E7-8673-512F-B486-FB07DD222B33" referredColumn="9BE6A06E-BF13-5A57-C6E3-0BEFBECA8F1E"/>
-</associations>
-</Column>
-<Column name="SUCS_AGENS_id_suc_agen" id="2007D00F-5988-A5F1-9F53-2D9968598DAB">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-09-25 17:52:29 UTC</createdTime>
-<generatorID>6860C7FA-E2DF-3F57-E273-BDD80CE0AC04</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="28D43219-E011-6241-8168-2A3B18050902" referredColumn="0E3401B8-0A5D-AC0F-2EF8-051D78C4B5FB"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="F4A83C2C-A2E7-CC2D-32E9-898AB76A52AA" name="EMPLEADOS_PK">
@@ -143,39 +65,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="A7A5A0AA-A8C9-628C-0600-44C341B6F81B"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="3B318949-7629-CC38-6A33-0FBF1127591B" name="EMPLEADOS_DEPARTAMENTOS_FK">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-09-25 17:52:29 UTC</createdTime>
-<generatorID>94A942DF-7CAB-5D6D-B05E-2137166054DC</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="AED5D110-23C8-C9C2-E013-93366E0B86BC"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="153B00CE-0687-ED23-68FB-C2A4195F61FD" name="EMPLEADOS_ROLES_FK">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-09-25 17:52:29 UTC</createdTime>
-<generatorID>34950056-9623-0585-A1BC-53117B0E157D</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="16A73222-B9AE-3D10-71B8-54BA5BE64062"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="366E6A61-1DA6-373C-E2EF-A01D7BBD1160" name="EMPLEADOS_SUCS_AGENS_FK">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-09-25 17:52:29 UTC</createdTime>
-<generatorID>F9E1865B-7E0A-EB2A-771D-6FE0F1398F5B</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="2007D00F-5988-A5F1-9F53-2D9968598DAB"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
