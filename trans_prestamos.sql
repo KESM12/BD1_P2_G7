@@ -18,10 +18,15 @@ BEGIN
         SET saldo_pend = saldo_pend - p_monto
         WHERE id_prestamo = p_id_prestamo;
 
+        UPDATE BOVEDAS
+        SET efectivo_disponible = efectivo_disponible + p_monto
+        WHERE id_suc_agen = p_id_suc_agen;
+
         INSERT INTO TRANSACCIONES 
         (id_transaccion, id_cliente, monto, fecha, hora, descripcion, id_suc_agen, CLIENTES_id_cliente, TIPO_TRANSACS_id_tipo_tran)
         VALUES 
-        (seq_tipo_transacs.NEXTVAL, id_cliente, -p_monto, SYSDATE, SYSDATE, 'Pago de préstamo', p_id_suc_agen, id_cliente, 4);
+        --(seq_tipo_transacs.NEXTVAL, id_cliente, -p_monto, SYSDATE, SYSDATE, 'Pago de préstamo', p_id_suc_agen, id_cliente, 4);
+        (seq_tipo_transacs.NEXTVAL, id_cliente, p_monto, SYSDATE, SYSDATE, 'Pago de préstamo', p_id_suc_agen, id_cliente, 4);
 
         COMMIT;
     ELSIF saldo_pendiente = p_monto THEN 
@@ -31,6 +36,9 @@ BEGIN
             ESTADOS_PRESTAMOS_id_eprestamo = 3
         WHERE id_prestamo = p_id_prestamo;
 
+        UPDATE BOVEDAS
+        SET efectivo_disponible = efectivo_disponible + p_monto
+        WHERE id_suc_agen = p_id_suc_agen;
 
         INSERT INTO TRANSACCIONES 
         (id_transaccion, id_cliente, monto, fecha, hora, descripcion, id_suc_agen, CLIENTES_id_cliente, TIPO_TRANSACS_id_tipo_tran)

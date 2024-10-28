@@ -3,11 +3,17 @@ CREATE OR REPLACE PROCEDURE realizar_deposito(
     p_monto IN NUMBER,
     p_descripcion IN VARCHAR,
     p_id_suc_agen IN INTEGER
-) AS
+) AS 
+    saldo_actual NUMBER; 
 BEGIN
+
     UPDATE CUENTAS
     SET saldo = saldo + p_monto
     WHERE id_cuenta = p_id_cuenta;
+
+    UPDATE BOVEDAS
+    SET efectivo_disponible = efectivo_disponible + p_monto
+    WHERE id_suc_agen = p_id_suc_agen;
 
     INSERT INTO TRANSACCIONES (
         id_transaccion, 
@@ -44,6 +50,8 @@ EXCEPTION
 END;
 /
 
+
+
 CREATE OR REPLACE PROCEDURE realizar_retiro(
     p_id_cuenta IN INTEGER,
     p_monto IN NUMBER,
@@ -61,6 +69,10 @@ BEGIN
         SET saldo = saldo - p_monto
         WHERE id_cuenta = p_id_cuenta;
 
+        UPDATE BOVEDAS
+        SET efectivo_disponible = efectivo_disponible - p_monto
+        WHERE id_suc_agen = p_id_suc_agen;
+
         INSERT INTO TRANSACCIONES (
             id_transaccion, 
             id_cliente, 
@@ -75,7 +87,8 @@ BEGIN
         VALUES (
             seq_transacciones.NEXTVAL, 
             (SELECT id_cliente FROM CUENTAS WHERE id_cuenta = p_id_cuenta), 
-            -p_monto, 
+            -- -p_monto, 
+            p_monto, 
             SYSDATE, 
             SYSDATE, 
             p_descripcion,
