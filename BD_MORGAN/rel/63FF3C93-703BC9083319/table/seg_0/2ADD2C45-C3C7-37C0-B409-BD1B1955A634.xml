@@ -3,6 +3,7 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:17:00 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <ordsAlias>table_10</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -12,6 +13,7 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:19:57 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -22,6 +24,7 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:19:57 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,6 +36,7 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:19:57 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -46,6 +50,7 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:19:57 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -59,6 +64,7 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:19:57 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -70,6 +76,7 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:19:57 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -81,6 +88,7 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:19:57 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -94,6 +102,7 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:19:57 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -101,26 +110,12 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CLIENTES_id_cliente" id="CEA1B35B-6911-E410-50D6-1808CCA0BFA8">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-09-25 17:52:29 UTC</createdTime>
-<generatorID>08FE9090-A745-3836-F672-43544BC3970F</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="8D5FD6AA-E8C9-60C1-FF85-AD22D646D0E1" referredColumn="6E948EEA-C929-A776-AF08-134D6AD7E233"/>
-</associations>
-</Column>
 <Column name="ESTADOS_PRESTAMOS_id_eprestamo" id="F15F1ED7-BD25-DCBC-C239-8BC6B585D7E3">
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-25 17:52:29 UTC</createdTime>
 <generatorID>A9AD9FB5-E6A2-90D2-DC45-D6A14701A244</generatorID>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -137,22 +132,12 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:19:57 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="F16EFEBF-F6B9-602D-AA88-18D552685CE4"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="34B7B787-2BF6-0374-2B96-BAFDB6BB79E4" name="PRESTAMOS_CLIENTES_FK">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-09-25 17:52:29 UTC</createdTime>
-<generatorID>1FEF1DFD-31D9-C2D8-3113-EF2864E4135E</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="CEA1B35B-6911-E410-50D6-1808CCA0BFA8"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="8A470517-81D1-5A6B-F542-43A2C20F57C0" name="PRESTAMOS_ESTADOS_PRESTAMOS_FK">

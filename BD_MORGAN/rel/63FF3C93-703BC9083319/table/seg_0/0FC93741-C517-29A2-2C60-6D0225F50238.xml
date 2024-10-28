@@ -3,6 +3,7 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:10:50 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <ordsAlias>table_8</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -12,6 +13,7 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:15:18 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -22,6 +24,7 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:15:18 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,6 +36,7 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:15:18 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -45,6 +49,7 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:15:18 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -58,6 +63,7 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:15:18 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -71,6 +77,7 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:15:18 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -82,6 +89,7 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:15:18 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -93,6 +101,7 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:15:18 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -104,6 +113,7 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:15:18 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -115,6 +125,7 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:15:18 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -122,26 +133,12 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CLIENTES_id_cliente" id="9DC4476E-F15F-BD33-A0AE-1E9F986587C8">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-09-25 17:52:29 UTC</createdTime>
-<generatorID>7590E29D-A522-1F2E-B691-C44EE5E00F82</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="C80D6081-2B28-94D6-9EF1-5B02AE82E9BC" referredColumn="6E948EEA-C929-A776-AF08-134D6AD7E233"/>
-</associations>
-</Column>
 <Column name="EST_TARJETAS_id_estado" id="20BBB948-6E2E-462B-1E29-9DA1575389F7">
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-25 17:52:29 UTC</createdTime>
 <generatorID>6E773833-F1A8-9251-C6D0-615F3AF4367E</generatorID>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -158,22 +155,12 @@
 <createdBy>Usuario</createdBy>
 <createdTime>2024-09-24 06:15:18 UTC</createdTime>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="11BDCA60-E94B-81B2-E71C-5E0379D86C6B"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="8ED9DA62-8326-138C-3313-4317C0B493E9" name="TARJS_CRED_CLIENTES_FK">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-09-25 17:52:29 UTC</createdTime>
-<generatorID>CF7B14A9-1BD5-C5D3-70D5-31B714A92A12</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="9DC4476E-F15F-BD33-A0AE-1E9F986587C8"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="A0ED1DAB-5594-D4A1-1A44-B027E521FD41" name="TARJS_CRED_EST_TARJETAS_FK">

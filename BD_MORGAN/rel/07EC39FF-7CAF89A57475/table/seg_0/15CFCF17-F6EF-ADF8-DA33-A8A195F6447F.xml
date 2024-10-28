@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="15CFCF17-F6EF-ADF8-DA33-A8A195F6447F" name="HISTORIAL_SALDOS">
+<createdBy>taro</createdBy>
+<createdTime>2024-10-28 14:57:44 UTC</createdTime>
+<generatorID>9E5AFA42-AD54-714F-4614-5AC31E682062</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_historial" id="7558AC67-7123-C2F8-CD4D-6036A8AB54D4">
+<createdBy>taro</createdBy>
+<createdTime>2024-10-28 14:57:44 UTC</createdTime>
+<generatorID>B338DBAA-8053-8AB5-DF88-3AF184F8907D</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="saldo" id="F4924796-FC93-B115-ABB1-B25296AA4D5F">
+<createdBy>taro</createdBy>
+<createdTime>2024-10-28 14:57:44 UTC</createdTime>
+<generatorID>49E1EDE7-6919-3F07-CC6A-7CC415422CB6</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="275E281B-231C-D507-7266-F704E88BA2F1">
+<createdBy>taro</createdBy>
+<createdTime>2024-10-28 14:57:44 UTC</createdTime>
+<generatorID>6E42BFD3-9011-B1E7-82B2-2A78D5C779A8</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUENTAS_id_cuenta" id="F059251D-9E68-48C0-F2FF-F220951B3586">
+<createdBy>taro</createdBy>
+<createdTime>2024-10-28 14:57:44 UTC</createdTime>
+<generatorID>A3BC8A8A-A27C-FA33-6D2F-E6464845E1CA</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C9BDA806-7AF3-64AA-DA8F-55658BE70ED0" referredColumn="3531AF23-4793-988B-292D-E28FA01685C1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F7FD2FF8-93CC-D004-EB7C-DC1F2B7B8D47" name="HISTORIAL_SALDOS_PK">
+<createdBy>taro</createdBy>
+<createdTime>2024-10-28 14:57:44 UTC</createdTime>
+<generatorID>3F4D4783-27BE-EF69-6CD3-78109FFCFCA0</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7558AC67-7123-C2F8-CD4D-6036A8AB54D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F0833940-866C-3875-94E2-69D74DC3743E" name="HISTORIAL_SALDOS__IDX">
+<createdBy>taro</createdBy>
+<createdTime>2024-10-28 14:57:44 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>D1D9F460-9D91-1420-5274-F1D04A10E1C4</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="F059251D-9E68-48C0-F2FF-F220951B3586"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4C4E3B4B-B310-40B8-4E3B-D07BF62B23FD" name="HISTORIAL_SALDOS_CUENTAS_FK">
+<createdBy>taro</createdBy>
+<createdTime>2024-10-28 14:57:44 UTC</createdTime>
+<generatorID>D1D9F460-9D91-1420-5274-F1D04A10E1C4</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F059251D-9E68-48C0-F2FF-F220951B3586"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

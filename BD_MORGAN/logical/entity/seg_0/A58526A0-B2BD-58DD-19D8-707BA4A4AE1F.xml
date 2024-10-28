@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A58526A0-B2BD-58DD-19D8-707BA4A4AE1F" name="TIPOCUENTAS">
+<createdBy>taro</createdBy>
+<createdTime>2024-10-28 14:48:57 UTC</createdTime>
+<generatorID>E2075738-D997-47A7-7653-25BDEB5791F8</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id tipo cuenta" id="A5FDFE9A-0A0D-2F88-CE4C-B95B5D4CC88D">
+<createdBy>taro</createdBy>
+<createdTime>2024-10-28 14:48:57 UTC</createdTime>
+<generatorID>AD7B4A0A-09CF-513B-6DD0-583CF011AA78</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo cuenta" id="FACF5ED9-87AE-3C33-1959-8F0CB4B27E20">
+<createdBy>taro</createdBy>
+<createdTime>2024-10-28 14:48:57 UTC</createdTime>
+<generatorID>7427980E-731D-9E01-67DF-E03B40C62507</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="666A2145-EBA6-196B-31FF-C5A69551C849" name="TIPOCUENTA PK">
+<createdBy>taro</createdBy>
+<createdTime>2024-10-28 14:48:57 UTC</createdTime>
+<generatorID>7A28F63A-142D-8B83-200F-33904A9BE48E</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A5FDFE9A-0A0D-2F88-CE4C-B95B5D4CC88D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

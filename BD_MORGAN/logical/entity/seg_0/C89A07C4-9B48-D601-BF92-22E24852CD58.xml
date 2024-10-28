@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C89A07C4-9B48-D601-BF92-22E24852CD58" name="CUENTAS">
+<createdBy>taro</createdBy>
+<createdTime>2024-10-28 14:48:57 UTC</createdTime>
+<generatorID>9E307AE0-7BF0-98DA-327F-14B0C681FDC0</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id cuenta" id="3B9808F3-7461-5194-CBCC-34D6A8A5A435">
+<createdBy>taro</createdBy>
+<createdTime>2024-10-28 14:48:57 UTC</createdTime>
+<generatorID>5A7E8FF1-3F11-E932-0AE2-2FDE122658FA</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero cuenta" id="DFC6F0BE-5FD7-7F2C-74C3-8053BBCB8C6B">
+<createdBy>taro</createdBy>
+<createdTime>2024-10-28 14:48:57 UTC</createdTime>
+<generatorID>383269DB-9A9B-186A-090C-64042FF692DB</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="saldo" id="E27F1A95-52DD-8014-1553-1B019351B1B4">
+<createdBy>taro</createdBy>
+<createdTime>2024-10-28 14:48:57 UTC</createdTime>
+<generatorID>B4B5D44C-A314-6E3D-9FB0-318824F1F475</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id cliente" id="A3F4AF06-DFC0-10E7-71AE-1994CB502A3C">
+<createdBy>taro</createdBy>
+<createdTime>2024-10-28 14:54:20 UTC</createdTime>
+<generatorID>3DE07160-81AA-7AD7-9BA7-87F6F7C936BE</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>57A3888D-0C8E-4408-1F52-10E5C18607F3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id tipo cuenta" id="580C3501-0D3C-0ED4-2049-CFADC33013FA">
+<createdBy>taro</createdBy>
+<createdTime>2024-10-28 14:55:45 UTC</createdTime>
+<generatorID>27C89652-8DE1-75F0-D39B-DDBB69D36961</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>A5FDFE9A-0A0D-2F88-CE4C-B95B5D4CC88D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="654230A4-EC5B-D1CE-718A-3AF1D281B0C6" name="CUENTA PK">
+<createdBy>taro</createdBy>
+<createdTime>2024-10-28 14:48:57 UTC</createdTime>
+<generatorID>87C5A9EF-436F-59F8-6821-EF1D1A67BD69</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<engineerTo>
+<item key="63FF3C93-E3C9-BF76-E59D-703BC9083319" value="true"/>
+<item key="07EC39FF-DB66-540E-C535-7CAF89A57475" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3B9808F3-7461-5194-CBCC-34D6A8A5A435</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

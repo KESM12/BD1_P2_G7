@@ -4,6 +4,7 @@
 <createdTime>2024-10-09 07:01:37 UTC</createdTime>
 <generatorID>786FEE73-9E67-5A3E-D139-61F0CE38BFCB</generatorID>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -13,17 +14,7 @@
 <createdTime>2024-10-09 07:01:37 UTC</createdTime>
 <generatorID>2B8EF85A-0E96-C69E-AD09-99C3875B5C28</generatorID>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="id_cuenta" id="D68AD753-5613-3493-136A-B4FE62111F18">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-10-19 00:33:13 UTC</createdTime>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
+<shouldEngineer>false</shouldEngineer>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -35,6 +26,7 @@
 <createdTime>2024-10-09 07:01:37 UTC</createdTime>
 <generatorID>06B2DEEA-DE45-DF4C-A364-6C466379A700</generatorID>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -49,6 +41,7 @@
 <createdTime>2024-10-09 07:01:37 UTC</createdTime>
 <generatorID>94C16CAE-7791-E9E0-F0BF-B5E53C0A02DF</generatorID>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -63,6 +56,7 @@
 <createdTime>2024-10-09 07:01:37 UTC</createdTime>
 <generatorID>AD4C24EB-A4A8-C174-0F28-B63170FAD846</generatorID>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -77,6 +71,7 @@
 <createdTime>2024-10-09 07:01:37 UTC</createdTime>
 <generatorID>E4C6F0E5-31A8-3C82-E098-E23B8FECDEC4</generatorID>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -91,6 +86,7 @@
 <createdTime>2024-10-09 07:01:37 UTC</createdTime>
 <generatorID>26EA764A-2D72-6F04-694E-5B8366A9957A</generatorID>
 <ownerDesignName>BD_MORGAN</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>

@@ -19,18 +19,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_cuenta" id="E456A3E3-8ECB-89DD-13EA-AEC8AED1CB7D">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-10-09 07:01:37 UTC</createdTime>
-<generatorID>D5E19BF0-36D2-FDC1-E77D-B1680251231C</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="saldo" id="C8E7A2AA-528F-A2B2-2AAA-E31FB6AD4BE8">
 <createdBy>Usuario</createdBy>
 <createdTime>2024-10-09 07:01:37 UTC</createdTime>
