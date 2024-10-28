@@ -5,7 +5,7 @@ import csv
 num_registros = 1000
 
 # Crear el archivo CSV
-with open('Auditoria.csv', mode='w', newline='', encoding='utf-8') as csvfile:
+with open('CSV/Auditoria.csv', mode='w', newline='', encoding='utf-8') as csvfile:
     fieldnames = ['Transaccion', 'Empleado', 'Fecha', 'Hora']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     
