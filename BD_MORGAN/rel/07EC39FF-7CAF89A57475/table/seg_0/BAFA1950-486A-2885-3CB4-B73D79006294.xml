@@ -69,18 +69,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="hora" id="9BCD2B60-68F1-72FA-9802-28E024E1B4F3">
-<createdBy>Kevin</createdBy>
-<createdTime>2024-10-28 15:47:02 UTC</createdTime>
-<generatorID>2F2D4C08-A954-E4EF-6363-33F9BB5A008B</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT015</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="A2D8CE84-4417-0C7C-0004-74FFC002B6E7" name="TRANINTERBS_PK">

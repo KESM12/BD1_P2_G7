@@ -16,7 +16,7 @@ with open('CSV/HistAuditorias.csv', mode='w', newline='', encoding='utf-8') as c
     for i in range(num_registros):
         # Generar fecha y hora aleatorias
         fecha = f"{random.randint(2000, 2021)}-{random.randint(1, 12):02d}-{random.randint(1, 28):02d}"
-        hora = f"{random.randint(0, 23):02d}:{random.randint(0, 59):02d}:{random.randint(0, 59):02d}"
+     #   hora = f"{random.randint(0, 23):02d}:{random.randint(0, 59):02d}:{random.randint(0, 59):02d}"
         
         # Generar un estado aleatorio
         idTransaccion = random.randint(1, num_registros)
@@ -27,7 +27,7 @@ with open('CSV/HistAuditorias.csv', mode='w', newline='', encoding='utf-8') as c
         # Escribir la fila en el CSV
         writer.writerow({
             'Fecha': fecha,
-            'Hora': hora,
+        #    'Hora': hora,
             'IdTransaccion': idTransaccion,
             'IdUsuario': user
         })

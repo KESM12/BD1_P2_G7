@@ -45,18 +45,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="hora" id="E36073E0-54DD-F00C-495F-D153D7C77080">
-<createdBy>Kevin</createdBy>
-<createdTime>2024-10-28 15:47:02 UTC</createdTime>
-<generatorID>3F9C8350-C014-F079-6C4E-D501C64A8BC5</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT015</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="descripcion" id="D2DFC175-87D9-0C9E-E85F-DF80B22BD48A">
 <createdBy>Kevin</createdBy>
 <createdTime>2024-10-28 15:47:02 UTC</createdTime>

@@ -6,7 +6,7 @@ num_registros = 1000
 
 # Crear el archivo CSV
 with open('CSV/Auditoria.csv', mode='w', newline='', encoding='utf-8') as csvfile:
-    fieldnames = ['Transaccion', 'Empleado', 'Fecha', 'Hora']
+    fieldnames = ['Transaccion', 'Empleado', 'Fecha']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     
     # Escribir la cabecera
@@ -21,15 +21,15 @@ with open('CSV/Auditoria.csv', mode='w', newline='', encoding='utf-8') as csvfil
 
         # Generar fecha y hora aleatorias
         fecha = f"{random.randint(2000, 2021)}-{random.randint(1, 12):02d}-{random.randint(1, 28):02d}"
-        hora = f"{random.randint(0, 23):02d}:{random.randint(0, 59):02d}:{random.randint(0, 59):02d}"
+       #hora = f"{random.randint(0, 23):02d}:{random.randint(0, 59):02d}:{random.randint(0, 59):02d}"
 
         
         # Escribir la fila en el CSV
         writer.writerow({
             "Transaccion": id_transaccion,
             "Empleado": id_empleado,
-            "Fecha": fecha,
-            "Hora": hora
+            "Fecha": fecha
+          #  "Hora": hora
         })
 
 print(f"Se han generado {num_registros} registros")

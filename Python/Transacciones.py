@@ -25,7 +25,7 @@ with open('CSV/Transacciones.csv', mode='w', newline='', encoding='utf-8') as cs
         
         # Generar fecha y hora aleatorias
         fecha = f"{random.randint(2000, 2021)}-{random.randint(1, 12):02d}-{random.randint(1, 28):02d}"
-        hora = f"{random.randint(0, 23):02d}:{random.randint(0, 59):02d}:{random.randint(0, 59):02d}"
+        #hora = f"{random.randint(0, 23):02d}:{random.randint(0, 59):02d}:{random.randint(0, 59):02d}"
 
         # Generar una descripción aleatoria
         descripcion_random = random.choice(descripcion)
@@ -37,7 +37,7 @@ with open('CSV/Transacciones.csv', mode='w', newline='', encoding='utf-8') as cs
         writer.writerow({
             'Monto': monto,
             'Fecha': fecha,
-            'Hora': hora,
+           # 'Hora': hora,
             'Descripcion': descripcion_random,
             'TipoTransaccion': tipo,
             'Cliente': id_cliente,

@@ -31,18 +31,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="hora" id="DD472E27-13D2-5C7A-8B55-557AEB5DB7D8">
-<createdBy>Kevin</createdBy>
-<createdTime>2024-10-28 15:47:02 UTC</createdTime>
-<generatorID>AA6F8BED-660A-5CB3-9F68-70C212DBE51A</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT015</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="TRANSACCIONES_id_transaccion" id="7E17991F-B0D2-D9AD-0C14-88AFEDCDB30B">
 <createdBy>Kevin</createdBy>
 <createdTime>2024-10-28 15:47:02 UTC</createdTime>

@@ -19,7 +19,7 @@ with open('CSV/SecAcces.csv', mode='w', newline='', encoding='utf-8') as csvfile
 
         # Generar fecha y hora aleatorias
         fecha = f"{random.randint(2000, 2021)}-{random.randint(1, 12):02d}-{random.randint(1, 28):02d}"
-        hora = f"{random.randint(0, 23):02d}:{random.randint(0, 59):02d}:{random.randint(0, 59):02d}"
+       # hora = f"{random.randint(0, 23):02d}:{random.randint(0, 59):02d}:{random.randint(0, 59):02d}"
         
         # Generar un estado aleatorio
         idTransaccion = random.randint(1, num_registros)
@@ -31,7 +31,7 @@ with open('CSV/SecAcces.csv', mode='w', newline='', encoding='utf-8') as csvfile
         writer.writerow({
             'Rol': roles,
             'Fecha': fecha,
-            'Hora': hora,
+        #    'Hora': hora,
             'IdEmpleado': user
         })
          

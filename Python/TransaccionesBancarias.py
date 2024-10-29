@@ -10,7 +10,7 @@ num_bovedas = 240
 
 # Crear el archivo CSV
 with open('CSV/TransaccionesInterbancarias.csv', mode='w', newline='', encoding='utf-8') as csvfile:
-    fieldnames = ['IdBovedaOrigen', 'IdBovedadDestino', 'Monto', 'Fecha', 'Hora']
+    fieldnames = ['IdBovedaOrigen', 'IdBovedadDestino', 'Monto', 'Fecha']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     
     # Escribir la cabecera
@@ -28,15 +28,14 @@ with open('CSV/TransaccionesInterbancarias.csv', mode='w', newline='', encoding=
         
         # Generar fecha y hora aleatorias
         fecha = f"{random.randint(2000, 2021)}-{random.randint(1, 12):02d}-{random.randint(1, 28):02d}"
-        hora = f"{random.randint(0, 23):02d}:{random.randint(0, 59):02d}:{random.randint(0, 59):02d}"
+       # hora = f"{random.randint(0, 23):02d}:{random.randint(0, 59):02d}:{random.randint(0, 59):02d}"
 
         # Escribir la fila en el CSV
         writer.writerow({
             'IdBovedaOrigen': id_boveda_origen,
             'IdBovedadDestino': id_boveda_destino,
             'Monto': monto,
-            'Fecha': fecha,
-            'Hora': hora       
+            'Fecha': fecha      
         })
 
 print(f"Se han generado {num_registros} registros")
