@@ -15,7 +15,6 @@ JOIN cuentas ct ON c.id_cliente = ct.clientes_id_cliente
 WHERE ct.numero_cuenta = '14870506981385521592';
 
 
-
 SELECT c.id_cliente, c.nombre, c.apellido, c.telefono, tc.tipo_cuenta
 FROM clientes c
 JOIN cuentas ct ON c.id_cliente = ct.clientes_id_cliente

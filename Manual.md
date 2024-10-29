@@ -14,7 +14,6 @@ El proyecto **Sistema Bancario - Banco JP Morgan** desarrollado para el segundo 
 
 4. **Evaluación de Solvencia**: El sistema puede calcular la solvencia del banco a través de consultas que comparan activos y pasivos, determinando si el banco está en quiebra o en equilibrio financiero.
 
-
 ## Diseño del Modelo de Base de Datos
 
 El modelo de datos está basado en una arquitectura relacional, implementado en Amazon RDS for Oracle. El sistema gestiona datos de clientes, cuentas bancarias, tarjetas de crédito, préstamos, empleados, auditorías, sucursales y bóvedas. El modelo se ha normalizado hasta la tercera forma normal (3NF) para reducir la redundancia de datos.
@@ -33,16 +32,16 @@ El diagrama lógico de la base de datos muestra cómo se relacionan las distinta
 
 El diagrama relacional detalla las relaciones de las tablas con sus atributos específicos y las claves primarias y foráneas. Este diagrama es fundamental para visualizar cómo interactúan las tablas y para definir las restricciones de integridad referencial en la base de datos.
 
-![Diagrama Relacional](Capturas/Relational_2.png)
----
+## ![Diagrama Relacional](Capturas/Relational_2.png)
 
 ## Tablas y Relaciones
 
-El sistema cuenta con 22 tablas principales, cada una con sus respectivas relaciones. Las tablas claves incluyen **CLIENTES**, **CUENTA**, **TRANSACCIONES**, **TARJETAS_CREDITO**, **PRESTAMO**, **SUCURSALES_AGENCIAS**, **BOVEDAS**, **TRANSACCIONES_INTERBANCARIAS**, entre otras. 
+El sistema cuenta con 22 tablas principales, cada una con sus respectivas relaciones. Las tablas claves incluyen **CLIENTES**, **CUENTA**, **TRANSACCIONES**, **TARJETAS_CREDITO**, **PRESTAMO**, **SUCURSALES_AGENCIAS**, **BOVEDAS**, **TRANSACCIONES_INTERBANCARIAS**, entre otras.
 
 A continuación, se describen las tablas clave de la base de datos y sus campos:
 
 ### **1. CLIENTES**
+
 - **Descripción**: Almacena la información básica de los clientes del banco.
 - **Atributos**:
   - `id_cliente` (INT, PK): Identificador único del cliente.
@@ -53,6 +52,7 @@ A continuación, se describen las tablas clave de la base de datos y sus campos:
 ---
 
 ### **2. CUENTA**
+
 - **Descripción**: Contiene las cuentas bancarias de los clientes.
 - **Atributos**:
   - `id_cuenta` (INT, PK): Identificador único de la cuenta.
@@ -67,6 +67,7 @@ A continuación, se describen las tablas clave de la base de datos y sus campos:
 ---
 
 ### **3. TIPOCUENTA**
+
 - **Descripción**: Define los tipos de cuentas disponibles.
 - **Atributos**:
   - `id_tipo_cuenta` (INT, PK): Identificador del tipo de cuenta.
@@ -75,6 +76,7 @@ A continuación, se describen las tablas clave de la base de datos y sus campos:
 ---
 
 ### **4. TRANSACCIONES**
+
 - **Descripción**: Registro de transacciones realizadas por los clientes.
 - **Atributos**:
   - `id_transaccion` (INT, PK): Identificador único de la transacción.
@@ -91,6 +93,7 @@ A continuación, se describen las tablas clave de la base de datos y sus campos:
 ---
 
 ### **5. TIPO_TRANSACCION**
+
 - **Descripción**: Define los tipos de transacciones.
 - **Atributos**:
   - `id_tipo_transaccion` (INT, PK): Identificador del tipo de transacción.
@@ -99,6 +102,7 @@ A continuación, se describen las tablas clave de la base de datos y sus campos:
 ---
 
 ### **6. TARJETAS_CREDITO**
+
 - **Descripción**: Información sobre las tarjetas de crédito de los clientes.
 - **Atributos**:
   - `id_tarjeta` (INT, PK): Identificador único de la tarjeta.
@@ -118,6 +122,7 @@ A continuación, se describen las tablas clave de la base de datos y sus campos:
 ---
 
 ### **7. ESTADO_TARJETA**
+
 - **Descripción**: Estados posibles para las tarjetas de crédito.
 - **Atributos**:
   - `id_estado` (INT, PK): Identificador del estado.
@@ -126,6 +131,7 @@ A continuación, se describen las tablas clave de la base de datos y sus campos:
 ---
 
 ### **8. PRESTAMO**
+
 - **Descripción**: Información sobre los préstamos otorgados a clientes.
 - **Atributos**:
   - `id_prestamo` (INT, PK): Identificador único del préstamo.
@@ -143,6 +149,7 @@ A continuación, se describen las tablas clave de la base de datos y sus campos:
 ---
 
 ### **9. ESTADO_PRESTAMO**
+
 - **Descripción**: Define los estados de los préstamos.
 - **Atributos**:
   - `id_eprestamo` (INT, PK): Identificador del estado.
@@ -151,6 +158,7 @@ A continuación, se describen las tablas clave de la base de datos y sus campos:
 ---
 
 ### **10. EMPLEADOS**
+
 - **Descripción**: Información sobre los empleados del banco.
 - **Atributos**:
   - `id_empleado` (INT, PK): Identificador del empleado.
@@ -168,6 +176,7 @@ A continuación, se describen las tablas clave de la base de datos y sus campos:
 ---
 
 ### **11. ROL**
+
 - **Descripción**: Define los roles de los empleados.
 - **Atributos**:
   - `id_rol` (INT, PK): Identificador del rol.
@@ -176,6 +185,7 @@ A continuación, se describen las tablas clave de la base de datos y sus campos:
 ---
 
 ### **12. SUCURSALES_AGENCIAS**
+
 - **Descripción**: Información sobre sucursales y agencias.
 - **Atributos**:
   - `id_suc_agen` (INT, PK): Identificador de la sucursal o agencia.
@@ -190,6 +200,7 @@ A continuación, se describen las tablas clave de la base de datos y sus campos:
 ---
 
 ### **13. TIPO_SUCURSAL_AGENCIA**
+
 - **Descripción**: Define los tipos de sucursales y agencias.
 - **Atributos**:
   - `id_tipo_suc_agen` (INT, PK): Identificador del tipo.
@@ -198,6 +209,7 @@ A continuación, se describen las tablas clave de la base de datos y sus campos:
 ---
 
 ### **14. DEPARTAMENTO**
+
 - **Descripción**: Define los departamentos geográficos.
 - **Atributos**:
   - `id_departamento` (INT, PK): Identificador del departamento.
@@ -209,6 +221,7 @@ A continuación, se describen las tablas clave de la base de datos y sus campos:
 ---
 
 ### **15. MUNICIPIO**
+
 - **Descripción**: Información de los municipios.
 - **Atributos**:
   - `id_municipio` (INT, PK): Identificador del municipio.
@@ -219,19 +232,22 @@ A continuación, se describen las tablas clave de la base de datos y sus campos:
 ---
 
 ### **16. BOVEDAS**
+
 - **Descripción**: Información de las bóvedas de almacenamiento de dinero.
 - **Atributos**:
   - `id_boveda` (INT, PK): Identificador único de la bóveda.
   - `id_suc_agen` (INT, FK): Identificador de la sucursal o agencia a la que pertenece la bóveda.
   - `efectivo
 
-_total` (DECIMAL(10,2)): Cantidad total de efectivo almacenado.
+\_total` (DECIMAL(10,2)): Cantidad total de efectivo almacenado.
+
 - **Relaciones**:
   - `id_suc_agen` -> SUCURSALES_AGENCIAS(`id_suc_agen`)
 
 ---
 
 ### **17. TRANSACCIONES_INTERBANCARIAS**
+
 - **Descripción**: Registra transacciones interbancarias que involucran el traslado de fondos entre bóvedas.
 - **Atributos**:
   - `id_interbancaria` (INT, PK): Identificador único de la transacción interbancaria.
@@ -247,6 +263,7 @@ _total` (DECIMAL(10,2)): Cantidad total de efectivo almacenado.
 ---
 
 ### **18. ESTADO_FINANCIERO**
+
 - **Descripción**: Almacena el estado financiero de las cuentas, registrando ingresos, egresos y capital.
 - **Atributos**:
   - `id_estado` (INT, PK): Identificador único del estado financiero.
@@ -261,6 +278,7 @@ _total` (DECIMAL(10,2)): Cantidad total de efectivo almacenado.
 ---
 
 ### **19. HISTORIAL_AUDITORIA**
+
 - **Descripción**: Registra auditorías de las transacciones, incluyendo el empleado responsable y la fecha/hora.
 - **Atributos**:
   - `id_auditoria` (INT, PK): Identificador único de la auditoría.
@@ -275,6 +293,7 @@ _total` (DECIMAL(10,2)): Cantidad total de efectivo almacenado.
 ---
 
 ### **20. HISTORIAL_SALDOS**
+
 - **Descripción**: Mantiene un historial de los saldos de las cuentas en diferentes fechas.
 - **Atributos**:
   - `id_historial` (INT, PK): Identificador único del registro de saldo.
@@ -287,6 +306,7 @@ _total` (DECIMAL(10,2)): Cantidad total de efectivo almacenado.
 ---
 
 ### **21. SEGURIDAD_ACCESO**
+
 - **Descripción**: Registra el acceso de empleados al sistema, indicando el rol, fecha y hora de acceso.
 - **Atributos**:
   - `id_acceso` (INT, PK): Identificador único del registro de acceso.
@@ -300,6 +320,7 @@ _total` (DECIMAL(10,2)): Cantidad total de efectivo almacenado.
 ---
 
 ### **22. HISTORIAL_PRESTAMOS**
+
 - **Descripción**: Guarda el historial de préstamos, incluyendo el estado y la fecha de solicitud.
 - **Atributos**:
   - `id_historial_prestamo` (INT, PK): Identificador único del historial de préstamo.
@@ -319,31 +340,28 @@ Cada tabla tiene restricciones de integridad para asegurar la consistencia de lo
 
 El diagrama matricial permite visualizar las relaciones entre las diferentes tablas y sus columnas principales. Este tipo de diagrama muestra claramente qué atributos se relacionan entre sí a través de claves primarias y foráneas, brindando una perspectiva completa de la conectividad entre tablas. Además, se utiliza para identificar dependencias clave en las consultas avanzadas.
 
-
-
-| Entidad                | Cliente | Cuenta | TipoCuenta | Transacciones | TipoTransaccion | TarjetasCredito | EstadoTarjeta | Prestamo | EstadoPrestamo | Empleados | Rol | Sucursales/Agencias | TipoSucursalAgencia | Departamento | Municipio | Bovedas | Transacciones_Interbancarias | Estado_Financiero | Historial_Auditoria | Historial_Saldos | Seguridad_Acceso | Historial_Prestamos |
-|------------------------|---------|--------|------------|---------------|-----------------|-----------------|---------------|----------|----------------|-----------|-----|----------------------|---------------------|--------------|-----------|---------|---------------------------|-------------------|----------------------|------------------|------------------|----------------------|
-| **Cliente**            | PK:1    | 1      | No aplica  | 1             | No aplica       | N               | No aplica     | 1        | No aplica      | No aplica | No aplica | No aplica           | No aplica          | No aplica     | No aplica  | No aplica | No aplica                 | No aplica          | No aplica           | N:1              | No aplica        | N:1                |
-| **Cuenta**             | N:1     | PK:1   | N:1        | No aplica     | No aplica       | No aplica       | No aplica     | No aplica | No aplica      | No aplica | No aplica | No aplica           | No aplica          | No aplica     | No aplica  | No aplica | No aplica                 | No aplica          | No aplica           | 1                | No aplica        | No aplica          |
-| **Transacciones**      | N:1     | No aplica | No aplica | PK:1        | N:1             | No aplica       | No aplica     | No aplica | No aplica      | No aplica | No aplica | N:1                | No aplica          | No aplica     | No aplica  | No aplica | No aplica                 | No aplica          | N:1                | No aplica         | No aplica        | No aplica          |
-| **TarjetasCredito**    | N       | No aplica | No aplica | No aplica   | No aplica       | PK:1            | N:1           | No aplica | No aplica      | No aplica | No aplica | No aplica          | No aplica          | No aplica     | No aplica  | No aplica | No aplica                 | No aplica          | No aplica           | No aplica         | No aplica        | No aplica          |
-| **EstadoTarjeta**      | No aplica | No aplica | No aplica | No aplica | No aplica       | No aplica       | PK:1          | No aplica | No aplica      | No aplica | No aplica | No aplica          | No aplica          | No aplica     | No aplica  | No aplica | No aplica                 | No aplica          | No aplica           | No aplica         | No aplica        | No aplica          |
-| **Prestamo**           | N:1     | No aplica | No aplica | No aplica   | No aplica       | No aplica       | No aplica     | PK:1      | N:1            | No aplica | No aplica | No aplica          | No aplica          | No aplica     | No aplica  | No aplica | No aplica                 | No aplica          | No aplica           | No aplica         | No aplica        | N:1               |
-| **EstadoPrestamo**     | No aplica | No aplica | No aplica | No aplica | No aplica       | No aplica       | No aplica     | N:1      | PK:1           | No aplica | No aplica | No aplica          | No aplica          | No aplica     | No aplica  | No aplica | No aplica                 | No aplica          | No aplica           | No aplica         | No aplica        | No aplica          |
-| **Empleados**          | No aplica | No aplica | No aplica | No aplica | No aplica       | No aplica       | No aplica     | No aplica | No aplica      | PK:1      | N         | N                  | No aplica          | N:1          | No aplica  | No aplica | No aplica                 | No aplica          | No aplica           | No aplica         | No aplica        | No aplica          |
-| **Rol**                | No aplica | No aplica | No aplica | No aplica | No aplica       | No aplica       | No aplica     | No aplica | No aplica      | N         | PK:1      | No aplica          | No aplica          | No aplica     | No aplica  | No aplica | No aplica                 | No aplica          | No aplica           | No aplica         | No aplica        | No aplica          |
-| **SucursalesAgencias** | No aplica | No aplica | No aplica | N:1       | No aplica       | No aplica       | No aplica     | No aplica | No aplica      | No aplica | PK:1      | 1                  | N:1               | N:1          | No aplica  | 1         | N                         | No aplica          | No aplica           | No aplica         | No aplica        | No aplica          |
-| **TipoSucursalAgencia** | No aplica | No aplica | No aplica | No aplica | No aplica      | No aplica       | No aplica     | No aplica | No aplica      | No aplica | No aplica | N:1               | PK:1               | No aplica     | No aplica  | No aplica | No aplica                 | No aplica          | No aplica           | No aplica         | No aplica        | No aplica          |
-| **Departamento**       | No aplica | No aplica | No aplica | No aplica | No aplica       | No aplica       | No aplica     | No aplica | No aplica      | No aplica | No aplica | N:1               | No aplica          | PK:1          | N:1       | No aplica | No aplica                 | No aplica          | No aplica           | No aplica         | No aplica        | No aplica          |
-| **Municipio**          | No aplica | No aplica | No aplica | No aplica | No aplica       | No aplica       | No aplica     | No aplica | No aplica      | No aplica | No aplica | No aplica         | No aplica          | N:1          | PK:1      | No aplica | No aplica                 | No aplica          | No aplica           | No aplica         | No aplica        | No aplica          |
-| **Bovedas**            | No aplica | No aplica | No aplica | No aplica | No aplica       | No aplica       | No aplica     | No aplica | No aplica      | No aplica | No aplica | N:1               | No aplica          | No aplica     | No aplica  | PK:1      | N                         | No aplica          | No aplica           | No aplica         | No aplica        | No aplica          |
-| **Transacciones_Interbancarias** | No aplica | No aplica | No aplica | No aplica | No aplica | No aplica     | No aplica     | No aplica | No aplica      | No aplica | No aplica | N                 | No aplica          | No aplica     | No aplica  | N         | PK:1                      | No aplica          | No aplica           | No aplica         | No aplica        | No aplica          |
-| **Estado_Financiero**  | No aplica | N:1    | No aplica | No aplica   | No aplica       | No aplica       | No aplica     | No aplica | No aplica      | No aplica | No aplica | No aplica         | No aplica          | No aplica     | No aplica  | No aplica | No aplica                 | PK:1               | No aplica           | No aplica         | No aplica        | No aplica          |
-| **Historial_Auditoria** | No aplica | No aplica | No aplica | N:1      | No aplica       | No aplica       | No aplica     | No aplica | No aplica      | N:1       | No aplica | No aplica         | No aplica          | No aplica     | No aplica  | No aplica | No aplica                 | No aplica          | PK:1                | No aplica         | No aplica        | No aplica          |
-| **Historial_Saldos**   | No aplica | 1      | No aplica | No aplica   | No aplica       | No aplica       | No aplica     | No aplica | No aplica      | No aplica | No aplica | No aplica         | No aplica          | No aplica     | No aplica  | No aplica | No aplica                 | No aplica          | No aplica           | PK:1             | No aplica        | No aplica          |
-| **Seguridad_Acceso**   | No aplica | No aplica | No aplica | No aplica | No aplica       | No aplica       | No aplica     | No aplica | No aplica      | N:1       | No aplica | No aplica         | No aplica          | No aplica     | No aplica  | No aplica | No aplica                 | No aplica          | No aplica           | No aplica         | PK:1             | No aplica          |
-| **Historial_Prestamos** | No aplica | No aplica | No aplica | No aplica | No aplica      | No aplica       | No aplica     | N:1      | No aplica      | No aplica | No aplica | No aplica         | No aplica          | No aplica     | No aplica  | No aplica | No aplica                 | No aplica          | No aplica           | No aplica         | No aplica        | PK:1               |
-
+| Entidad                          | Cliente   | Cuenta    | TipoCuenta | Transacciones | TipoTransaccion | TarjetasCredito | EstadoTarjeta | Prestamo  | EstadoPrestamo | Empleados | Rol       | Sucursales/Agencias | TipoSucursalAgencia | Departamento | Municipio | Bovedas   | Transacciones_Interbancarias | Estado_Financiero | Historial_Auditoria | Historial_Saldos | Seguridad_Acceso | Historial_Prestamos |
+| -------------------------------- | --------- | --------- | ---------- | ------------- | --------------- | --------------- | ------------- | --------- | -------------- | --------- | --------- | ------------------- | ------------------- | ------------ | --------- | --------- | ---------------------------- | ----------------- | ------------------- | ---------------- | ---------------- | ------------------- |
+| **Cliente**                      | PK:1      | 1         | No aplica  | 1             | No aplica       | N               | No aplica     | 1         | No aplica      | No aplica | No aplica | No aplica           | No aplica           | No aplica    | No aplica | No aplica | No aplica                    | No aplica         | No aplica           | N:1              | No aplica        | N:1                 |
+| **Cuenta**                       | N:1       | PK:1      | N:1        | No aplica     | No aplica       | No aplica       | No aplica     | No aplica | No aplica      | No aplica | No aplica | No aplica           | No aplica           | No aplica    | No aplica | No aplica | No aplica                    | No aplica         | No aplica           | 1                | No aplica        | No aplica           |
+| **Transacciones**                | N:1       | No aplica | No aplica  | PK:1          | N:1             | No aplica       | No aplica     | No aplica | No aplica      | No aplica | No aplica | N:1                 | No aplica           | No aplica    | No aplica | No aplica | No aplica                    | No aplica         | N:1                 | No aplica        | No aplica        | No aplica           |
+| **TarjetasCredito**              | N         | No aplica | No aplica  | No aplica     | No aplica       | PK:1            | N:1           | No aplica | No aplica      | No aplica | No aplica | No aplica           | No aplica           | No aplica    | No aplica | No aplica | No aplica                    | No aplica         | No aplica           | No aplica        | No aplica        | No aplica           |
+| **EstadoTarjeta**                | No aplica | No aplica | No aplica  | No aplica     | No aplica       | No aplica       | PK:1          | No aplica | No aplica      | No aplica | No aplica | No aplica           | No aplica           | No aplica    | No aplica | No aplica | No aplica                    | No aplica         | No aplica           | No aplica        | No aplica        | No aplica           |
+| **Prestamo**                     | N:1       | No aplica | No aplica  | No aplica     | No aplica       | No aplica       | No aplica     | PK:1      | N:1            | No aplica | No aplica | No aplica           | No aplica           | No aplica    | No aplica | No aplica | No aplica                    | No aplica         | No aplica           | No aplica        | No aplica        | N:1                 |
+| **EstadoPrestamo**               | No aplica | No aplica | No aplica  | No aplica     | No aplica       | No aplica       | No aplica     | N:1       | PK:1           | No aplica | No aplica | No aplica           | No aplica           | No aplica    | No aplica | No aplica | No aplica                    | No aplica         | No aplica           | No aplica        | No aplica        | No aplica           |
+| **Empleados**                    | No aplica | No aplica | No aplica  | No aplica     | No aplica       | No aplica       | No aplica     | No aplica | No aplica      | PK:1      | N         | N                   | No aplica           | N:1          | No aplica | No aplica | No aplica                    | No aplica         | No aplica           | No aplica        | No aplica        | No aplica           |
+| **Rol**                          | No aplica | No aplica | No aplica  | No aplica     | No aplica       | No aplica       | No aplica     | No aplica | No aplica      | N         | PK:1      | No aplica           | No aplica           | No aplica    | No aplica | No aplica | No aplica                    | No aplica         | No aplica           | No aplica        | No aplica        | No aplica           |
+| **SucursalesAgencias**           | No aplica | No aplica | No aplica  | N:1           | No aplica       | No aplica       | No aplica     | No aplica | No aplica      | No aplica | PK:1      | 1                   | N:1                 | N:1          | No aplica | 1         | N                            | No aplica         | No aplica           | No aplica        | No aplica        | No aplica           |
+| **TipoSucursalAgencia**          | No aplica | No aplica | No aplica  | No aplica     | No aplica       | No aplica       | No aplica     | No aplica | No aplica      | No aplica | No aplica | N:1                 | PK:1                | No aplica    | No aplica | No aplica | No aplica                    | No aplica         | No aplica           | No aplica        | No aplica        | No aplica           |
+| **Departamento**                 | No aplica | No aplica | No aplica  | No aplica     | No aplica       | No aplica       | No aplica     | No aplica | No aplica      | No aplica | No aplica | N:1                 | No aplica           | PK:1         | N:1       | No aplica | No aplica                    | No aplica         | No aplica           | No aplica        | No aplica        | No aplica           |
+| **Municipio**                    | No aplica | No aplica | No aplica  | No aplica     | No aplica       | No aplica       | No aplica     | No aplica | No aplica      | No aplica | No aplica | No aplica           | No aplica           | N:1          | PK:1      | No aplica | No aplica                    | No aplica         | No aplica           | No aplica        | No aplica        | No aplica           |
+| **Bovedas**                      | No aplica | No aplica | No aplica  | No aplica     | No aplica       | No aplica       | No aplica     | No aplica | No aplica      | No aplica | No aplica | N:1                 | No aplica           | No aplica    | No aplica | PK:1      | N                            | No aplica         | No aplica           | No aplica        | No aplica        | No aplica           |
+| **Transacciones_Interbancarias** | No aplica | No aplica | No aplica  | No aplica     | No aplica       | No aplica       | No aplica     | No aplica | No aplica      | No aplica | No aplica | N                   | No aplica           | No aplica    | No aplica | N         | PK:1                         | No aplica         | No aplica           | No aplica        | No aplica        | No aplica           |
+| **Estado_Financiero**            | No aplica | N:1       | No aplica  | No aplica     | No aplica       | No aplica       | No aplica     | No aplica | No aplica      | No aplica | No aplica | No aplica           | No aplica           | No aplica    | No aplica | No aplica | No aplica                    | PK:1              | No aplica           | No aplica        | No aplica        | No aplica           |
+| **Historial_Auditoria**          | No aplica | No aplica | No aplica  | N:1           | No aplica       | No aplica       | No aplica     | No aplica | No aplica      | N:1       | No aplica | No aplica           | No aplica           | No aplica    | No aplica | No aplica | No aplica                    | No aplica         | PK:1                | No aplica        | No aplica        | No aplica           |
+| **Historial_Saldos**             | No aplica | 1         | No aplica  | No aplica     | No aplica       | No aplica       | No aplica     | No aplica | No aplica      | No aplica | No aplica | No aplica           | No aplica           | No aplica    | No aplica | No aplica | No aplica                    | No aplica         | No aplica           | PK:1             | No aplica        | No aplica           |
+| **Seguridad_Acceso**             | No aplica | No aplica | No aplica  | No aplica     | No aplica       | No aplica       | No aplica     | No aplica | No aplica      | N:1       | No aplica | No aplica           | No aplica           | No aplica    | No aplica | No aplica | No aplica                    | No aplica         | No aplica           | No aplica        | PK:1             | No aplica           |
+| **Historial_Prestamos**          | No aplica | No aplica | No aplica  | No aplica     | No aplica       | No aplica       | No aplica     | N:1       | No aplica      | No aplica | No aplica | No aplica           | No aplica           | No aplica    | No aplica | No aplica | No aplica                    | No aplica         | No aplica           | No aplica        | No aplica        | PK:1                |
 
 ---
 
@@ -356,15 +374,16 @@ La base de datos incluye varias consultas avanzadas que permiten la obtención d
 Esta consulta calcula el total de activos (dinero en cuentas y préstamos) y lo compara con los pasivos (costos operativos, sueldos, deudas) para determinar si el banco está en quiebra o en punto de equilibrio.
 
 ```sql
-SELECT 
+-- NO JALA
+SELECT
     SUM(CU.saldo) AS total_cuentas,
     SUM(PR.saldo_pendiente) AS total_prestamos,
     (SUM(CU.saldo) + SUM(PR.saldo_pendiente)) AS total_activos,
     SUM(GS.costo) AS total_pasivos,
-    CASE 
-        WHEN (SUM(CU.saldo) + SUM(PR.saldo_pendiente)) >= SUM(GS.costo) 
-        THEN 'Punto de Equilibrio' 
-        ELSE 'Quiebra' 
+    CASE
+        WHEN (SUM(CU.saldo) + SUM(PR.saldo_pendiente)) >= SUM(GS.costo)
+        THEN 'Punto de Equilibrio'
+        ELSE 'Quiebra'
     END AS estado_financiero
 FROM CUENTA CU
 JOIN PRESTAMO PR ON CU.id_cliente = PR.id_cliente
@@ -376,12 +395,12 @@ JOIN GASTOS GS ON GS.id_gasto = CU.id_cuenta;
 Esta consulta calcula el monto que debe enviarse a cada sucursal basado en el número de transacciones y la demanda local.
 
 ```sql
-SELECT 
+SELECT
     SA.nombre AS sucursal,
     SUM(T.monto) AS total_transacciones,
     (SUM(T.monto) * 0.2) AS efectivo_a_enviar
-FROM SUCURSALES_AGENCIAS SA
-JOIN TRANSACCIONES T ON SA.id_suc_agen = T.id_suc_agen
+FROM SUCS_AGENS SA
+JOIN TRANSACCIONES T ON SA.id_suc_agen = T.CLIENTES_ID_CLIENTE
 GROUP BY SA.nombre;
 ```
 
@@ -390,14 +409,13 @@ GROUP BY SA.nombre;
 Consulta que obtiene el historial de transacciones de un cliente específico.
 
 ```sql
-SELECT 
-    T.id_transaccion, 
-    T.monto, 
-    T.fecha, 
+SELECT
+    T.id_transaccion,
+    T.monto,
+    T.fecha,
     T.descripcion
 FROM TRANSACCIONES T
-JOIN CUENTA C ON T.id_cuenta = C.id_cuenta
-WHERE C.id_cliente = :id_cliente
+JOIN CUENTAS C ON T.CLIENTES_ID_CLIENTE = C.id_cuenta
 ORDER BY T.fecha DESC;
 ```
 
@@ -406,11 +424,11 @@ ORDER BY T.fecha DESC;
 Consulta que agrupa los saldos por tipo de cuenta.
 
 ```sql
-SELECT 
-    TC.tipo_cuenta, 
+SELECT
+    TC.tipo_cuenta,
     SUM(CU.saldo) AS saldo_total
-FROM CUENTA CU
-JOIN TIPOCUENTA TC ON CU.id_tipo_cuenta = TC.id_tipo_cuenta
+FROM CUENTAS CU
+JOIN TIPOCUENTAS TC ON CU.ID_CUENTA = TC.id_tipo_cuenta
 GROUP BY TC.tipo_cuenta;
 ```
 
@@ -419,12 +437,12 @@ GROUP BY TC.tipo_cuenta;
 Esta consulta lista los clientes que no han realizado transacciones en los últimos seis meses.
 
 ```sql
-SELECT 
-    C.nombre, 
+SELECT
+    C.nombre,
     C.apellido
 FROM CLIENTES C
-LEFT JOIN CUENTA CU ON C.id_cliente = CU.id_cliente
-LEFT JOIN TRANSACCIONES T ON CU.id_cuenta = T.id_cuenta
+LEFT JOIN CUENTAS CU ON C.id_cliente = CU.CLIENTES_ID_CLIENTE
+LEFT JOIN TRANSACCIONES T ON CU.id_cuenta = T.CLIENTES_ID_CLIENTE
 WHERE T.fecha IS NULL OR T.fecha < ADD_MONTHS(SYSDATE, -6);
 ```
 
@@ -433,13 +451,14 @@ WHERE T.fecha IS NULL OR T.fecha < ADD_MONTHS(SYSDATE, -6);
 Muestra todos los empleados asignados a una sucursal específica.
 
 ```sql
-SELECT 
-    E.nombre, 
-    E.apellido, 
+-- NO JALA
+SELECT
+    E.nombre,
+    E.apellido,
     R.rol
 FROM EMPLEADOS E
-JOIN SUCURSALES_AGENCIAS SA ON E.id_suc_agen = SA.id_suc_agen
-JOIN ROL R ON E.id_rol = R.id_rol
+JOIN SUCS_AGENS SA ON E.SUCS_AGENS_ID_SUC_AGEN = SA.id_suc_agen
+JOIN ROLES R ON E.ROLES_ID_ROL = R.id_rol
 WHERE SA.nombre = :nombre_sucursal;
 ```
 
@@ -448,11 +467,11 @@ WHERE SA.nombre = :nombre_sucursal;
 Calcula el estado financiero del banco con un enfoque más amplio que incluye ingresos, egresos y capital.
 
 ```sql
-SELECT 
-    SUM(EF.ingresos) AS total_ingresos, 
+SELECT
+    SUM(EF.ingresos) AS total_ingresos,
     SUM(EF.egresos) AS total_egresos,
     SUM(EF.capital) AS total_capital
-FROM ESTADO_FINANCIERO EF
+FROM ESTFINACIEROS EF
 GROUP BY EF.fecha;
 ```
 
@@ -461,15 +480,16 @@ GROUP BY EF.fecha;
 ## Procedimientos Almacenados
 
 ### 1. **Registrar Depósito**
+
 Este procedimiento incrementa el saldo de una cuenta cuando un cliente realiza un depósito.
 
 ```sql
 CREATE OR REPLACE PROCEDURE registrar_deposito (
-    p_id_cuenta IN CUENTA.id_cuenta%TYPE,
+    p_id_cuenta IN CUENTAS.id_cuenta%TYPE,
     p_monto IN NUMBER
 ) IS
 BEGIN
-    UPDATE CUENTA
+    UPDATE CUENTAS
     SET saldo = saldo + p_monto
     WHERE id_cuenta = p_id_cuenta;
     COMMIT;
@@ -477,15 +497,16 @@ END;
 ```
 
 ### 2. **Registrar Retiro**
+
 Este procedimiento decrementa el saldo de una cuenta cuando un cliente realiza un retiro.
 
 ```sql
 CREATE OR REPLACE PROCEDURE registrar_retiro (
-    p_id_cuenta IN CUENTA.id_cuenta%TYPE,
+    p_id_cuenta IN CUENTAS.id_cuenta%TYPE,
     p_monto IN NUMBER
 ) IS
 BEGIN
-    UPDATE CUENTA
+    UPDATE CUENTAS
     SET saldo = saldo - p_monto
     WHERE id_cuenta = p_id_cuenta AND saldo >= p_monto;
     COMMIT;
@@ -493,6 +514,7 @@ END;
 ```
 
 ### 3. **Transferencia entre Cuentas**
+
 Este procedimiento transfiere fondos de una cuenta a otra.
 
 ```sql
@@ -509,70 +531,74 @@ BEGIN
     UPDATE CUENTA
     SET saldo = saldo + p_monto
     WHERE id_cuenta = p_id_cuenta_destino;
-    
+
     COMMIT;
 END;
 ```
 
 ### 4. **Pago de Préstamo**
+
 Este procedimiento permite a un cliente realizar pagos de su préstamo, ajustando el saldo pendiente.
 
 ```sql
 CREATE OR REPLACE PROCEDURE pagar_prestamo (
-    p_id_prestamo IN PRESTAMO.id_prestamo%TYPE,
+    p_id_prestamo IN PRESTAMOS.id_prestamo%TYPE,
     p_monto IN NUMBER
 ) IS
 BEGIN
-    UPDATE PRESTAMO
-    SET saldo_pendiente = saldo_pendiente - p_monto
+    UPDATE PRESTAMOS
+    SET SALDO_PEND = PRESTAMOS.SALDO_PEND - p_monto
     WHERE id_prestamo = p_id_prestamo;
-    
+
     COMMIT;
 END;
 ```
 
-
 Estas consultas son ejemplos de cómo extraer información clave del sistema y utilizar los datos para la toma de decisiones. Cada consulta ha sido optimizada para asegurar tiempos de respuesta rápidos y un impacto mínimo en el rendimiento de la base de datos.
-
-
 
 ## Pruebas y Validación
 
 Las pruebas de la base de datos se realizaron utilizando datos reales y escenarios simulados. A continuación se detallan los resultados de las pruebas:
 
 ### 1. **Prueba de Integridad de Datos**
+
 - **Descripción**: Validación de las claves primarias y foráneas, y aseguramiento de que las relaciones entre tablas sean correctas.
 - **Resultado**: Todas las relaciones se validaron correctamente, garantizando la integridad referencial.
 
 ### 2. **Prueba de Consultas Avanzadas**
+
 - **Descripción**: Evaluación del rendimiento de las consultas avanzadas bajo una carga de datos significativa (1 millón de registros).
 - **Resultado**: Todas las consultas se ejecutaron en menos de 2 segundos con un volumen de 500,000 transacciones.
 
 ### 3. **Prueba de Procedimientos Almacenados**
+
 - **Descripción**: Validación de los procedimientos almacenados para manejar depósitos, retiros, transferencias y pagos de préstamos.
 - **Resultado**: Todos los procedimientos se ejecutaron correctamente, con la garantía de cumplir con las propiedades ACID.
 
 ### 4. **Pruebas de Seguridad**
+
 - **Descripción**: Validación de los roles de acceso para diferentes usuarios (Ingeniero de datos, DBA, Analista).
 - **Resultado**: La autenticación y control de accesos funcionan correctamente, asegurando que cada usuario tenga los permisos adecuados.
-
 
 ## Estimación de Costos
 
 El costo estimado del proyecto se ha calculado con base en el uso de los servicios de Amazon Web Services (AWS) necesarios para la infraestructura. A continuación, se detalla la estimación mensual de cada componente:
 
 1. **Amazon RDS for Oracle**
+
    - **Instancia**: `db.m5.large`, Multi-AZ
    - **Costo Aproximado**: $450 USD/mes
    - **Almacenamiento**: 500 GB (SSD gp2), con respaldo automático
    - **Licencia**: Bring Your Own License (BYOL) para Oracle Enterprise Edition
 
 2. **Amazon EC2**
+
    - **Instancia**: `t3.medium` (para aplicación web)
    - **Costo Aproximado**: $30 USD/mes (instancia bajo demanda)
    - **Sistema Operativo**: Amazon Linux 2
 
 3. **Amazon S3**
+
    - **Uso**: Almacenamiento de archivos estáticos y copias de seguridad
    - **Costo Aproximado**: $10 USD/mes (dependiendo del volumen de datos almacenados)
 
@@ -585,4 +611,3 @@ La estimación de costos es una aproximación que puede variar según el uso esp
 ## Conclusión
 
 Este sistema bancario cumple con los requisitos de la Superintendencia de Bancos de Guatemala y permite gestionar eficientemente las transacciones financieras, sucursales, y la liquidez bancaria. Se implementaron consultas avanzadas y procedimientos almacenados que garantizan la consistencia de los datos y la seguridad de las transacciones. Además, el análisis de costos de AWS brinda una estimación realista para la implementación del sistema en un entorno de nube.
-
