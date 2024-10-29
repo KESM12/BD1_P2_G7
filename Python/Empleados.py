@@ -139,7 +139,7 @@ apellidos = [
 ]
 
 tipo_cuenta = ['Ahorro', 'Monetaria', 'Corriente']
-Roles = ['Cajero', 'Gerente', 'Auxiliar', 'RRHH', 'Contador', 'Auditor', 'Asesor']
+#Roles = ['Cajero', 'Gerente', 'Auxiliar', 'RRHH', 'Contador', 'Auditor', 'Asesor']
  
 
 # Número de registros
@@ -163,7 +163,7 @@ with open('CSV/Empleados.csv', mode='w', newline='', encoding='utf-8') as csvfil
             'Nombre': random.choice(nombres),
             'Apellido': random.choice(apellidos),
             'Telefono': f'+502{random.randint(10000000, 99999999)}',
-            'Rol': random.choice(Roles),
+            'Rol': random.randint(1, 3),
             'Departamento': 1,
             'Suc/Agen': 1
         })
@@ -175,9 +175,9 @@ with open('CSV/Empleados.csv', mode='w', newline='', encoding='utf-8') as csvfil
                 'Nombre': random.choice(nombres),
                 'Apellido': random.choice(apellidos),
                 'Telefono': f'+502{random.randint(10000000, 99999999)}',
-                'Rol': random.choice(Roles),
+                'Rol': random.randint(1, 3),
                 'Departamento': f'{random.randint(2, 22)}',
                 'Suc/Agen': sucursales
             })
             
-print(f'Se han generado {num_registros} registros en el archivo clientes.csv')
+print(f'Se han generado {num_registros} registros en el archivo Empleados.csv')
