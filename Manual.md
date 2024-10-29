@@ -347,10 +347,6 @@ El diagrama matricial permite visualizar las relaciones entre las diferentes tab
 
 La base de datos incluye varias consultas avanzadas que permiten la obtención de reportes detallados y análisis en tiempo real. Estas consultas han sido diseñadas para satisfacer necesidades específicas del sistema, como el monitoreo de saldos, generación de reportes de transacciones y análisis de la actividad de los clientes. A continuación, se presentan algunas de las consultas clave junto con una explicación detallada de su funcionalidad:
 
-## Consultas SQL Avanzadas
-
-El sistema requiere diversas consultas SQL avanzadas para responder preguntas clave sobre la gestión financiera y operativa del banco.
-
 ### 1. **¿Está el banco en quiebra o en punto de equilibrio?**
 
 Esta consulta calcula el total de activos (dinero en cuentas y préstamos) y lo compara con los pasivos (costos operativos, sueldos, deudas) para determinar si el banco está en quiebra o en punto de equilibrio.
