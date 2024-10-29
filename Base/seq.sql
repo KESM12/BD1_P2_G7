@@ -231,3 +231,23 @@ BEGIN
     :NEW.ID_INTERBANCARIA := seq_transacciones_interbancarias.NEXTVAL;
 END;
 /
+
+-- Trigger para bovedas
+CREATE OR REPLACE TRIGGER trg_bovedas_id
+BEFORE INSERT ON BOVEDAS
+FOR EACH ROW
+WHEN (NEW.ID_BOVEDA IS NULL)
+BEGIN
+    :NEW.ID_BOVEDA := seq_bovedas.NEXTVAL;
+END;
+/
+
+-- Trigger para historial_auditoria
+CREATE OR REPLACE TRIGGER trg_historial_auditoria_id
+BEFORE INSERT ON HISTAUDTORIAS
+FOR EACH ROW
+WHEN (NEW.ID_AUDITORIA IS NULL)
+BEGIN
+    :NEW.ID_AUDITORIA := seq_historial_auditoria.NEXTVAL;
+END;
+/

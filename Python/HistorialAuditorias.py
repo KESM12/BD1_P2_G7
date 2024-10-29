@@ -7,7 +7,7 @@ num_registros = 50
 
 # Crear el archivo CSV
 with open('CSV/HistAuditorias.csv', mode='w', newline='', encoding='utf-8') as csvfile:
-    fieldnames = ['Fecha', 'Hora', 'IdTransaccion', 'IdUsuario']
+    fieldnames = ['Fecha', 'IdTransaccion', 'IdUsuario']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     
     # Escribir la cabecera
@@ -27,7 +27,6 @@ with open('CSV/HistAuditorias.csv', mode='w', newline='', encoding='utf-8') as c
         # Escribir la fila en el CSV
         writer.writerow({
             'Fecha': fecha,
-        #    'Hora': hora,
             'IdTransaccion': idTransaccion,
             'IdUsuario': user
         })
