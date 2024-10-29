@@ -90,7 +90,7 @@ ALTER TABLE estprests ADD CONSTRAINT estprests_pk PRIMARY KEY ( id_eprestamo );
 CREATE TABLE histaudtorias (
     id_auditoria                 INTEGER NOT NULL,
     fecha                        DATE,
-    hora                         DATE,
+    hora                         TIME,
     transacciones_id_transaccion INTEGER NOT NULL,
     empleados_id_empleado        INTEGER NOT NULL
 );
@@ -149,7 +149,7 @@ CREATE TABLE secacces (
     id_acceso             INTEGER NOT NULL,
     rol_acceso            VARCHAR2(50),
     fecha_acceso          DATE,
-    hora_acceso           DATE,
+    hora_acceso           TIME,
     empleados_id_empleado INTEGER NOT NULL
 );
 
@@ -214,7 +214,7 @@ CREATE TABLE traninterbs (
     id_boveda_destino INTEGER,
     monto             NUMBER(10, 2),
     fecha             DATE,
-    hora              DATE
+    hora              TIME
 );
 
 ALTER TABLE traninterbs ADD CONSTRAINT traninterbs_pk PRIMARY KEY ( id_interbancaria );
@@ -223,7 +223,7 @@ CREATE TABLE transacciones (
     id_transaccion             INTEGER NOT NULL,
     monto                      NUMBER(10, 2),
     fecha                      DATE,
-    hora                       DATE,
+    hora                       TIME,
     descripcion                VARCHAR2(255),
     clientes_id_cliente        INTEGER NOT NULL,
     tipo_transacs_id_tipo_tran INTEGER NOT NULL
