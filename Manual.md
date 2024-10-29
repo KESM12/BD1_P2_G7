@@ -19,6 +19,10 @@ El proyecto **Sistema Bancario - Banco JP Morgan** desarrollado para el segundo 
 
 El modelo de datos está basado en una arquitectura relacional, implementado en Amazon RDS for Oracle. El sistema gestiona datos de clientes, cuentas bancarias, tarjetas de crédito, préstamos, empleados, auditorías, sucursales y bóvedas. El modelo se ha normalizado hasta la tercera forma normal (3NF) para reducir la redundancia de datos.
 
+### Diagrama Conceptual.
+
+![Diagrama Logico](Capturas/Conceptual.png)
+
 ### Diagrama Lógico
 
 El diagrama lógico de la base de datos muestra cómo se relacionan las distintas entidades (tablas) y los atributos clave de cada una. Este modelo lógico permite una comprensión inicial del esquema de la base de datos y cómo se maneja la información dentro del sistema.
