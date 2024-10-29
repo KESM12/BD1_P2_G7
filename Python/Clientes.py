@@ -139,7 +139,7 @@ apellidos = [
 
 
 # Número de registros
-num_registros = 50
+num_registros = 500000
 
 # Crear el archivo CSV
 with open('CSV/Clientes.csv', mode='w', newline='', encoding='utf-8') as csvfile:

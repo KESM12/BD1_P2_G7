@@ -2,7 +2,7 @@ import random
 import csv
 
 # Número de registros
-num_registros = 1000
+num_registros = 100000
 
 # Crear el archivo CSV
 with open('CSV/Auditoria.csv', mode='w', newline='', encoding='utf-8') as csvfile:

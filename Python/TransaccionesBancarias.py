@@ -3,7 +3,7 @@ import csv
 
 
 # Número de registros
-num_registros = 50
+num_registros = 170
 
 # Cantidad de bovedas
 num_bovedas = 240

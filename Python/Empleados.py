@@ -143,7 +143,7 @@ tipo_cuenta = ['Ahorro', 'Monetaria', 'Corriente']
  
 
 # Número de registros
-num_registros = 50
+num_registros = 1000
 
 # Número de sucursales
 num_sucursales = 23

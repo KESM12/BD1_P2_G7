@@ -6,7 +6,7 @@ id_cliente = ['1', '2', '3', '4', '5']
 descripcion = ['Deposito', 'Retiro', 'Transferencia', 'Pago', 'Compra']
 
 # Número de registros
-num_registros = 50
+num_registros = 100000
 
 # Crear el archivo CSV
 with open('CSV/Transacciones.csv', mode='w', newline='', encoding='utf-8') as csvfile:

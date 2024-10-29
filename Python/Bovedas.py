@@ -2,7 +2,7 @@ import random
 import csv
 
 # Número de registros
-num_registros = 50
+num_registros = 240
 
 
 # Crear el archivo CSV

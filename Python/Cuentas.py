@@ -2,7 +2,7 @@ import random
 import csv
 
 # Número de registros
-num_registros = 50
+num_registros = 250000
 
 # Crear el archivo CSV
 with open('CSV/Cuentas.csv', mode='w', newline='', encoding='utf-8') as csvfile:

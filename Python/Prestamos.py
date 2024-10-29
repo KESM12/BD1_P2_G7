@@ -3,7 +3,7 @@ import csv
 from datetime import datetime, timedelta
 
 # Número de registros
-num_registros = 50
+num_registros = 200000
 
 # Crear el archivo CSV
 with open('CSV/Prestamos.csv', mode='w', newline='', encoding='utf-8') as csvfile:
