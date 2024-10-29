@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 23.1.0.087.0806
---   en:        2024-10-28 17:38:07 CST
+--   en:        2024-10-28 18:05:45 CST
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -85,7 +85,7 @@ ALTER TABLE estprests ADD CONSTRAINT estprests_pk PRIMARY KEY ( id_eprestamo );
 CREATE TABLE histaudtorias (
     id_auditoria                 INTEGER NOT NULL,
     fecha                        DATE,
-    hora                         DATE,
+    hora                         TIMESTAMP,
     transacciones_id_transaccion INTEGER NOT NULL,
     empleados_id_empleado        INTEGER NOT NULL
 );
@@ -144,18 +144,18 @@ CREATE TABLE secacces (
     id_acceso             INTEGER NOT NULL,
     rol_acceso            VARCHAR2(50),
     fecha_acceso          DATE,
-    hora_acceso           DATE,
+    hora_acceso           TIMESTAMP,
     empleados_id_empleado INTEGER NOT NULL
 );
 
 ALTER TABLE secacces ADD CONSTRAINT secacces_pk PRIMARY KEY ( id_acceso );
 
 CREATE TABLE sucs_agens (
-    id_suc_agen                      INTEGER NOT NULL,
-    nombre                           VARCHAR2(100),
-    telefono                         VARCHAR2(12),
-    departamentos_id_departamento    INTEGER NOT NULL, 
-    tiposucsagens_idtiposucagen INTEGER NOT NULL
+    id_suc_agen                   INTEGER NOT NULL,
+    nombre                        VARCHAR2(100),
+    telefono                      VARCHAR2(12),
+    departamentos_id_departamento INTEGER NOT NULL,
+    tipsucagens_id_tipo_suc_agen  INTEGER NOT NULL
 );
 
 ALTER TABLE sucs_agens ADD CONSTRAINT sucs_agens_pk PRIMARY KEY ( id_suc_agen );
@@ -175,13 +175,6 @@ CREATE TABLE tarjs_cred (
 
 ALTER TABLE tarjs_cred ADD CONSTRAINT tarjs_cred_pk PRIMARY KEY ( id_tarjeta );
 
-CREATE TABLE tipo_sucs_agens (
-    id_tipo_suc_agen INTEGER NOT NULL,
-    tipo_suc_agen    VARCHAR2(50)
-);
-
-ALTER TABLE tipo_sucs_agens ADD CONSTRAINT tipo_sucs_agens_pk PRIMARY KEY ( id_tipo_suc_agen );
-
 CREATE TABLE tipo_transacs (
     id_tipo_tran           INTEGER NOT NULL,
     tipo_tran              VARCHAR2(50),
@@ -197,13 +190,20 @@ CREATE TABLE tipocuentas (
 
 ALTER TABLE tipocuentas ADD CONSTRAINT tipocuentas_pk PRIMARY KEY ( id_tipo_cuenta );
 
+CREATE TABLE tipsucagens (
+    id_tipo_suc_agen INTEGER NOT NULL,
+    tiposucagen      VARCHAR2(50)
+);
+
+ALTER TABLE tipsucagens ADD CONSTRAINT tipo_sucs_agens_pk PRIMARY KEY ( id_tipo_suc_agen );
+
 CREATE TABLE traninterbs (
     id_interbancaria  INTEGER NOT NULL,
     id_boveda_origen  INTEGER,
     id_boveda_destino INTEGER,
     monto             NUMBER(10, 2),
     fecha             DATE,
-    hora              DATE
+    hora              TIMESTAMP
 );
 
 ALTER TABLE traninterbs ADD CONSTRAINT traninterbs_pk PRIMARY KEY ( id_interbancaria );
@@ -212,7 +212,7 @@ CREATE TABLE transacciones (
     id_transaccion             INTEGER NOT NULL,
     monto                      NUMBER(10, 2),
     fecha                      DATE,
-    hora                       DATE,
+    hora                       TIMESTAMP,
     descripcion                VARCHAR2(255),
     clientes_id_cliente        INTEGER NOT NULL,
     tipo_transacs_id_tipo_tran INTEGER NOT NULL
@@ -289,8 +289,8 @@ ALTER TABLE sucs_agens
         REFERENCES departamentos ( id_departamento );
 
 ALTER TABLE sucs_agens
-    ADD CONSTRAINT sucs_agens_tipo_sucs_agens_fk FOREIGN KEY ( tipo_sucs_agens_id_tipo_suc_agen )
-        REFERENCES tipo_sucs_agens ( id_tipo_suc_agen );
+    ADD CONSTRAINT sucs_agens_tipsucagens_fk FOREIGN KEY ( tipsucagens_id_tipo_suc_agen )
+        REFERENCES tipsucagens ( id_tipo_suc_agen );
 
 ALTER TABLE tarjs_cred
     ADD CONSTRAINT tarjs_cred_clientes_fk FOREIGN KEY ( clientes_id_cliente )
@@ -354,5 +354,5 @@ ALTER TABLE transacciones
 -- ORDS ENABLE SCHEMA                       0
 -- ORDS ENABLE OBJECT                       0
 -- 
--- ERRORS                                   1
+-- ERRORS                                   0
 -- WARNINGS                                 0
