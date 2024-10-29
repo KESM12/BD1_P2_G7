@@ -44,18 +44,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="hora_acceso" id="E29BD38C-3085-D5BE-D5C2-27E3DC48AA1E">
-<createdBy>Kevin</createdBy>
-<createdTime>2024-10-28 15:47:02 UTC</createdTime>
-<generatorID>496BA4BC-DF93-A117-C2BE-7B6CC4F6B2C9</generatorID>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT015</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="EMPLEADOS_id_empleado" id="C56AF6C8-00C4-05C9-D5AF-FB9CD283E2E8">
 <createdBy>Kevin</createdBy>
 <createdTime>2024-10-28 15:47:02 UTC</createdTime>
