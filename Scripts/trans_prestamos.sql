@@ -7,38 +7,30 @@ CREATE OR REPLACE PROCEDURE realizar_pago_prestamo(
     id_cliente NUMBER;
 BEGIN
 
-    SELECT saldo_pend, CLIENTES_id_cliente INTO saldo_pendiente, id_cliente 
-    FROM PRESTAMOS 
+    SELECT saldo_pend, clientes_id_cliente INTO saldo_pendiente, id_cliente 
+    FROM prestamos 
     WHERE id_prestamo = p_id_prestamo;
     
-
     IF saldo_pendiente > p_monto THEN
 
-        UPDATE PRESTAMOS
+        UPDATE prestamos
         SET saldo_pend = saldo_pend - p_monto
         WHERE id_prestamo = p_id_prestamo;
 
-        INSERT INTO TRANSACCIONES 
-        (id_transaccion, id_cliente, monto, fecha, hora, descripcion, id_suc_agen, CLIENTES_id_cliente, TIPO_TRANSACS_id_tipo_tran)
+        /*
+        UPDATE bovedas
+        SET efectivo_disponible = efectivo_disponible + p_monto
+        WHERE sucs_agens_id_suc_agen = p_id_suc_agen;
+        */
+
+        INSERT INTO transacciones 
+        ( monto, fecha, descripcion, clientes_id_cliente, tipo_transacs_id_tipo_tran)
         VALUES 
-        (seq_tipo_transacs.NEXTVAL, id_cliente, -p_monto, SYSDATE, SYSDATE, 'Pago de préstamo', p_id_suc_agen, id_cliente, 4);
+        ( p_monto, SYSDATE, 'Pago de préstamo', id_cliente, 1);
 
-        COMMIT;
-    ELSIF saldo_pendiente = p_monto THEN 
-
-        UPDATE PRESTAMOS
-        SET saldo_pend = saldo_pend - p_monto,
-            ESTADOS_PRESTAMOS_id_eprestamo = 3
-        WHERE id_prestamo = p_id_prestamo;
-
-
-        INSERT INTO TRANSACCIONES 
-        (id_transaccion, id_cliente, monto, fecha, hora, descripcion, id_suc_agen, CLIENTES_id_cliente, TIPO_TRANSACS_id_tipo_tran)
-        VALUES 
-        (seq_tipo_transacs.NEXTVAL, id_cliente, -p_monto, SYSDATE, SYSDATE, 'Pago de préstamo', p_id_suc_agen, id_cliente, 4);
          COMMIT;
     ELSE 
-        ROLLBACK
+        ROLLBACK;
         RAISE_APPLICATION_ERROR(-20003, 'El monto a pagar excede el saldo pendiente.');
     END IF;
 EXCEPTION

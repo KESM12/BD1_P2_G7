@@ -6,24 +6,34 @@ CREATE OR REPLACE PROCEDURE mover_efectivo(
 BEGIN
     
     SELECT efectivo_disponible INTO efectivo_disponible 
-    FROM BOVEDAS WHERE id_boveda = p_id_boveda_origen;
+    FROM bovedas WHERE id_boveda = p_id_boveda_origen;
 
     IF efectivo_disponible >= p_monto THEN
-        UPDATE BOVEDAS
+
+        UPDATE bovedas
         SET efectivo_disponible = efectivo_disponible - p_monto
         WHERE id_boveda = p_id_boveda_origen;
 
-        UPDATE BOVEDAS
+        UPDATE bovedas
         SET efectivo_disponible = efectivo_disponible + p_monto
         WHERE id_boveda = p_id_boveda_destino;
 
-        INSERT INTO TRANSACCIONES_INTERBANCARIAS (id_interbancaria, id_boveda_origen, id_boveda_destino, monto, fecha, hora, BOVEDAS_id_boveda)
-        VALUES (seq_transacciones_interbancarias.NEXTVAL, p_id_boveda_origen, p_id_boveda_destino, p_monto, SYSDATE, SYSDATE, p_id_boveda_origen);
+        INSERT INTO traninterbs (id_boveda_origen, id_boveda_destino, monto, fecha)
+        VALUES (p_id_boveda_origen, p_id_boveda_destino, p_monto, SYSDATE);
         
         COMMIT;
     ELSE
-        ROLLBACK
+        ROLLBACK;
         RAISE_APPLICATION_ERROR(-20002, 'Efectivo insuficiente en la bóveda de origen.');
     END IF;
+    
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+        ROLLBACK;
+        RAISE_APPLICATION_ERROR(-20001, 'No se encontró la cuenta con el id con el ID proporcionado.');
+    WHEN OTHERS THEN
+        ROLLBACK;
+        RAISE_APPLICATION_ERROR(-20002, 'Ocurrió un error inesperado: ' || SQLERRM);
+
 END;
 
