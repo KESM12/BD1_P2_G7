@@ -2,12 +2,12 @@ import random
 import csv
 
 # Número de registros
-num_registros = 1000
+num_registros = 239
 
 
 # Crear el archivo CSV
 with open('CSV/SecAcces.csv', mode='w', newline='', encoding='utf-8') as csvfile:
-    fieldnames = ['Rol', 'Fecha', 'Hora', 'IdEmpleado']
+    fieldnames = ['Rol', 'Fecha', 'IdEmpleado']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     
     # Escribir la cabecera
@@ -31,7 +31,6 @@ with open('CSV/SecAcces.csv', mode='w', newline='', encoding='utf-8') as csvfile
         writer.writerow({
             'Rol': roles,
             'Fecha': fecha,
-        #    'Hora': hora,
             'IdEmpleado': user
         })
          

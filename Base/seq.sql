@@ -22,6 +22,7 @@ CREATE SEQUENCE seq_tipo_transacs START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE seq_transacciones START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE seq_transacciones_interbancarias START WITH 1 INCREMENT BY 1;
 
+
 -- Trigger para clientes
 CREATE OR REPLACE TRIGGER trg_clientes_id
 BEFORE INSERT ON CLIENTES

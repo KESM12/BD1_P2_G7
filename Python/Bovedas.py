@@ -2,7 +2,7 @@ import random
 import csv
 
 # Número de registros
-num_registros = 240
+num_registros = 60 #-> jala el id de las agencias
 
 
 # Crear el archivo CSV
