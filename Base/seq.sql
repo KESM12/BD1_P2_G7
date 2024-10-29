@@ -231,3 +231,57 @@ BEGIN
     :NEW.ID_INTERBANCARIA := seq_transacciones_interbancarias.NEXTVAL;
 END;
 /
+
+-- Trigger para bovedas
+CREATE OR REPLACE TRIGGER trg_bovedas_id
+BEFORE INSERT ON BOVEDAS
+FOR EACH ROW
+WHEN (NEW.ID_BOVEDA IS NULL)
+BEGIN
+    :NEW.ID_BOVEDA := seq_bovedas.NEXTVAL;
+END;
+/
+
+----Departamentos-----
+INSERT INTO DEPARTAMENTOS (id_departamento, nombre) VALUES (DEPARTAMENTOS_SEQ.NEXTVAL, 'Guatemala');
+INSERT INTO DEPARTAMENTOS (id_departamento, nombre) VALUES (DEPARTAMENTOS_SEQ.NEXTVAL, 'El Progreso');
+INSERT INTO DEPARTAMENTOS (id_departamento, nombre) VALUES (DEPARTAMENTOS_SEQ.NEXTVAL, 'Sacatepéquez');
+INSERT INTO DEPARTAMENTOS (id_departamento, nombre) VALUES (DEPARTAMENTOS_SEQ.NEXTVAL, 'Chimaltenango');
+INSERT INTO DEPARTAMENTOS (id_departamento, nombre) VALUES (DEPARTAMENTOS_SEQ.NEXTVAL, 'Escuintla');
+INSERT INTO DEPARTAMENTOS (id_departamento, nombre) VALUES (DEPARTAMENTOS_SEQ.NEXTVAL, 'Santa Rosa');
+INSERT INTO DEPARTAMENTOS (id_departamento, nombre) VALUES (DEPARTAMENTOS_SEQ.NEXTVAL, 'Sololá');
+INSERT INTO DEPARTAMENTOS (id_departamento, nombre) VALUES (DEPARTAMENTOS_SEQ.NEXTVAL, 'Totonicapán');
+INSERT INTO DEPARTAMENTOS (id_departamento, nombre) VALUES (DEPARTAMENTOS_SEQ.NEXTVAL, 'Quetzaltenango');
+INSERT INTO DEPARTAMENTOS (id_departamento, nombre) VALUES (DEPARTAMENTOS_SEQ.NEXTVAL, 'Suchitepéquez');
+INSERT INTO DEPARTAMENTOS (id_departamento, nombre) VALUES (DEPARTAMENTOS_SEQ.NEXTVAL, 'Retalhuleu');
+INSERT INTO DEPARTAMENTOS (id_departamento, nombre) VALUES (DEPARTAMENTOS_SEQ.NEXTVAL, 'San Marcos');
+INSERT INTO DEPARTAMENTOS (id_departamento, nombre) VALUES (DEPARTAMENTOS_SEQ.NEXTVAL, 'Huehuetenango');
+INSERT INTO DEPARTAMENTOS (id_departamento, nombre) VALUES (DEPARTAMENTOS_SEQ.NEXTVAL, 'Quiché');
+INSERT INTO DEPARTAMENTOS (id_departamento, nombre) VALUES (DEPARTAMENTOS_SEQ.NEXTVAL, 'Baja Verapaz');
+INSERT INTO DEPARTAMENTOS (id_departamento, nombre) VALUES (DEPARTAMENTOS_SEQ.NEXTVAL, 'Alta Verapaz');
+INSERT INTO DEPARTAMENTOS (id_departamento, nombre) VALUES (DEPARTAMENTOS_SEQ.NEXTVAL, 'Peten');
+INSERT INTO DEPARTAMENTOS (id_departamento, nombre) VALUES (DEPARTAMENTOS_SEQ.NEXTVAL, 'Izabal');
+INSERT INTO DEPARTAMENTOS (id_departamento, nombre) VALUES (DEPARTAMENTOS_SEQ.NEXTVAL, 'Zacapa');
+INSERT INTO DEPARTAMENTOS (id_departamento, nombre) VALUES (DEPARTAMENTOS_SEQ.NEXTVAL, 'Chiquimula');
+INSERT INTO DEPARTAMENTOS (id_departamento, nombre) VALUES (DEPARTAMENTOS_SEQ.NEXTVAL, 'Jalapa');
+INSERT INTO DEPARTAMENTOS (id_departamento, nombre) VALUES (DEPARTAMENTOS_SEQ.NEXTVAL, 'Jutiapa');
+
+----- Estado de prestamos -----
+INSERT INTO ESTPRESTS (id_eprestamo, nombre) VALUES (ESTPRESTS_SEQ.NEXTVAL,'Aceptado');
+INSERT INTO ESTPRESTS (id_eprestamo, nombre) VALUES (ESTPRESTS_SEQ.NEXTVAL, 'Rechazado');
+INSERT INTO ESTPRESTS (id_eprestamo, nombre) VALUES (ESTPRESTS_SEQ.NEXTVAL, 'Pendiente');
+
+----- Estado de tarjetas -----
+INSERT INTO EST_TARJETAS (id_estado, nombre) VALUES (EST_TARJETAS_SEQ.NEXTVAL, 'Activa');
+INSERT INTO EST_TARJETAS (id_estado, nombre) VALUES (EST_TARJETAS_SEQ.NEXTVAL, 'Suspendida');
+INSERT INTO EST_TARJETAS (id_estado, nombre) VALUES (EST_TARJETAS_SEQ.NEXTVAL, 'Cancelada');
+
+---- Roles -----
+INSERT INTO ROLES (id_rol, nombre) VALUES (ROLES_SEQ.NEXTVAL, 'Gerente');
+INSERT INTO ROLES (id_rol, nombre) VALUES (ROLES_SEQ.NEXTVAL, 'Cajero');
+INSERT INTO ROLES (id_rol, nombre) VALUES (ROLES_SEQ.NEXTVAL, 'Servicio al Cliente');
+
+---- Tipo de cuentas -----
+INSERT INTO TIPOCUENTAS (id_tipo_cuenta, nombre) VALUES (TIPOCUENTAS_SEQ.NEXTVAL, 'Monetaria');
+INSERT INTO TIPOCUENTAS (id_tipo_cuenta, nombre) VALUES (TIPOCUENTAS_SEQ.NEXTVAL, 'Ahorro');
+INSERT INTO TIPOCUENTAS (id_tipo_cuenta, nombre) VALUES (TIPOCUENTAS_SEQ.NEXTVAL, 'Corriente');
