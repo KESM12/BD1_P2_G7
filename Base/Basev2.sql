@@ -143,7 +143,6 @@ CREATE TABLE secacces (
     id_acceso             INTEGER NOT NULL,
     rol_acceso            VARCHAR2(50),
     fecha_acceso          DATE,
-    hora_acceso           TIMESTAMP,
     empleados_id_empleado INTEGER NOT NULL
 );
 
