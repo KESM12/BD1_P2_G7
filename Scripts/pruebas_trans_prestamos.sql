@@ -54,7 +54,7 @@ END;
 
 BEGIN
     realizar_pago_prestamo(
-        p_id_prestamo => 4,
+        p_id_prestamo => 8,
         p_monto => 200,
         p_id_suc_agen => 6
     );
@@ -63,7 +63,7 @@ END;
 
 BEGIN
     realizar_pago_prestamo(
-        p_id_prestamo => 5,
+        p_id_prestamo => 15,
         p_monto => 190,
         p_id_suc_agen => 5
     );
@@ -72,7 +72,7 @@ END;
 
 BEGIN
     realizar_pago_prestamo(
-        p_id_prestamo => 6,
+        p_id_prestamo => 16,
         p_monto => 100,
         p_id_suc_agen => 4
     );
@@ -81,7 +81,7 @@ END;
 
 BEGIN
     realizar_pago_prestamo(
-        p_id_prestamo => 6,
+        p_id_prestamo => 16,
         p_monto => 100,
         p_id_suc_agen => 4
     );

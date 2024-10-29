@@ -8,8 +8,8 @@ CREATE OR REPLACE PROCEDURE realizar_retiro(
     id_cliente INTEGER;
 BEGIN
 
-    SELECT id_cliente INTO id_cliente
-    FROM CUENTAS 
+    SELECT clientes_id_cliente INTO id_cliente
+    FROM cuentas 
     WHERE id_cuenta = p_id_cuenta;
 
 
