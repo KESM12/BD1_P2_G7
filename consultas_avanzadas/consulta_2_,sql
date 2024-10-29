@@ -1,0 +1,46 @@
+WITH Totales AS (
+    SELECT
+        COUNT(id_transaccion) AS total_transacciones,
+        SUM(monto) AS total_monto
+    FROM
+        transacciones
+),
+disponible_traslado_boveda_central AS (
+    SELECT
+        (SELECT SUM(saldo) * 0.20 FROM cuentas) AS encaje_bancario,
+        (SELECT efectivo_disponible FROM bovedas WHERE sucs_agens_id_suc_agen = 1) AS efectivo_boveda_central
+    FROM dual
+),
+trans AS (
+    SELECT
+        ta.id_suc_agen AS id_suc_agen,  -- ID de la agencia
+        ta.nombre AS nombre,
+        ta.nombre AS agencia_nombre,      -- Nombre de la agencia
+        COUNT(t.id_transaccion) AS total_transacciones,  -- Conteo de transacciones
+        SUM(t.monto) AS total_monto,      -- Suma de montos
+        AVG(t.monto) AS promedio_monto     -- Promedio de montos
+    FROM
+        transacciones t
+    JOIN
+        tipo_transacs tt ON t.tipo_transacs_id_tipo_tran = tt.id_tipo_tran
+    JOIN
+        sucs_agens ta ON tt.sucs_agens_id_suc_agen = ta.id_suc_agen
+    GROUP BY
+        ta.id_suc_agen,
+        ta.nombre
+)
+
+SELECT
+    t.id_suc_agen AS "SUCURSAL",
+    t.nombre AS nombre,
+    t.total_transacciones AS transacciones,  -- Conteo de transacciones
+    ABS(t.total_monto) AS monto_total,       -- Suma total de montos
+    ROUND(t.total_transacciones * 100.0 / (SELECT total_transacciones FROM Totales), 2) AS porcentaje,
+    TO_CHAR(d.efectivo_boveda_central * (t.total_transacciones / (SELECT total_transacciones FROM Totales)), 'FM$999,999,999,999.00') AS traslado
+FROM
+    trans t,
+    disponible_traslado_boveda_central d
+ORDER BY
+    t.id_suc_agen;
+
+
