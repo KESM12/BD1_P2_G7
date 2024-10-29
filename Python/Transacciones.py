@@ -10,7 +10,7 @@ num_registros = 100000
 
 # Crear el archivo CSV
 with open('CSV/Transacciones.csv', mode='w', newline='', encoding='utf-8') as csvfile:
-    fieldnames = ['Monto', 'Fecha', 'Hora', 'Descripcion', 'Cliente', 'TipoTransaccion']
+    fieldnames = ['Monto', 'Fecha','Descripcion', 'Cliente', 'TipoTransaccion']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     
     # Escribir la cabecera
@@ -37,7 +37,6 @@ with open('CSV/Transacciones.csv', mode='w', newline='', encoding='utf-8') as cs
         writer.writerow({
             'Monto': monto,
             'Fecha': fecha,
-           # 'Hora': hora,
             'Descripcion': descripcion_random,
             'TipoTransaccion': tipo,
             'Cliente': id_cliente,
