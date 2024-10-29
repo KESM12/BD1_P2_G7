@@ -60,6 +60,20 @@
 <colAssociation fkAssociation="AA48A54F-F803-DBF6-2C74-7A9BAEF4B7BA" referredColumn="FAF92C52-F655-2E36-C92C-18205B6AEE95"/>
 </associations>
 </Column>
+<Column name="TIPSUCAGENS_id_tipo_suc_agen" id="05065CE4-C110-7E72-48B1-800F66913610">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-29 00:04:55 UTC</createdTime>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3BBB7888-5C65-2AF3-33DF-9261966A671F" referredColumn="D3B2DC65-F1F4-645F-8C78-7BB6046EBEE1"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="5414230A-E260-DD33-4428-6C5147B3B9A7" name="SUCS_AGENS_PK">
@@ -83,6 +97,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="E7949CF4-A994-E12E-877B-D06D299D78CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F89AA43F-6C56-93EE-3211-F98297210532" name="SUCS_AGENS_TIPSUCAGENS_FK">
+<createdBy>Kevin</createdBy>
+<createdTime>2024-10-29 00:04:55 UTC</createdTime>
+<generatorID>5E0BA083-5980-BFBF-D7BC-EB3629D40B54</generatorID>
+<ownerDesignName>BD_MORGAN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05065CE4-C110-7E72-48B1-800F66913610"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -90,17 +90,6 @@
 <colUsage columnID="1FE7F398-62FC-59BE-DC90-3AC02437F828"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="99756768-5E81-2F33-8E29-DA2F2465CD4C" name="BOVEDAS__IDX">
-<createdBy>Kevin</createdBy>
-<createdTime>2024-10-28 15:47:02 UTC</createdTime>
-<ownerDesignName>BD_MORGAN</ownerDesignName>
-<indexState>Unique Plain Index</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<relationGeneratorID>EB9D94B2-BE6B-5A90-FE48-DEF1C5FEE259</relationGeneratorID>
-<indexColumnUsage>
-<colUsage columnID="D3F183A9-4471-516C-89E1-60E41B9A9ED4"/>
-</indexColumnUsage>
-</ind_PK_UK>
 <ind_PK_UK id="7962A595-AC55-2FE9-5CF8-EFA68CAA369C" name="BOVEDAS_SUCS_AGENS_FK">
 <createdBy>Kevin</createdBy>
 <createdTime>2024-10-28 15:47:02 UTC</createdTime>
